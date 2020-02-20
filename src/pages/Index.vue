@@ -1,9 +1,9 @@
 <template>
   <Layout>
     <section class="mt-24">
-      <h1 class="m-4 p-2 text-center text-white font-thin">
-        במאגר יש לעת עתה <span>{{ amountOfVideos }}</span> סרטונים על
-        <span>{{ amountOfTecnologies }}</span> טכנולוגיות
+      <h1 class="font m-4 p-2 text-center text-custom-green-1 font-thin">
+        במאגר יש כעת <span>{{ amountOfVideos }}</span> סרטונים על
+        <span>{{ amountOfTecnologies }}</span> טכנולוגיות שונות
       </h1>
       <tech-list />
     </section>
@@ -36,3 +36,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.font {
+  font-family: "Dosis", sans-serif;
+}
+</style>

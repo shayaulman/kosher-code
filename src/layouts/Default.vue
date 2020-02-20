@@ -1,6 +1,6 @@
 <template>
   <div
-    class="theme-dark min-h-screen bg-custom-bg-primary border-t-2 border-custom-yellow-1"
+    class="theme-dark min-h-screen bg-custom-bg-primary border-t-4 border-custom-green-1"
   >
     <app-header />
 

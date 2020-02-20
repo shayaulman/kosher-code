@@ -1,5 +1,7 @@
 <template>
-  <section class="m-2  bg-custom-bg-card rounded-md">
+  <section
+    class="m-2  bg-custom-bg-card rounded-md transform hover:scale-105 transition ease-in duration-200"
+  >
     <div class="pt-2 px-5">
       <g-link
         :to="`/${name.toLowerCase()}`"
@@ -7,10 +9,10 @@
         class="text-center"
       >
         <app-icon :icon="name.toLowerCase()" class="w-24" />
-        <h3 class="p-2 text-center font-light">{{ name }}</h3>
+        <h3 class="py-1 px-2 text-center font-light">{{ name }}</h3>
       </g-link>
     </div>
-    <div class="px-4 py-1 flex justify-between items-center">
+    <div class="px-4 pb-2 flex justify-between items-center">
       <g-link
         :to="`https://${link}`"
         target="_blank"
@@ -29,7 +31,7 @@
 <script>
 import AppIcon from "~/components/UI/AppIcon";
 import ExternalIcon from "~/components/UI/ExternalIcon";
-import YoutubeIcon from "~/components/UI/YoutubeIcon.vue";
+import YoutubeIcon from "~/components/UI/YoutubeIcon";
 export default {
   props: {
     name: String,

@@ -13,11 +13,3 @@
     />
   </svg>
 </template>
-
-<style lang="scss" scoped>
-svg:hover {
-  .main {
-    fill: #f00;
-  }
-}
-</style>
