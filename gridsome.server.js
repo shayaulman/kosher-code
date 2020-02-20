@@ -26,7 +26,7 @@ module.exports = function(api) {
         id: item.id,
         category: VIDEO_URL.name,
         title: item.snippet.title,
-        description: item.snippet.description.slice(0, 100),
+        description: item.snippet.description,
         // hebrew: Sources.find(tech => tech.videoTutorials[videoTutorials.findOf()]),
         thumbnail: item.snippet.thumbnails.medium.url,
         color: VIDEO_URL.color
