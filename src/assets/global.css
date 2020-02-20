@@ -1,0 +1,20 @@
+body {
+  direction: rtl;
+  font-family: "Varela Round", sans-serif;
+}
+
+:root {
+  --green-1: #00b494;
+  --yellow-1: #f0bc1d;
+}
+
+.theme-dark {
+  --bg-primary: #222831;
+  --bg-card: #191c23;
+  --bg-header: #15191e;
+}
+
+.theme-light {
+  --bg-primary: white;
+  --bg-card: gray;
+}
