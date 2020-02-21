@@ -4,6 +4,7 @@
       <div style="width:100px" class="m-auto">
         <app-icon :icon="$context.technology" />
       </div>
+      <h3>נמצאו {{ category.length }} סרטונים</h3>
     </section>
     <section class="flex flex-wrap justify-center">
       <video-card

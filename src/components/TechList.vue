@@ -1,5 +1,5 @@
 <template>
-  <section class="flex justify-center">
+  <section class="flex flex-wrap justify-center">
     <tech-card
       v-for="(tech, i) in technologies"
       :key="i"

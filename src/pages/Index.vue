@@ -39,6 +39,5 @@ export default {
 
 <style scoped>
 .font {
-  font-family: "Dosis", sans-serif;
 }
 </style>

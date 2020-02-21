@@ -8,7 +8,6 @@
     viewBox="0 0 100 100"
     preserveAspectRatio="xMidYMid"
   >
-    <!-- <circle cx="50" cy="50" r="0" fill="none" stroke="#e90c59" stroke-width="2"> -->
     <circle cx="50" cy="50" r="0" fill="none" :stroke="color" stroke-width="2">
       <animate
         attributeName="r"
@@ -31,7 +30,14 @@
         begin="-0.5s"
       ></animate>
     </circle>
-    <circle cx="50" cy="50" r="0" fill="none" stroke="#46dff0" stroke-width="2">
+    <circle
+      cx="50"
+      cy="50"
+      r="0"
+      fill="none"
+      :stroke="youtube ? 'red' : '#46dff0'"
+      stroke-width="2"
+    >
       <animate
         attributeName="r"
         repeatCount="indefinite"
@@ -58,7 +64,8 @@
 <script>
 export default {
   props: {
-    color: String
+    color: String,
+    youtube: Boolean
   }
 };
 </script>

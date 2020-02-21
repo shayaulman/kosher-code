@@ -1,5 +1,8 @@
 <template>
-  <section style="direction:ltr" class="w-72 m-3 rounded-md bg-custom-bg-card">
+  <section
+    :style="`direction: ${direction}`"
+    class="card w-72 m-3 rounded-md bg-custom-bg-card"
+  >
     <g-link :to="`/${category}/${id}`">
       <div class="relative">
         <div class="absolute top-0 w-full flex justify-center z-0">
@@ -58,12 +61,33 @@ export default {
       );
     },
 
+    direction() {
+      return this.isTitleHebrew ? "rtl" : "ltr";
+    },
+
     isHebrew() {
       const HEBREW = RegExp("[\u0590-\u05FF]");
       return (
-        HEBREW.test(this.description) || this.description.includes("Hebrew")
+        HEBREW.test(this.description) ||
+        HEBREW.test(this.title) ||
+        this.description.includes("Hebrew")
       );
+    },
+
+    isTitleHebrew() {
+      const HEBREW = RegExp("[\u0590-\u05FF]");
+      return HEBREW.test(this.title);
     }
   }
 };
 </script>
+
+<style scoped>
+.card {
+  transition: 0.3s ease-in;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+</style>

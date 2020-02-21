@@ -1,6 +1,9 @@
-body {
+html {
   direction: rtl;
-  font-family: "Dosis", sans-serif;
+  font-family: "Noto Sans Hebrew", "Roboto", sans-serif;
+}
+
+h1 {
 }
 
 :root {

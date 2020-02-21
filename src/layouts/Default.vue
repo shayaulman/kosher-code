@@ -1,10 +1,8 @@
 <template>
-  <div
-    class="theme-dark min-h-screen bg-custom-bg-primary border-t-4 border-custom-green-1"
-  >
+  <div class="theme-dark min-h-screen bg-custom-bg-primary">
     <app-header />
 
-    <div class="max-w-6xl m-auto">
+    <div class="max-w-6xl m-auto p-8">
       <slot />
     </div>
   </div>
@@ -21,8 +19,6 @@ export default {
 
 <style>
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.5;

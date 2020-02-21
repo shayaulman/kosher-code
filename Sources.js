@@ -28,7 +28,22 @@ module.exports = [
     videoTutorials: [
       { url: "Wy9q22isx3U" },
       { url: "78tNYZUS-ps" },
-      { url: "utJGnK9D_UQ" }
+      { url: "utJGnK9D_UQ" },
+      { url: "JLc-hWsPTUY" },
+      { url: "W_ajgnqjK_g" },
+      { url: "dFTsbSRJuIw" },
+      { url: "VugasBUoBdI" },
+      { url: "rt2gNWjydAM" },
+      { url: "lzhnOgwto0M" },
+      { url: "EsSi4cER48E" },
+      { url: "DZyWNS4fVE0" },
+      { url: "mS9-fTrgjrA" },
+      { url: "REqu-nKek-o" },
+      { url: "VqnJwh6E9ak" },
+      { url: "ISVaMijczKc" },
+      { url: "6-us2D7GQCk" },
+      { url: "ko5Eijiaozo" },
+      { url: "5pvG6fzkdFM" }
     ],
     color: "#41b883"
   },
@@ -55,5 +70,20 @@ module.exports = [
       { url: "1AGyBuVCTeE" }
     ],
     color: "#ffd530"
+  },
+  {
+    name: "HTML",
+    officialSite: "https://www.w3.org/html/",
+    videoTutorials: [
+      { url: "88PXJAA6szs" },
+      { url: "b-lny3-7Lo" },
+      { url: "cw5f_P3pZs" },
+      { url: "dkP1rDqUll8" },
+      { url: "tZN6o0ylao" },
+      { url: "Z55B-PN5Ys0" },
+      { url: "qOAdCdW6gg" },
+      { url: "5h-YgYXdnSQ" }
+    ],
+    color: "#e65c18"
   }
 ];
