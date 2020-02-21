@@ -37,7 +37,7 @@ export default {
   computed: {
     isHebrew() {
       const HEBREW = RegExp("[\u0590-\u05FF]");
-      return HEBREW.test(this.title);
+      return HEBREW.test(this.$context.title);
     },
     direction() {
       return this.isHebrew ? "rtl" : "ltr";

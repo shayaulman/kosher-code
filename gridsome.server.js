@@ -1,9 +1,9 @@
 const axios = require("axios");
 const Sources = require("./Sources");
 
-const ID_LIST = Sources.map(tech =>
-  tech.videoTutorials.map(video => video.url)
-).flat();
+let id_list = Sources.map(tech => tech.videoTutorials.map(video => video.url));
+
+const ID_LIST = [].concat.apply([], id_list);
 
 const CHUNK_SIZE = 50;
 
@@ -76,11 +76,6 @@ module.exports = function(api) {
           technology: cat.toLowerCase(),
           color: Sources.find(tech => tech.name === cat).color
         }
-      });
-      createPage({
-        name: "technologyID",
-        path: "/:technology/:id",
-        component: "./src/templates/VideoPage.vue"
       });
     });
   });
