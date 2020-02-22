@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <section class="mt-24">
-      <h1 class="font m-4 p-2 text-center text-custom-green-1 font-thin">
+      <h1 class="font m-4 p-2 text-center text-custom-text-primary font-thin">
         במאגר יש כעת <span>{{ amountOfVideos }}</span> סרטונים על
         <span>{{ amountOfTecnologies }}</span> טכנולוגיות שונות
       </h1>

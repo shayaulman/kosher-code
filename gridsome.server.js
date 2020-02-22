@@ -22,15 +22,16 @@ module.exports = function(api) {
       .then(res => res.map(r => r.data));
 
     const VideoCollection = actions.addCollection("Video");
-    for (const ite of data) {
-      for (const item of ite.items) {
+    for (const d of data) {
+      for (const item of d.items.reverse()) {
+        // API returns reversed
         const VIDEO_URL = Sources.find(tech =>
           tech.videoTutorials.find(video => video.url === item.id)
         );
 
         VideoCollection.addNode({
           id: item.id,
-          category: VIDEO_URL.name,
+          category: VIDEO_URL.name.toLowerCase(),
           title: item.snippet.title,
           description: item.snippet.description,
           thumbnail: item.snippet.thumbnails.medium.url,
@@ -57,7 +58,7 @@ module.exports = function(api) {
 
     data.allVideo.edges.forEach(({ node }) => {
       createPage({
-        path: `/:category/${node.id}`,
+        path: `/video-tutorials/:category/${node.id}`,
         component: "./src/templates/VideoPage.vue",
         context: {
           id: node.id,
@@ -70,7 +71,7 @@ module.exports = function(api) {
     const videoCategories = Sources.map(tech => tech.name);
     videoCategories.forEach(cat => {
       createPage({
-        path: `/${cat.toLowerCase()}`,
+        path: `/video-tutorials/${cat.toLowerCase()}`,
         component: "./src/templates/TechnologyPage.vue",
         context: {
           technology: cat.toLowerCase(),

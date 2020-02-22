@@ -4,9 +4,9 @@
       <div style="width:100px" class="m-auto">
         <app-icon :icon="$context.technology" />
       </div>
-      <h3>נמצאו {{ category.length }} סרטונים</h3>
+      <h3 class="text-custom-text-card">{{ category.length }} סרטונים</h3>
     </section>
-    <section class="flex flex-wrap justify-center">
+    <section style="direction:ltr" class="flex flex-wrap justify-center">
       <video-card
         v-for="course in category"
         :key="course.node.id"
@@ -23,8 +23,8 @@
 </template>
 
 <page-query>
- query {
- videos: allVideo {
+ query Vid ($technology: String!){
+ videos: allVideo (filter: {category: {eq: $technology}}) {
     edges {
       node {
         id

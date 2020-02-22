@@ -1,8 +1,8 @@
 <template>
-  <section>
+  <section style="width: 36px; height: 36px;" class="rounded-full shadow-xl">
     <svg
-      height="28"
-      width="28"
+      height="36"
+      width="36"
       version="1.1"
       id="Layer_1"
       xmlns="http://www.w3.org/2000/svg"

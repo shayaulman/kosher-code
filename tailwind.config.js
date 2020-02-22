@@ -3,9 +3,12 @@ module.exports = {
     extend: {
       colors: {
         custom: {
+          brand: "var(--brand)",
           "bg-primary": "var(--bg-primary)",
           "bg-card": "var(--bg-card)",
           "bg-header": "var(--bg-header)",
+          "text-primary": "var(--text-primary)",
+          "text-card": "var(--text-card)",
           "green-1": "var(--green-1)",
           "yellow-1": "var(--yellow-1)"
         }
@@ -17,6 +20,11 @@ module.exports = {
       },
       boxShadow: {
         xxl: "0 25px 55px rgba(0,0,0,.2),0 16px 28px rgba(0,0,0,.24)"
+      },
+
+      fontFamily: {
+        rubik: ["Rubik", "Roboto", "sans-serif"],
+        tomorow: "Tomorrow"
       }
     }
   },

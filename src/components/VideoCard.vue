@@ -3,18 +3,11 @@
     :style="`direction: ${direction}`"
     class="card w-72 m-3 rounded-md bg-custom-bg-card"
   >
-    <g-link :to="`/${category}/${id}`">
+    <g-link :to="`video-tutorials/${category}/${id}`">
       <div class="relative">
         <div class="absolute top-0 w-full flex justify-center z-0">
           <app-loader :color="color" />
         </div>
-        <div
-          v-if="isHebrew"
-          class="m-3 absolute top-0 right-0 z-20 rounded-full overflow-hidden bg-white shadow-lg"
-        >
-          <israel-flag-icon />
-        </div>
-
         <img
           style="height:180px;"
           :src="thumbnail"
@@ -22,9 +15,15 @@
           class="relative z-10 rounded-t-md"
         />
       </div>
-      <div class="p-4">
+      <div class="relative p-4">
+        <div
+          v-if="isHebrew"
+          class="-mt-4 mr-3 absolute top-0 right-0 z-20 rounded-full overflow-hidden bg-white shadow-lg"
+        >
+          <israel-flag-icon />
+        </div>
         <h2 :style="`color: ${color}`" class="py-2 font-thin">{{ title }}</h2>
-        <p class="py-2 text-gray-400 font-hairline text-xs">
+        <p class="py-2 text-custom-text-card font-hairline text-xs">
           {{ formattedDescription }}
         </p>
       </div>
@@ -51,6 +50,18 @@ export default {
     IsraelFlagIcon
   },
 
+  methods: {
+    doesContainHebrewLetters(textArr) {
+      const HEBREW = RegExp("[\u0590-\u05FF]");
+      return textArr.some(txt => HEBREW.test(txt));
+    },
+
+    doesContainWordHebrew(textArr) {
+      const WORD_HEBREW = new RegExp("hebrew", "i");
+      return textArr.some(txt => WORD_HEBREW.test(txt));
+    }
+  },
+
   computed: {
     formattedDescription() {
       return (
@@ -62,21 +73,14 @@ export default {
     },
 
     direction() {
-      return this.isTitleHebrew ? "rtl" : "ltr";
+      return this.doesContainHebrewLetters([this.title]) ? "rtl" : "ltr";
     },
 
     isHebrew() {
-      const HEBREW = RegExp("[\u0590-\u05FF]");
       return (
-        HEBREW.test(this.description) ||
-        HEBREW.test(this.title) ||
-        this.description.includes("Hebrew")
+        this.doesContainHebrewLetters([this.title, this.description]) ||
+        this.doesContainWordHebrew([this.title, this.description])
       );
-    },
-
-    isTitleHebrew() {
-      const HEBREW = RegExp("[\u0590-\u05FF]");
-      return HEBREW.test(this.title);
     }
   }
 };

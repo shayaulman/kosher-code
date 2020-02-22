@@ -4,7 +4,7 @@
   >
     <div class="pt-2 px-5">
       <g-link
-        :to="`/${name.toLowerCase()}`"
+        :to="`/video-tutorials/${name.toLowerCase()}`"
         :style="`color: ${color}`"
         class="text-center"
       >

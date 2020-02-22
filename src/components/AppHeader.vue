@@ -1,15 +1,36 @@
 <template>
-  <header
-    class="sticky top-0 py-6 px-12 flex justify-between items-center bg-custom-bg-header border-t-4 border-custom-green-1 shadow-lg z-30"
-  >
-    <g-link to="/" class="text-xl text-center text-custom-green-1 font-thin"
-      ><span class="text-custom-green-1 font-bold">{</span> מאגר למתכנת
-      <span class="text-custom-green-1 font-bold">}</span></g-link
-    >
+  <header class="py-6 px-12 flex justify-between items-center">
+    <g-link to="/" class="text-xl text-center text-white font-thin">
+      <app-logo />
+    </g-link>
     <div class="flex">
-      <g-link class="mx-3 text-gray-400" to="/">בית</g-link>
-      <g-link class="mx-3 text-gray-400" to="/blogs">בלוגים</g-link>
-      <g-link class="mx-3 text-gray-400" to="/podcasts">פודקאסטים</g-link>
+      <nav-item
+        v-for="(item, i) in navItems"
+        :key="i"
+        :item="item.item"
+        :link="item.link"
+      />
     </div>
+    <div><theme-toggle /></div>
   </header>
 </template>
+
+<script>
+import NavItem from "~/components/NavItem";
+import ThemeToggle from "~/components/UI/ThemeToggle";
+import AppLogo from "~/components/UI/AppLogo";
+export default {
+  components: { NavItem, ThemeToggle, AppLogo },
+  data() {
+    return {
+      navItems: [
+        { item: "בית", link: "/" },
+        { item: "סרטוני הדרכה", link: "/" },
+        { item: "בלוגים", link: "/blogs" },
+        { item: "פודאקסטים", link: "/podcasts" },
+        { item: "Reddit", link: "/reddit" }
+      ]
+    };
+  }
+};
+</script>

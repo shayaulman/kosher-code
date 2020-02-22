@@ -1,12 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Tomorrow&display=swap");
+
 html {
   direction: rtl;
   font-family: "Noto Sans Hebrew", "Roboto", sans-serif;
+  moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
 }
 
 :root {
+  --brand: #cf36a6;
   --green-1: #00b494;
   --yellow-1: #f0bc1d;
 }
@@ -14,10 +18,13 @@ h1 {
 .theme-dark {
   --bg-primary: #222831;
   --bg-card: #191c23;
-  --bg-header: #15191e;
+  --text-primary: white;
+  --text-card: #cbd5e0;
 }
 
 .theme-light {
-  --bg-primary: white;
-  --bg-card: gray;
+  --bg-primary: #e2e8f0;
+  --bg-card: white;
+  --text-primary: black;
+  --text-card: #2d3748;
 }
