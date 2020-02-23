@@ -4,7 +4,7 @@
       <div style="width:100px" class="m-auto">
         <app-icon :icon="$context.technology" />
       </div>
-      <h3 class="text-custom-text-card">{{ category.length }} סרטונים</h3>
+      <h3 class="text-custom-text-secondary">{{ category.length }} סרטונים</h3>
     </section>
     <section style="direction:ltr" class="flex flex-wrap justify-center">
       <video-card

@@ -1,11 +1,9 @@
 <template>
-  <section class="p-4 w-full absolute bottom-0 flex justify-around">
-    <!-- <github-icon /> -->
-    <a
-      class="text-sm text-custom-text-primary font-thin"
-      href="https://github.com/shayaulman"
-      >GitHub</a
-    >
+  <section class="py-4 w-full absolute bottom-0 flex justify-around">
+    <a href="https://github.com/shayaulman" class="h-6 w-6">
+      <app-icon class="hover:text-custom-text-brand" :icon="'github'" />
+    </a>
+
     <p class="text-sm text-custom-text-primary font-thin">
       &copy; 2020 shayaulman
     </p>
@@ -18,8 +16,8 @@
 </template>
 
 <script>
-import GithubIcon from "~/components/UI/GithubIcon.vue";
+import AppIcon from "~/components/UI/AppIcon";
 export default {
-  components: { GithubIcon }
+  components: { AppIcon }
 };
 </script>

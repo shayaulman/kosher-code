@@ -1,7 +1,32 @@
 <template>
   <Layout>
-    <section class="mt-24">
-      <h1 class="font m-4 p-2 text-center text-custom-text-primary font-thin">
+    <section class=" mt-24">
+      <div class="heading">
+        <div class=" mb-16 flex flex-col items-center">
+          <h1 class="text-xl text-custom-text-primary">
+            מאגר ענק של מקורות למידה למתכנתים כמו
+          </h1>
+
+          <categories-slide />
+          <h3 class="p-2 text-custom-text-secondary">
+            שנבדקו ואושרו ע"י<a
+              href="https://netfree.link/"
+              style="color: #00b494"
+              class="hover:underline"
+            >
+              NetFree</a
+            >
+          </h3>
+        </div>
+      </div>
+      <h1
+        id="video-tutorials"
+        class="rtl mt-48 mx-auto w-32 py-2 px-4 text-center text-white bg-custom-brand rounded-full"
+      >
+        סרטוני הדרכה
+      </h1>
+
+      <h1 class="font m-4 p-2 text-center text-custom-text-secondary font-thin">
         במאגר יש כעת <span>{{ amountOfVideos }}</span> סרטונים על
         <span>{{ amountOfTecnologies }}</span> טכנולוגיות שונות
       </h1>
@@ -12,12 +37,11 @@
 
 <script>
 import TechList from "@/components/TechList";
+import CategoriesSlide from "@/components/CategoriesSlide";
 export default {
-  metaInfo: {
-    title: "Hello, Tailwind!"
-  },
   components: {
-    TechList
+    TechList,
+    CategoriesSlide
   },
   data() {
     return {
@@ -38,6 +62,7 @@ export default {
 </script>
 
 <style scoped>
-.font {
+.heading {
+  clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
 }
 </style>

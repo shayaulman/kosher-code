@@ -23,7 +23,7 @@
           <israel-flag-icon />
         </div>
         <h2 :style="`color: ${color}`" class="py-2 font-thin">{{ title }}</h2>
-        <p class="py-2 text-custom-text-card font-hairline text-xs">
+        <p class="py-2 text-custom-text-secondary font-hairline text-xs">
           {{ formattedDescription }}
         </p>
       </div>
@@ -64,12 +64,21 @@ export default {
 
   computed: {
     formattedDescription() {
-      return (
+      const spliced =
         this.description
           .split(" ")
           .slice(0, 20)
-          .join(" ") + "..."
-      );
+          .join(" ") + "...";
+
+      if (spliced.length > 250) {
+        return (
+          spliced
+            .split("")
+            .slice(0, 250)
+            .join("") + "..."
+        );
+      }
+      return spliced;
     },
 
     direction() {

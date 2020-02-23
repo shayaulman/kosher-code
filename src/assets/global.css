@@ -19,12 +19,12 @@ h1 {
   --bg-primary: #222831;
   --bg-card: #191c23;
   --text-primary: white;
-  --text-card: #cbd5e0;
+  --text-secondary: #cbd5e0;
 }
 
 .theme-light {
   --bg-primary: #e2e8f0;
   --bg-card: white;
   --text-primary: black;
-  --text-card: #2d3748;
+  --text-secondary: #2d3748;
 }

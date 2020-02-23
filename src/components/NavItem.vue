@@ -2,7 +2,7 @@
   <section>
     <g-link
       :to="link"
-      class="mx-3 text-custom-text-primary font-hairline hover:text-custom-brand transition duration-300"
+      class="mx-3 text-custom-text-primary font-hairline opacity-75 hover:text-custom-brand transition duration-300"
       >{{ item }}</g-link
     >
   </section>
@@ -16,3 +16,9 @@ export default {
   }
 };
 </script>
+
+<style lang="postcss" scoped>
+.active--exact {
+  @apply text-custom-brand;
+}
+</style>

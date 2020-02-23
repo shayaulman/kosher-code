@@ -1,5 +1,7 @@
 <template>
-  <header class="py-6 px-12 flex justify-between items-center">
+  <header
+    class="max-w-6xl mx-auto py-6 px-12 flex justify-between items-center"
+  >
     <g-link to="/" class="text-xl text-center text-white font-thin">
       <app-logo />
     </g-link>
@@ -25,7 +27,7 @@ export default {
     return {
       navItems: [
         { item: "בית", link: "/" },
-        { item: "סרטוני הדרכה", link: "/" },
+        { item: "סרטוני הדרכה", link: "/#video-tutorials" },
         { item: "בלוגים", link: "/blogs" },
         { item: "פודאקסטים", link: "/podcasts" },
         { item: "Reddit", link: "/reddit" }

@@ -1,14 +1,15 @@
 <template>
   <div
     :class="theme"
-    class="background-wrapper relative min-h-screen bg-custom-bg-primary transition duration-200"
+    class="relative min-h-screen bg-custom-bg-primary transition duration-200"
   >
     <div class="header-bar"></div>
     <app-header />
-
     <div class="max-w-6xl mx-auto pb-24">
+      <h1>{{ title }}</h1>
+      <h2>{{ subTitle }}</h2>
       <slot />
-      <app-footer />
+      <!-- <app-footer /> -->
     </div>
   </div>
 </template>
@@ -17,6 +18,10 @@
 import AppHeader from "~/components/AppHeader";
 import AppFooter from "~/components/AppFooter";
 export default {
+  props: {
+    title: String,
+    subTitle: String
+  },
   components: {
     AppHeader,
     AppFooter

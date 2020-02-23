@@ -21,8 +21,8 @@
         ><external-icon
       /></g-link>
       <div class="flex items-center text-xs text-gray-700">
+        <!-- <youtube-icon /> -->
         <p class="ml-2">{{ amountOfVideos }}</p>
-        <youtube-icon />
       </div>
     </div>
   </section>
