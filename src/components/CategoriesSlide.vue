@@ -30,7 +30,7 @@ export default {
         $vm._counter = setTimeout(() => {
           $vm.currentText = ($vm.currentText + 1) % 4;
           requestAnimationFrame(animate);
-        }, 3000);
+        }, 2000);
       })();
     })(this);
   },
