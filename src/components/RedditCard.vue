@@ -1,8 +1,8 @@
 <template>
   <g-link
     :style="`background:${color}`"
-    class=" m-2 py-2 px-12 w-64 text-white text-lg rounded-md transform hover:scale-105 transition ease-in duration-200"
-    :to="`https://www.reddit.com/r/${channel}`"
+    class="m-2 py-2 px-6 w-64 text-center text-white text-lg rounded-md transform hover:scale-105 transition ease-in duration-200"
+    :to="`https://www.reddit.com/r/${channel}/`"
   >
     <div class="ltr flex">
       <div class="p-2"><reddit-icon :size="'26'" /></div>

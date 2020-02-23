@@ -51,6 +51,7 @@ module.exports = function(api) {
               id
               title
               description
+              category
               publishedAt
             }
           }
@@ -66,6 +67,7 @@ module.exports = function(api) {
           id: node.id,
           title: node.title,
           description: node.description,
+          category: node.category,
           publishedAt: node.publishedAt
         }
       });

@@ -6,8 +6,14 @@
       </div>
       <div class="flex justify-between">
         <h3 class="text-xs text-custom-text-secondary opacity-75">
-          מציג {{ technologies.length }} סרטונים מתוך
-          {{ technologies.length }}
+          מציג
+          <span class="text-custom-text-primary">{{
+            technologies.length
+          }}</span>
+          סרטונים מתוך
+          <span class="text-custom-text-primary">{{
+            technologies.length
+          }}</span>
         </h3>
         <button
           @click="toggle"

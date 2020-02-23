@@ -1,7 +1,7 @@
 <template>
   <Layout dontShowFooter>
     <section :style="`direction: ${direction}`" class="m-3">
-      <section class=" relative flex">
+      <div class="flex">
         <div
           class="video-container relative w-full h-full float-left bg-black container rounded-md overflow-hidden shadow-lg"
         >
@@ -16,7 +16,13 @@
             allowfullscreen
           ></iframe>
         </div>
-      </section>
+        <g-link :to="`video-tutorials/${$context.category}`">
+          <div class="px-12">
+            <app-icon class=" w-12 h-12" :icon="$context.category" /></div
+        ></g-link>
+      </div>
+
+      <section class=" relative flex"></section>
       <h4 class="mt-3 text-xs text-custom-text-3">{{ formattedTime }}</h4>
       <section style="width:640px" class="my-3">
         <h1 class="my-1 py-2 text-custom-text-primary text-lg">
@@ -32,9 +38,11 @@
 
 <script>
 import AppLoader from "~/components/UI/AppLoader";
+import AppIcon from "~/components/UI/AppIcon";
 export default {
   components: {
-    AppLoader
+    AppLoader,
+    AppIcon
   },
   computed: {
     isHebrew() {
