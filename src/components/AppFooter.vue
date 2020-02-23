@@ -1,17 +1,17 @@
 <template>
-  <section class="py-4  absolute bottom-0 flex justify-around">
-    <a href="https://github.com/shayaulman" class="h-6 w-6">
-      <app-icon class="hover:text-custom-text-brand" :icon="'github'" />
-    </a>
-
+  <section class="ltr py-4 w-full absolute bottom-0 flex justify-around">
     <p class="text-sm text-custom-text-primary font-thin">
-      &copy; 2020 shayaulman
+      <a href="mailto:shayaulman@gmail.com" class="text-sm  font-thin"
+        >Shaya Ulman</a
+      >
+      &copy; 2020
     </p>
-    <a
-      href="mailto:shayaulman@gmail.com"
-      class="text-sm text-custom-text-primary font-thin"
-      >shayaulman</a
-    >
+    <a href="https://github.com/shayaulman" class="h-6 w-6">
+      <app-icon
+        class="fill-current text-custom-text-primary hover:text-custom-brand transform transition duration-300"
+        :icon="'github'"
+      />
+    </a>
   </section>
 </template>
 
