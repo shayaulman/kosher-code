@@ -1,33 +1,39 @@
 <template>
   <Layout>
-    <section class="p-16 m-auto">
-      <div style="width:100px" class="m-auto">
+    <section class="p-12 m-auto">
+      <div style="width:100px" class="mb-12 mx-auto">
         <app-icon :icon="$context.technology" />
       </div>
-      <h3 class="text-custom-text-secondary">
-        {{ $page.videos.edges.length }} סרטונים
-      </h3>
-      <button @click="toggle">
-        {{ hebrewOnly ? "הצג כל הסרטונים" : "הצג רק סרטונים בעברית" }}
-      </button>
+      <div class="flex justify-between">
+        <h3 class="text-xs text-custom-text-secondary opacity-75">
+          מציג {{ technologies.length }} סרטונים מתוך
+          {{ technologies.length }}
+        </h3>
+        <button
+          @click="toggle"
+          class="my-1 px-4 py-1 text-white text-xs bg-black rounded-full shadow-outline focus:outline-none"
+        >
+          {{ hebrewOnly ? "הצג כל הסרטונים" : "הצג רק סרטונים בעברית" }}
+        </button>
+      </div>
     </section>
-    <section style="direction:ltr" class="flex flex-wrap justify-center">
+    <transition-group
+      name="fade"
+      mode="in-out"
+      style="direction:ltr"
+      class="flex flex-wrap justify-center"
+    >
       <video-card
-        v-for="course in $page.videos.edges"
-        v-show="videosToShow"
+        v-for="course in technologies"
         :key="course.node.id"
         :id="course.node.id"
         :title="course.node.title"
         :description="course.node.description"
-        :hebrew="
-          doesContainHebrewLetters([course.node.title]) ||
-            doesContainHebrewLetters([course.node.description])
-        "
         :category="$context.technology"
         :thumbnail="course.node.thumbnail"
         :color="course.node.color"
       />
-    </section>
+    </transition-group>
   </Layout>
 </template>
 
@@ -59,6 +65,7 @@ export default {
 
   data() {
     return {
+      technologies: [],
       hebrewOnly: false
     };
   },
@@ -69,16 +76,41 @@ export default {
     },
     doesContainHebrewLetters(textArr) {
       const HEBREW = RegExp("[\u0590-\u05FF]");
-      return textArr.some(txt => HEBREW.test(txt));
+      return textArr.some(txt => {
+        console.log(txt);
+        return HEBREW.test(txt);
+      });
     }
   },
 
-  computed: {
-    videosToShow() {
-      if (!this.hebrewOnly) return this.$page.videos.edges;
-
-      return this.$page.videos.edges.filter();
+  watch: {
+    hebrewOnly: function(val) {
+      if (val) {
+        this.technologies = this.technologies.filter((video, i) => {
+          const HEBREW = RegExp("[\u0590-\u05FF]");
+          return (
+            HEBREW.test(video.node.title) || HEBREW.test(video.node.description)
+          );
+        });
+      } else {
+        this.technologies = this.$page.videos.edges;
+      }
     }
+  },
+
+  mounted() {
+    this.technologies = this.$page.videos.edges;
   }
 };
 </script>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.3s ease;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: scale(0.9);
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
   <div
     :class="theme"
-    class="relative  min-h-screen bg-custom-bg-primary transition duration-200"
+    class="relative min-h-screen bg-custom-bg-primary transition duration-200"
   >
     <div class="header-bar"></div>
     <app-header />
@@ -9,7 +9,7 @@
       <h1>{{ title }}</h1>
       <h2>{{ subTitle }}</h2>
       <slot />
-      <app-footer />
+      <app-footer v-if="!dontShowFooter" />
     </div>
   </div>
 </template>
@@ -20,7 +20,8 @@ import AppFooter from "~/components/AppFooter";
 export default {
   props: {
     title: String,
-    subTitle: String
+    subTitle: String,
+    dontShowFooter: Boolean
   },
   components: {
     AppHeader,

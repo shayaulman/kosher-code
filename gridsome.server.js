@@ -35,6 +35,7 @@ module.exports = function(api) {
           title: item.snippet.title,
           description: item.snippet.description,
           thumbnail: item.snippet.thumbnails.medium.url,
+          publishedAt: item.snippet.publishedAt,
           color: VIDEO_URL.color
         });
       }
@@ -50,6 +51,7 @@ module.exports = function(api) {
               id
               title
               description
+              publishedAt
             }
           }
         }
@@ -63,7 +65,8 @@ module.exports = function(api) {
         context: {
           id: node.id,
           title: node.title,
-          description: node.description
+          description: node.description,
+          publishedAt: node.publishedAt
         }
       });
     });

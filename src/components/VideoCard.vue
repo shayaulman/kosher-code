@@ -1,5 +1,7 @@
 <template>
-  <section class="card w-72 m-3 rounded-md bg-custom-bg-card">
+  <section
+    class="w-72 m-3 rounded-md bg-custom-bg-card transform hover:-translate-y-1 ease-in duration-100"
+  >
     <g-link :to="`video-tutorials/${category}/${id}`">
       <div class="relative">
         <div class="absolute top-0 w-full flex justify-center z-0">
@@ -100,13 +102,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.card {
-  transition: 0.3s ease-in;
-}
-
-.card:hover {
-  transform: scale(1.03);
-}
-</style>
