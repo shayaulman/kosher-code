@@ -4,13 +4,14 @@ import Vuex from "vuex";
 import DefaultLayout from "~/layouts/Default.vue";
 import "~/assets/tailwind.css";
 import "~/assets/global.css";
+import vueSmoothScroll from "vue-smooth-scroll";
 
 export default function(Vue, { router, head, isClient, appOptions }) {
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
   Vue.use(router);
   Vue.use(Vuex);
-
+  Vue.use(vueSmoothScroll);
   appOptions.store = new Vuex.Store({
     state: {
       theme: "theme-dark"

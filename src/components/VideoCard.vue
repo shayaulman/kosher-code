@@ -1,8 +1,5 @@
 <template>
-  <section
-    :style="`direction: ${direction}`"
-    class="card w-72 m-3 rounded-md bg-custom-bg-card"
-  >
+  <section class="card w-72 m-3 rounded-md bg-custom-bg-card">
     <g-link :to="`video-tutorials/${category}/${id}`">
       <div class="relative">
         <div class="absolute top-0 w-full flex justify-center z-0">
@@ -22,8 +19,17 @@
         >
           <israel-flag-icon />
         </div>
-        <h2 :style="`color: ${color}`" class="py-2 font-thin">{{ title }}</h2>
-        <p class="py-2 text-custom-text-secondary font-hairline text-xs">
+        <h2
+          :style="`color: ${color}`"
+          :class="{ rtl: doesContainHebrewLetters([title]) }"
+          class="py-2 font-thin"
+        >
+          {{ title }}
+        </h2>
+        <p
+          :class="{ rtl: doesContainHebrewLetters([formattedDescription]) }"
+          class="py-2 text-custom-text-secondary font-hairline text-xs"
+        >
           {{ formattedDescription }}
         </p>
       </div>

@@ -19,18 +19,21 @@
           </h3>
         </div>
       </div>
-      <h1
-        id="video-tutorials"
-        class="rtl mt-48 mx-auto w-32 py-2 px-4 text-center text-white bg-custom-brand rounded-full"
-      >
-        סרטוני הדרכה
-      </h1>
+      <div id="video-tutorials" class="pt-12 mb-48">
+        <h1
+          class="rtl mx-auto w-32 py-2 px-4 text-center text-white bg-custom-brand rounded-full"
+        >
+          סרטוני הדרכה
+        </h1>
 
-      <h1 class="font m-4 p-2 text-center text-custom-text-secondary font-thin">
-        במאגר יש כעת <span>{{ amountOfVideos }}</span> סרטונים על
-        <span>{{ amountOfTecnologies }}</span> טכנולוגיות שונות
-      </h1>
-      <tech-list />
+        <h1
+          class="font m-4 p-2 text-center text-custom-text-secondary font-thin"
+        >
+          במאגר יש כעת <span>{{ amountOfVideos }}</span> סרטונים על
+          <span>{{ amountOfTecnologies }}</span> טכנולוגיות שונות
+        </h1>
+        <tech-list />
+      </div>
     </section>
   </Layout>
 </template>
