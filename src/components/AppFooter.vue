@@ -1,5 +1,5 @@
 <template>
-  <section class="py-4 absolute bottom-0 flex justify-around">
+  <section class="py-4  absolute bottom-0 flex justify-around">
     <a href="https://github.com/shayaulman" class="h-6 w-6">
       <app-icon class="hover:text-custom-text-brand" :icon="'github'" />
     </a>

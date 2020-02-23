@@ -9,6 +9,7 @@ module.exports = {
           "bg-header": "var(--bg-header)",
           "text-primary": "var(--text-primary)",
           "text-secondary": "var(--text-secondary)",
+          "text-3": "var(--text-3)",
           "green-1": "var(--green-1)",
           "yellow-1": "var(--yellow-1)"
         }
