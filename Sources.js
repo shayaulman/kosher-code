@@ -54,7 +54,7 @@ module.exports = [
     officialSite: "angular.io",
     hebrewName: "אנגולר",
     videoTutorials: [
-      { url: "GWws2gi9JEM", hebrew: true },
+      { url: "GWws2gi9JEM" },
       { url: "9P5DTlg9oLc" },
       { url: "DBjPIabiRNg" },
       { url: "gCcl2MSzB7I" },
@@ -80,7 +80,42 @@ module.exports = [
       { url: "HB6ftmxKzL8" },
       { url: "vrdHEBkGAow" },
       { url: "k5E2AVpwsko" },
-      { url: "YxyeX8-9lb0" }
+      { url: "YxyeX8-9lb0" },
+      { url: "zHJE4G7dYJk" },
+      { url: "-_4ZPdJbqm8" },
+      { url: "du_R8YHuTgw" },
+      { url: "fHn_LrMG4Zw" },
+      { url: "5lEkegyHexU" },
+      { url: "FXzOPErFivY" },
+      { url: "xx8HLEfdB_0" }
+    ],
+    color: "#c5002a"
+  },
+  {
+    name: "AngularJS",
+    officialSite: "angularjs.org",
+    hebrewName: "אנגולר JS",
+    videoTutorials: [
+      { url: "KyWkKvpr_Sk" },
+      { url: "nebg6X1El2g" },
+      { url: "CGhJBNkYv8M" },
+      { url: "NeE8zUm5NZE" },
+      { url: "nqUvSkZyAZU" },
+      { url: "6J08m1H2BME" },
+      { url: "TRrL5j3MIvo" },
+      { url: "cdG_T6ufcbE" },
+      { url: "gu6TfGZXUZs" },
+      { url: "OPxeCiy0RdY" },
+      { url: "BTVSIYeiCss" },
+      { url: "3TWiSyjCAtw" },
+      { url: "Yj-kygWJEgg" },
+      { url: "hAh2xJ7Yd6Y" },
+      { url: "xC8umPupywk" },
+      { url: "i9MHigUZKEM" },
+      { url: "h_JaD1wnt6Y" },
+      { url: "" },
+
+      { url: "" }
     ],
     color: "#c5002a"
   },

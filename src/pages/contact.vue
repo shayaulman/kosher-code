@@ -84,7 +84,7 @@ export default {
           ...this.formData
         })
       })
-        .then(() => this.$router.push("/Success/"))
+        .then(() => this.$router.push("/success/"))
         .catch(error => alert(error));
     }
   }
@@ -97,7 +97,7 @@ form {
 }
 input,
 textarea {
-  @apply p-3 w-full text-gray-700 rounded bg-custom-bg-card border-none;
+  @apply text-custom-text-primary p-3 w-full rounded bg-custom-bg-card border-none;
 }
 
 ::placeholder {
