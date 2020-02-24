@@ -8,7 +8,7 @@
       <div class="flex justify-center">
         <input
           class="ml-1 p-3 bg-custom-text-3 rounded"
-          v-model="url"
+          v-model.lazy="url"
           type="text"
           @keyup.enter="checkVideo(url)"
         />
@@ -25,8 +25,14 @@
         <h1 class="m-3 text-custom-brand" v-if="videoExists.length > 0">
           הסרטון נמצא בקטגוריה של {{ videoExists[0].node.category }}!
         </h1>
+        <h1
+          v-else-if="url.length !== 11 && url.length > 0"
+          class="m-2 text-xs text-red-800"
+        >
+          URL לא חוקי
+        </h1>
         <div
-          v-else-if="videoExists.length === 0"
+          v-else-if="videoExists.length === 0 && url.length === 11"
           class="p-2 text-center text-custom-text-secondary"
         >
           <h1>הסרטון <span class="text-red-700">אינו</span> קיים במאגר</h1>
@@ -35,8 +41,8 @@
       </div>
 
       <section
-        v-if="videoExists.length === 0"
-        class="flex flex-col items-center"
+        v-if="videoExists.length === 0 && url.length === 11"
+        class="m-4 flex flex-col items-center"
       >
         <iframe
           v-if="showVideo"
