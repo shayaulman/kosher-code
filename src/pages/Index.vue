@@ -4,7 +4,7 @@
       <div class="heading">
         <div class=" mb-16 flex flex-col items-center">
           <h1 class="text-xl text-custom-text-primary">
-            מאגר ענק של מקורות למידה למתכנתים כמו
+            מאגר ענק של מקורות למידה למתכנתים
           </h1>
 
           <categories-slide />

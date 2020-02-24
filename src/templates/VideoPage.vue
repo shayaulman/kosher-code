@@ -16,7 +16,10 @@
             allowfullscreen
           ></iframe>
         </div>
-        <g-link :to="`video-tutorials/${$context.category}`">
+        <g-link
+          :title="`-חזור ל${$context.category}`"
+          :to="`video-tutorials/${$context.category}`"
+        >
           <div class="px-12">
             <app-icon class=" w-12 h-12" :icon="$context.category" /></div
         ></g-link>
@@ -28,9 +31,10 @@
         <h1 class="my-1 py-2 text-custom-text-primary text-lg">
           {{ $context.title }}
         </h1>
-        <p class="text-custom-text-3 text-sm font-thin">
-          {{ $context.description }}
-        </p>
+        <p
+          v-html="formattedDescription"
+          class="text-custom-text-3 text-sm font-thin"
+        ></p>
       </section>
     </section>
   </Layout>
@@ -56,12 +60,35 @@ export default {
     formattedTime() {
       const d = new Date(this.$context.publishedAt);
       return d.toDateString();
+    },
+
+    formattedDescription() {
+      return this.createTextLinks(this.$context.description);
+    }
+  },
+
+  methods: {
+    createTextLinks(text) {
+      return (text || "").replace(
+        /([^\S]|^)(((https?\:\/\/)|(www\.))(\S+))/gi,
+        function(match, space, url) {
+          var hyperlink = url;
+          if (!hyperlink.match("^https?:\/\/")) {
+            hyperlink = "http://" + hyperlink;
+          }
+          return space + '<a href="' + hyperlink + '">' + url + "</a>";
+        }
+      );
     }
   }
 };
 </script>
 
 <style scoped>
+a {
+  color: red;
+}
+
 .video-container {
   overflow: hidden;
   position: relative;
