@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="p-12 m-auto">
+    <section class="mb-24 p-12 mx-auto">
       <div style="width:100px" class="mb-12 mx-auto">
         <app-icon :icon="$context.technology" />
       </div>

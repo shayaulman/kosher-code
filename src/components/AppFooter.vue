@@ -4,7 +4,7 @@
       <a
         href="mailto:shayaulman@gmail.com"
         class="text-sm font-thin hover:text-custom-brand transform transition duration-300"
-        >Shaya Ulman</a
+        >Shaya</a
       >
       &copy; 2020
     </p>
