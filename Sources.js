@@ -1,6 +1,7 @@
 module.exports = [
   {
     name: "React",
+    hebrewName: "ריאקט",
     officialSite: "he.reactjs.org",
     videoTutorials: [
       { url: "sBws8MSXN7A" },
@@ -24,6 +25,7 @@ module.exports = [
   },
   {
     name: "Vue",
+    hebrewName: "ויו",
     officialSite: "vuejs.org",
     videoTutorials: [
       { url: "Wy9q22isx3U" },
@@ -50,6 +52,7 @@ module.exports = [
   {
     name: "Angular",
     officialSite: "angular.io",
+    hebrewName: "אנגולר",
     videoTutorials: [
       { url: "GWws2gi9JEM", hebrew: true },
       { url: "9P5DTlg9oLc" },
@@ -83,6 +86,7 @@ module.exports = [
   },
   {
     name: "Python",
+    hebrewName: "פייתון",
     officialSite: "python.org",
     videoTutorials: [
       { url: "-wikR15AYWY" },
@@ -96,6 +100,7 @@ module.exports = [
   },
   {
     name: "HTML",
+    hebrewName: "HTML",
     officialSite: "http://www.ecmascript.org/",
     videoTutorials: [
       { url: "88PXJAA6szs" },
@@ -112,6 +117,7 @@ module.exports = [
   },
   {
     name: "CSS",
+    hebrewName: "CSS",
     officialSite: "https://www.w3.org/css/",
     videoTutorials: [
       { url: "J35jug1uHzE" },
@@ -122,6 +128,7 @@ module.exports = [
   },
   {
     name: "JavaScript",
+    hebrewName: "ג'אווהסקריפט",
     officialSite: "https://www.w3.org/javascript/",
     videoTutorials: [
       { url: "10ujZygJzMQ" },
@@ -144,7 +151,8 @@ module.exports = [
   },
   {
     name: "Git",
-    officialSite: "https://www.w3.org/javascript/",
+    hebrewName: "גיט",
+    officialSite: "https://git-scm.com/",
     videoTutorials: [
       { url: "SWYqp7iY_Tc" },
       { url: "Mi7LDN4cvq8" },
@@ -154,5 +162,71 @@ module.exports = [
       { url: "nrV0wVvI3-4" }
     ],
     color: "#f44f29"
+  },
+  {
+    name: "WordPress",
+    hebrewName: "וורדפרס",
+    officialSite: "https://wordpress.org/",
+    videoTutorials: [
+      { url: "0zwDo5hH2LQ" },
+      { url: "NmBADqf1UY0" },
+      { url: "AYua5KpkBCg" },
+      { url: "4teO1oHuQbA" },
+      { url: "kzxzbRF6alg" },
+      { url: "4lbKadpMn4U" },
+      { url: "OBHPqgiN6lk" },
+      { url: "3uYHcetEy40" },
+      { url: "PiqeNvGklSM" },
+      { url: "ZCxPIhdB6Ek" },
+      { url: "3DtQbVfC6cE" },
+      { url: "7-agKKX9TPo" },
+      { url: "Wv_QYADAm9w" },
+      { url: "Y64r8eGaS0Q" },
+      { url: "Wq6gAj0i_P8" },
+      { url: "WIoFEbGAiEw" },
+      { url: "xLN4LqdkR4c" },
+      { url: "z4ULR6t3MIE" },
+      { url: "BZSSLQjVf1U" },
+      { url: "dO6QdlFBozw" },
+      { url: "3_TAJGaW1J8" },
+      { url: "cLBc8S21rRM" },
+      { url: "SUOATIrsqwM" },
+      { url: "Pp_NuiCJFhs" },
+      { url: "i-OFd0oE9BU" },
+      { url: "tJ0kzKaUHKs" }
+    ],
+    color: "#494949"
+  },
+  {
+    name: "Elementor",
+    hebrewName: "אלמנטור",
+    officialSite: "https://elementor.com/",
+    videoTutorials: [
+      { url: "N1W9kumpF64" },
+      { url: "Kq4hsUnzrlI" },
+      { url: "n8Vp8OOoPl8" },
+      { url: "MwCw-xIVSl0" },
+      { url: "7Mz1rmljtOk" },
+      { url: "XcWLNqEZnXI" },
+      { url: "6H7nXlshkm0" },
+      { url: "KgmjkGNJvUY" },
+      { url: "mdphDST-ZtM" },
+      { url: "n8zA70d6-KU" },
+      { url: "B5NS5NNoI9E" },
+      { url: "neRuPTBAV8w" },
+      { url: "IMfosDIBhe4" },
+      { url: "H-Y0vdkU0dc" },
+      { url: "tBd9ZifIYFA" },
+      { url: "EPvf9ZfDAsg" },
+      { url: "XEtv6e7_-Io" },
+      { url: "fdZ5lt7OQpU" },
+      { url: "BGc-B9E2xso" },
+      { url: "WaXDixTrOCo" },
+      { url: "MV0KId5JhLk" },
+      { url: "spOpSzNEpoI" },
+      { url: "q_MWcY5Nu8k" },
+      { url: "xQ6ecbNI6NM" }
+    ],
+    color: "#8d2d6b"
   }
 ];

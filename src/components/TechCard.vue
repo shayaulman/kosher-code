@@ -1,6 +1,6 @@
 <template>
   <section
-    class="m-2  bg-custom-bg-card rounded-md transform hover:scale-105 transition ease-in duration-200"
+    class="m-2 w-32 bg-custom-bg-card rounded-md transform hover:scale-105 transition ease-in duration-200"
   >
     <div class="pt-2 px-5">
       <g-link
@@ -8,8 +8,13 @@
         :style="`color: ${color}`"
         class="text-center"
       >
-        <app-icon :icon="name.toLowerCase()" class="w-24" />
-        <h3 class="py-1 px-2 text-center font-light">{{ name }}</h3>
+        <app-icon
+          v-if="name !== 'Elementor'"
+          :icon="name.toLowerCase()"
+          class="w-24"
+        />
+        <g-image src="~/assets/icons/elementor.png" v-else class="p-1" />
+        <h3 class="py-1 px-2 text-center font-light">{{ hebrewName }}</h3>
       </g-link>
     </div>
     <div class="px-4 pb-2 flex justify-between items-center">
@@ -35,6 +40,7 @@ import YoutubeIcon from "~/components/UI/YoutubeIcon";
 export default {
   props: {
     name: String,
+    hebrewName: String,
     icon: String,
     color: String,
     link: String

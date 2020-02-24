@@ -27,7 +27,7 @@ export default {
     return {
       navItems: [
         { item: "בית", link: "/" },
-        { item: "סרטוני הדרכה", link: "/video-tutorials" },
+        { item: "סרטוני הדרכה", link: "/#video-tutorials" },
         { item: "בלוגים", link: "/blogs" },
         { item: "פודאקסטים", link: "/podcasts" },
         { item: "Reddit", link: "/reddit" }

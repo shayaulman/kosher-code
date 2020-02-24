@@ -4,6 +4,7 @@
       v-for="(tech, i) in technologiesSorted"
       :key="i"
       :name="tech.name"
+      :hebrewName="tech.hebrewName"
       :icon="tech.icon"
       :color="tech.color"
       :link="tech.officialSite"
