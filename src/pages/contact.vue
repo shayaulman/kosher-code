@@ -5,7 +5,7 @@
         name="contact"
         method="post"
         v-on:submit.prevent="handleSubmit"
-        action="/Success/"
+        action="/success/"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >
@@ -23,7 +23,7 @@
               type="text"
               name="name"
               v-model="formData.name"
-              placeholder="Name"
+              placeholder="שם"
             />
           </div>
           <div>
@@ -32,7 +32,7 @@
               type="email"
               name="email"
               v-model="formData.email"
-              placeholder="E-Mail"
+              placeholder="אי-מייל"
             />
           </div>
         </div>
@@ -42,10 +42,13 @@
           <textarea
             name="message"
             v-model="formData.message"
-            placeholder="Message"
+            placeholder="הודעה"
           ></textarea>
-          <button type="submit">
-            <span class="mdc-button__label">Send!</span>
+          <button
+            type="submit"
+            class="bg-custom-brand hover:opacity-75 transition duration-300"
+          >
+            <span class="mdc-button__label ">שלח!</span>
           </button>
         </div>
       </form>
@@ -94,7 +97,11 @@ form {
 }
 input,
 textarea {
-  @apply p-3 w-full text-gray-700 rounded bg-custom-text-3 border-none;
+  @apply p-3 w-full text-gray-700 rounded bg-custom-bg-card border-none;
+}
+
+::placeholder {
+  @apply text-custom-text-primary;
 }
 
 .message-wrapper {
@@ -103,19 +110,12 @@ textarea {
   button {
     position: absolute;
     bottom: 15px;
-    right: 15px;
+    left: 15px;
     border-radius: 5px;
     padding: 6px 14px;
     font-family: var(--font-3);
-    background-color: var(--color-3);
-    color: var(--text-main);
-    font-size: 16px;
-    border: none;
 
-    &:hover {
-      cursor: pointer;
-      @extend .animated-background;
-    }
+    border: none;
 
     &:focus {
       outline: none;
@@ -131,23 +131,5 @@ textarea {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
   grid-gap: 6px;
-}
-
-.animated-background {
-  animation-duration: 0.7s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-name: placeHolderShimmer;
-  animation-timing-function: linear;
-  background: #f6f6f6;
-  background: linear-gradient(
-    to right,
-    var(--color-3-op) 8%,
-    var(--color-3) 18%,
-    var(--color-3) 33%
-  );
-  background-size: 800px 104px;
-  // height: 96px;
-  // position: relative;
 }
 </style>

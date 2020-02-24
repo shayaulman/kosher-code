@@ -228,5 +228,43 @@ module.exports = [
       { url: "xQ6ecbNI6NM" }
     ],
     color: "#8d2d6b"
+  },
+
+  {
+    name: "PHP",
+    hebrewName: "PHP",
+    officialSite: "https://www.php.net/",
+    videoTutorials: [
+      { url: "ZdP0KM49IVk" },
+      { url: "y_gQ0dMJ0hU" },
+      { url: "ZA0malVnbbE" },
+      { url: "AKsf77W1ytA" },
+      { url: "cuBNeIWbnAw" }
+    ],
+    color: "#6181B6"
+  },
+
+  {
+    name: "NodeJS",
+    hebrewName: "JS נוד",
+    officialSite: "https://nodejs.org/en/",
+    videoTutorials: [
+      { url: "AA2G9ZFIN8o" },
+      { url: "KujWrArivjo" },
+      { url: "sqf_2EIRdpk" },
+      { url: "3Dzt8FL2OxI" },
+      { url: "UTE6kQXVa-M" },
+      { url: "OIGb6W9T4AY" },
+      { url: "yZ8-vEusBwg" },
+      { url: "GK-tFvpIR7c" },
+      { url: "djt-IRn8LvU" },
+      { url: "vCXlp7E5Mzk" },
+      { url: "UrUirVYByGI" },
+      { url: "Z1ktxiqyiLA" },
+      { url: "DZ_bRk8JWDM" },
+      { url: "DNPVqK_woRQ" },
+      { url: "9neEE_HowzM" }
+    ],
+    color: "#83CD29"
   }
 ];

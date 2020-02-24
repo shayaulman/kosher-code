@@ -23,7 +23,7 @@ module.exports = function(api) {
 
     const VideoCollection = actions.addCollection("Video");
     for (const d of data) {
-      for (const item of d.items.reverse()) {
+      for (const item of d.items) {
         // API returns reversed
         const VIDEO_URL = Sources.find(tech =>
           tech.videoTutorials.find(video => video.url === item.id)
