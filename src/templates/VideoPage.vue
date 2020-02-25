@@ -21,7 +21,11 @@
           :to="`video-tutorials/${$context.category}`"
         >
           <div class="px-12">
-            <app-icon class=" w-12 h-12" :icon="$context.category" /></div
+            <app-icon
+              v-if="$context.category !== 'elementor'"
+              class=" w-12 h-12"
+              :icon="$context.category"
+            /></div
         ></g-link>
       </div>
 

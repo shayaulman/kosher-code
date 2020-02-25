@@ -3,7 +3,11 @@
     <section class="p-12 mx-auto">
       <!-- <button @click="debug">debug</button> -->
       <div style="width:100px" class="mb-12 mx-auto">
-        <app-icon :icon="$context.technology" />
+        <app-icon
+          v-if="$context.technology !== 'elementor'"
+          :icon="$context.technology"
+        />
+        {{ $context.technology }}
       </div>
       <div class="flex justify-between">
         <h3 class="text-xs text-custom-text-secondary opacity-75">
