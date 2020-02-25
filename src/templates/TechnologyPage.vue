@@ -7,7 +7,6 @@
           v-if="$context.technology !== 'elementor'"
           :icon="$context.technology"
         />
-        {{ $context.technology }}
       </div>
       <div class="flex justify-between">
         <h3 class="text-xs text-custom-text-secondary opacity-75">
