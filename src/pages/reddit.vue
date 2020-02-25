@@ -52,7 +52,10 @@ export default {
         { name: "LearnJavaScript", color: "#2495E8" },
         { name: "technology", color: "#29dbc6" },
         { name: "ReverseEngineering", color: "#2495E8" },
-        { name: "WordPress", color: "#00678c" }
+        { name: "WordPress", color: "#00678c" },
+        { name: "i3wm", color: "#2495e8" },
+        { name: "golang", color: "#2d6ee8" },
+        { name: "selfhosted", color: "#2495E8" }
       ]
     };
   },

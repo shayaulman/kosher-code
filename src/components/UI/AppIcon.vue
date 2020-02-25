@@ -2,8 +2,8 @@
   <section>
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 128 128"
-      v-html="icons[icon]"
+      :viewBox="icons[icon].vwb"
+      v-html="icons[icon].path"
     />
   </section>
 </template>

@@ -6,6 +6,7 @@ module.exports = {
           brand: "var(--brand)",
           "bg-primary": "var(--bg-primary)",
           "bg-card": "var(--bg-card)",
+          "bg-card-2": "var(--bg-card-2)",
           "bg-header": "var(--bg-header)",
           "text-primary": "var(--text-primary)",
           "text-secondary": "var(--text-secondary)",

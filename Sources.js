@@ -299,13 +299,30 @@ module.exports = [
       { url: "9neEE_HowzM" }
     ],
     color: "#83CD29"
-  }
+  },
 
-  // {
-  //   name: "Ionic",
-  //   hebrewName: "אייאונויק",
-  //   officialSite: "https://ionicframework.com/",
-  //   videoTutorials: [],
-  //   color: "#4688ff"
-  // }
+  {
+    name: "Ionic",
+    hebrewName: "איאוניק",
+    officialSite: "https://ionicframework.com/",
+    color: "#4688ff",
+    videoTutorials: [
+      { url: "2C8HbcPrt_o" },
+      { url: "J2tnT-WFpyg" },
+      { url: "p3AN3igqiRc" },
+      { url: "O2WiI9QrS5s" },
+      { url: "uWhfwhN5IZc" },
+      { url: "YwSzqeBchEc" },
+      { url: "xtw_fMk1ZNU" },
+      { url: "2N6MZVULgDM" },
+      { url: "XZHG1e_prmQ" },
+      { url: "CYNZ6QTbB3A" },
+      { url: "PiwD67PkJVw" },
+      { url: "r2ga-iXS5i4" },
+      { url: "vuc4dp0qHSc" },
+      { url: "w1rTxE-fOy8" },
+      { url: "BHBLjRuzb7s" },
+      { url: "Rv_RX3SxdHM" }
+    ]
+  }
 ];
