@@ -1,9 +1,22 @@
 <template>
   <Layout dontShowFooter>
     <section :style="`direction: ${direction}`" class="m-3">
-      <div class="flex">
+      <div
+        class="flex flex-col items-center md:flex-row-reverse md:justify-between md:align-top"
+      >
+        <g-link
+          :title="`-חזור ל${$context.category}`"
+          :to="`video-tutorials/${$context.category}`"
+        >
+          <div class="p-8">
+            <app-icon
+              v-if="$context.category !== 'elementor'"
+              class=" w-12 h-12"
+              :icon="$context.category"
+            /></div
+        ></g-link>
         <div
-          class="video-container relative w-full h-full float-left bg-black container rounded-md overflow-hidden shadow-lg"
+          class="video-container relative w-full h-full  bg-black container rounded-md overflow-hidden shadow-lg"
         >
           <div class="absolute z-0 inset-0 flex items-center justify-center">
             <app-loader youtube />
@@ -16,29 +29,37 @@
             allowfullscreen
           ></iframe>
         </div>
-        <g-link
-          :title="`-חזור ל${$context.category}`"
-          :to="`video-tutorials/${$context.category}`"
-        >
-          <div class="px-12">
-            <app-icon
-              v-if="$context.category !== 'elementor'"
-              class=" w-12 h-12"
-              :icon="$context.category"
-            /></div
-        ></g-link>
       </div>
 
-      <section class=" relative flex"></section>
-      <h4 class="mt-3 text-xs text-custom-text-3">{{ formattedTime }}</h4>
+      <section class="relative flex"></section>
+      <h4
+        class="py-6 mt-3 text-xs text-custom-text-3 font-hairline border-b border-custom-bg-card"
+      >
+        {{ formattedTime }}
+      </h4>
+
       <section style="width:640px" class="my-3">
         <h1 class="my-1 py-2 text-custom-text-primary text-lg">
           {{ $context.title }}
         </h1>
         <p
-          v-html="formattedDescription"
+          v-html="description"
           class="text-custom-text-3 text-sm font-thin"
         ></p>
+        <button
+          @click="showMore = !showMore"
+          class="m-2 p-2 rounded text-custom-text-secondary font-bold"
+        >
+          {{
+            isHebrew
+              ? showMore
+                ? "הצג פחות"
+                : "הצג יותר"
+              : showMore
+              ? "Show Less"
+              : "Show More"
+          }}
+        </button>
       </section>
     </section>
   </Layout>
@@ -52,6 +73,12 @@ export default {
     AppLoader,
     AppIcon
   },
+
+  data() {
+    return {
+      showMore: false
+    };
+  },
   computed: {
     isHebrew() {
       const HEBREW = RegExp("[\u0590-\u05FF]");
@@ -61,42 +88,52 @@ export default {
       return this.isHebrew ? "rtl" : "ltr";
     },
 
+    description() {
+      return this.showMore
+        ? this.fullFormattedDescription
+        : this.firstPargaraphOfDescription;
+    },
+
+    firstPargaraphOfDescription() {
+      return this.formatter(this.$context.description.split("\n")[0]);
+    },
+
     formattedTime() {
       const d = new Date(this.$context.publishedAt);
       return d.toDateString();
     },
 
-    formattedDescription() {
-      return this.createTextLinks(this.$context.description);
+    fullFormattedDescription() {
+      return this.formatter(this.$context.description);
     }
   },
 
   methods: {
-    createTextLinks(text) {
-      return (text || "").replace(
+    formatter(text) {
+      let createTextLinks = (text || "").replace(
         /([^\S]|^)(((https?\:\/\/)|(www\.))(\S+))/gi,
         function(match, space, url) {
           var hyperlink = url;
           if (!hyperlink.match("^https?:\/\/")) {
             hyperlink = "http://" + hyperlink;
           }
-          return space + '<a href="' + hyperlink + '">' + url + "</a>";
+          return (
+            space + '<a class="link" href="' + hyperlink + '">' + url + "</a>"
+          );
         }
       );
+
+      return createTextLinks.replace(/\n/g, "<br/>");
     }
   }
 };
 </script>
 
 <style scoped>
-a {
-  color: red;
-}
-
 .video-container {
   overflow: hidden;
   position: relative;
-  width: 75%;
+  width: 80%;
 }
 
 .video-container::after {

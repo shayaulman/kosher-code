@@ -25,8 +25,8 @@ h1 {
 }
 
 .theme-light {
-  --bg-primary: #e2e8f0;
-  --bg-card: white;
+  --bg-primary: white;
+  --bg-card: #edf2f7;
   --bg-card-2: #d8dde4;
   --text-primary: black;
   --text-secondary: #2d3748;
