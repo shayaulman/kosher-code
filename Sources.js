@@ -112,10 +112,7 @@ module.exports = [
       { url: "hAh2xJ7Yd6Y" },
       { url: "xC8umPupywk" },
       { url: "i9MHigUZKEM" },
-      { url: "h_JaD1wnt6Y" },
-      { url: "" },
-
-      { url: "" }
+      { url: "h_JaD1wnt6Y" }
     ],
     color: "#c5002a"
   },
@@ -202,6 +199,7 @@ module.exports = [
     name: "WordPress",
     hebrewName: "וורדפרס",
     officialSite: "https://wordpress.org/",
+    color: "#d4d3d3",
     videoTutorials: [
       { url: "0zwDo5hH2LQ" },
       { url: "NmBADqf1UY0" },
@@ -224,19 +222,19 @@ module.exports = [
       { url: "BZSSLQjVf1U" },
       { url: "dO6QdlFBozw" },
       { url: "3_TAJGaW1J8" },
-      { url: "cLBc8S21rRM" },
-      { url: "SUOATIrsqwM" },
-      { url: "Pp_NuiCJFhs" },
-      { url: "i-OFd0oE9BU" },
-      { url: "tJ0kzKaUHKs" }
-    ],
-    color: "#494949"
+      { url: "cLBc8S21rRM" }
+      // { url: "SUOATIrsqwM" },
+      // { url: "Pp_NuiCJFhs" },
+      // { url: "i-OFd0oE9BU" },
+      // { url: "tJ0kzKaUHKs" }
+    ]
   },
   {
     name: "Elementor",
     hebrewName: "אלמנטור",
     officialSite: "https://elementor.com/",
     videoTutorials: [
+      { url: "3YJ9doorCqY" },
       { url: "N1W9kumpF64" },
       { url: "Kq4hsUnzrlI" },
       { url: "n8Vp8OOoPl8" },
@@ -302,4 +300,12 @@ module.exports = [
     ],
     color: "#83CD29"
   }
+
+  // {
+  //   name: "Ionic",
+  //   hebrewName: "אייאונויק",
+  //   officialSite: "https://ionicframework.com/",
+  //   videoTutorials: [],
+  //   color: "#4688ff"
+  // }
 ];

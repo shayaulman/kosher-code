@@ -25,18 +25,20 @@ module.exports = function(api) {
     for (const d of data) {
       for (const item of d.items) {
         // API returns reversed
-        const VIDEO_URL = Sources.find(tech =>
+        const technologyName = Sources.find(tech =>
           tech.videoTutorials.find(video => video.url === item.id)
         );
-
         VideoCollection.addNode({
           id: item.id,
-          category: VIDEO_URL.name.toLowerCase(),
+          category: technologyName.name.toLowerCase(),
           title: item.snippet.title,
           description: item.snippet.description,
           thumbnail: item.snippet.thumbnails.medium.url,
           publishedAt: item.snippet.publishedAt,
-          color: VIDEO_URL.color
+          color: technologyName.color,
+          ind: Sources.map(tech =>
+            tech.videoTutorials.findIndex(vid => vid.url === item.id)
+          ).filter(i => i !== -1)
         });
       }
     }
@@ -48,6 +50,7 @@ module.exports = function(api) {
         allVideo {
           edges {
             node {
+              ind
               id
               title
               description
@@ -60,6 +63,9 @@ module.exports = function(api) {
     `);
 
     data.allVideo.edges.forEach(({ node }) => {
+      if (node.category === "elementor") {
+        // console.log(node.id);
+      }
       createPage({
         path: `/video-tutorials/:category/${node.id}`,
         component: "./src/templates/VideoPage.vue",

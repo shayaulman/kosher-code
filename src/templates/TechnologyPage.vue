@@ -1,6 +1,7 @@
 <template>
   <Layout>
-    <section class="mb-24 p-12 mx-auto">
+    <section class="p-12 mx-auto">
+      <!-- <button @click="debug">debug</button> -->
       <div style="width:100px" class="mb-12 mx-auto">
         <app-icon :icon="$context.technology" />
       </div>
@@ -27,7 +28,7 @@
       name="fade"
       mode="in-out"
       style="direction:ltr"
-      class="flex flex-wrap justify-center"
+      class="mb-24 flex flex-wrap justify-center"
     >
       <video-card
         v-for="course in technologies"
@@ -45,7 +46,7 @@
 
 <page-query>
  query Vid ($technology: String!){
- videos: allVideo (filter: {category: {eq: $technology}}) {
+ videos: allVideo (sortBy: "ind" order:ASC filter: {category: {eq: $technology}}) {
     edges {
       node {
         id
@@ -86,6 +87,10 @@ export default {
         console.log(txt);
         return HEBREW.test(txt);
       });
+    },
+
+    debug() {
+      console.log(this.technologies);
     }
   },
 
