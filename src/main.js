@@ -12,6 +12,13 @@ export default function(Vue, { router, head, isClient, appOptions }) {
   Vue.use(router);
   Vue.use(Vuex);
   Vue.use(vueSmoothScroll);
+
+  if (process.isClient) {
+    const Paginate = require("vuejs-paginate");
+
+    Vue.component("Paginate", Paginate);
+  }
+
   appOptions.store = new Vuex.Store({
     state: {
       theme: "theme-dark"

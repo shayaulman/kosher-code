@@ -12,8 +12,8 @@
       <reddit-card
         v-for="(channel, i) in channelsSorted"
         :key="i"
-        :channel="channel.name"
-        :color="channel.color"
+        :channel="channel.node.name"
+        :color="channel.node.color"
       />
     </section>
     <section class="flex flex-col items-center">
@@ -32,38 +32,30 @@
   </Layout>
 </template>
 
+<page-query>
+{
+  reddit: allReddit {
+    edges {
+      node {
+        name
+        color
+        id
+      }
+    }
+  }
+}
+ </page-query>
+
 <script>
 import RedditCard from "~/components/RedditCard";
 import RedditIcon from "~/components/UI/RedditIcon";
 export default {
   components: { RedditCard, RedditIcon },
-  data() {
-    return {
-      channels: [
-        { name: "vuejs", color: "#5ab58d" },
-        { name: "reactjs", color: "#004075" },
-        { name: "angular", color: "#228ddc" },
-        { name: "programming", color: "#002631" },
-        { name: "python", color: "#6186b3" },
-        { name: "javascript", color: "#e6ad12" },
-        { name: "learnprogramming", color: "#57b869" },
-        { name: "ProgrammerHumor", color: "#777ab5" },
-        { name: "java", color: "#2495E8" },
-        { name: "LearnJavaScript", color: "#2495E8" },
-        { name: "technology", color: "#29dbc6" },
-        { name: "ReverseEngineering", color: "#2495E8" },
-        { name: "WordPress", color: "#00678c" },
-        { name: "i3wm", color: "#2495e8" },
-        { name: "golang", color: "#2d6ee8" },
-        { name: "selfhosted", color: "#2495E8" }
-      ]
-    };
-  },
 
   computed: {
     channelsSorted() {
-      return this.channels.sort((a, b) =>
-        a.name.toLowerCase().localeCompare(b.name.toLowerCase())
+      return this.$page.reddit.edges.sort((a, b) =>
+        a.node.name.toLowerCase().localeCompare(b.node.name.toLowerCase())
       );
     }
   }

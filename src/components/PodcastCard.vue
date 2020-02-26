@@ -8,7 +8,7 @@
       :class="[hebrew ? 'rounded-r-md' : 'rounded-l-md']"
       class="h-full bg-custom-bg-card"
     >
-      <g-image class="w-12 h-12 m-4" :src="image" />
+      <g-image class="w-12 h-12 m-4" :src="handleImage" />
     </div>
 
     <div class="p-6">
@@ -34,6 +34,11 @@ export default {
   },
 
   computed: {
+    handleImage() {
+      const splitedPath = this.image.split(".");
+      const isPng = splitedPath[splitedPath.length - 1] === "png";
+      return isPng ? require("~/assets/icons/syntaxfm.png") : this.image;
+    },
     direction() {
       return this.hebrew ? "rtl" : "ltr";
     }

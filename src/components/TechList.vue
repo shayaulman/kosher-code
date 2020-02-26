@@ -17,7 +17,7 @@ import TechCard from "~/components/TechCard";
 export default {
   data() {
     return {
-      technologies: require("../../Sources")
+      technologies: require("../../data/videoTutorials")
     };
   },
   components: {

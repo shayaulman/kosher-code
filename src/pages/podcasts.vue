@@ -3,14 +3,14 @@
     <div class="my-8 flex justify-center"><podcast-icon /></div>
     <section class="mx-auto my-16 flex flex-col items-center">
       <podcast-card
-        v-for="(podcast, i) in podcasts"
+        v-for="(podcast, i) in $page.podcast.edges"
         :key="i"
-        :name="podcast.name"
-        :description="podcast.description"
-        :link="podcast.link"
-        :image="podcast.image"
-        :color="podcast.color"
-        :hebrew="isHebrew(podcast.description)"
+        :name="podcast.node.name"
+        :description="podcast.node.description"
+        :link="podcast.node.link"
+        :image="podcast.node.image"
+        :color="podcast.node.color"
+        :hebrew="isHebrew(podcast.node.description)"
       />
     </section>
     <section class="flex flex-col items-center">
@@ -29,6 +29,22 @@
   </Layout>
 </template>
 
+<page-query>
+{
+  podcast: allPodcast {
+    edges {
+      node {
+        name
+        description
+        link
+        color
+        image 
+      }
+    }
+  }
+}
+ </page-query>
+
 <script>
 import PodcastCard from "~/components/PodcastCard";
 import PodcastIcon from "~/components/UI/PodcastIcon";
@@ -36,29 +52,29 @@ export default {
   components: { PodcastIcon, PodcastCard },
   data() {
     return {
-      podcasts: [
-        {
-          name: "רברס עם פלטפורמה",
-          description: "הפודקאסט של אורי ורן",
-          link: "www.reversim.com",
-          color: "#ff2600"
-        },
-        {
-          name: "Chanelog",
-          description: "News and podcasts for developers",
-          link: "changelog.com",
-          image:
-            "https://cdn.changelog.com/images/brand/changelog-logomark-97913322799ebebe4ec08d1ee2492899.svg?vsn=d",
-          color: "#3d765f"
-        },
-        {
-          name: "Syntax",
-          description: "A Tasty Treats Podcast for Web Developers.",
-          link: "syntax.fm",
-          image: require("~/assets/icons/syntaxfm.png"),
-          color: "#d0a650"
-        }
-      ]
+      // podcasts: [
+      //   {
+      //     name: "רברס עם פלטפורמה",
+      //     description: "הפודקאסט של אורי ורן",
+      //     link: "www.reversim.com",
+      //     color: "#ff2600"
+      //   },
+      //   {
+      //     name: "Chanelog",
+      //     description: "News and podcasts for developers",
+      //     link: "changelog.com",
+      //     image:
+      //       "https://cdn.changelog.com/images/brand/changelog-logomark-97913322799ebebe4ec08d1ee2492899.svg?vsn=d",
+      //     color: "#3d765f"
+      //   },
+      //   {
+      //     name: "Syntax",
+      //     description: "A Tasty Treats Podcast for Web Developers.",
+      //     link: "syntax.fm",
+      //     image: require("~/assets/icons/syntaxfm.png"),
+      //     color: "#d0a650"
+      //   }
+      // ]
     };
   },
 

@@ -72,14 +72,12 @@ export default {
     VideoCard,
     AppIcon
   },
-
   data() {
     return {
       technologies: [],
       hebrewOnly: false
     };
   },
-
   methods: {
     toggle() {
       this.hebrewOnly = !this.hebrewOnly;
@@ -91,12 +89,10 @@ export default {
         return HEBREW.test(txt);
       });
     },
-
     debug() {
       console.log(this.technologies);
     }
   },
-
   watch: {
     hebrewOnly: function(val) {
       if (val) {
@@ -111,7 +107,6 @@ export default {
       }
     }
   },
-
   mounted() {
     this.technologies = this.$page.videos.edges;
   }

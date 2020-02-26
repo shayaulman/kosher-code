@@ -48,7 +48,7 @@ export default {
   },
   data() {
     return {
-      technologies: require("../../Sources")
+      technologies: require("../../data/videoTutorials")
     };
   },
 
