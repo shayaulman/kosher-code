@@ -19,5 +19,10 @@ module.exports = [
     link: "syntax.fm",
     image: "syntaxfm.png",
     color: "#d0a650"
+  },
+  {
+    name: "מפתחים חסרי תרבות",
+    description: "פודקאסט בעברית על חיי היום יום של צוותי פיתוח",
+    link: "http://notarbut.co/"
   }
 ];
