@@ -8,6 +8,8 @@ module.exports = [
       { url: "Ke90Tje7VS0" },
       { url: "xsSnOQynTHs" },
       { url: "3frXLe5woQ8" },
+      { url: "tmlGsk5EwwY" },
+      { url: "RZvY4VaXCr8" },
       { url: "1iAG6h9ff5s" },
       { url: "nusgoj74a3Y" },
       { url: "114SMzf0vjA" },
@@ -18,7 +20,13 @@ module.exports = [
       { url: "VylTNsFy3tc" },
       { url: "2DkLGLH3J1I" },
       { url: "_D1JGNidMr4" },
-      { url: "ZBxMljq9GSE" }
+      { url: "ZBxMljq9GSE" },
+      { url: "wgcRHZatR7I", pl: "Yenon Perek" },
+      { url: "cfgaPVN-g5E", pl: "Yenon Perek" },
+      { url: "MR8JlqgTEos", pl: "Yenon Perek" },
+      { url: "-RLrLonTx8U", pl: "Yenon Perek" },
+      { url: "6dwrRkih5BE", pl: "Yenon Perek" },
+      { url: "bf541NclFS8", pl: "Yenon Perek" }
     ],
     color: "#5adafd"
   },
@@ -27,6 +35,17 @@ module.exports = [
     hebrewName: "ויו",
     officialSite: "vuejs.org",
     videoTutorials: [
+      { url: "zyWNA2SdZU4", pl: "gocode" },
+      { url: "h7hR2_LGlGs", pl: "gocode" },
+      { url: "h7hR2_LGlGs", pl: "gocode" },
+      { url: "togm3q-uvH4", pl: "gocode" },
+      { url: "XfSzcS93990", pl: "gocode" },
+      { url: "IGrxTXcejfY", pl: "gocode" },
+      { url: "3KEnfWttkFk", pl: "gocode" },
+      { url: "8N1bd3Tp_Ys", pl: "gocode" },
+      { url: "R1Revdex7gw", pl: "gocode" },
+      { url: "-esamBQaGio", pl: "gocode" },
+      { url: "IOMO0-Qk4Xc", pl: "gocode" },
       { url: "Wy9q22isx3U" },
       { url: "78tNYZUS-ps" },
       { url: "utJGnK9D_UQ" },
@@ -43,7 +62,12 @@ module.exports = [
       { url: "ISVaMijczKc" },
       { url: "6-us2D7GQCk" },
       { url: "ko5Eijiaozo" },
-      { url: "5pvG6fzkdFM" }
+      { url: "5pvG6fzkdFM" },
+      { url: "GuNQ_lcm5VE" },
+      { url: "EMFBOb6cBBs" },
+      { url: "k-bPNMY63DI" },
+      { url: "8e0XHPylhj0" },
+      { url: "zvxgWzr5rwE" }
     ],
     color: "#41b883"
   },
@@ -134,6 +158,7 @@ module.exports = [
     officialSite: "http://www.ecmascript.org/",
     videoTutorials: [
       { url: "88PXJAA6szs" },
+      { url: "3JluqTojuME" },
       { url: "Z55B-PN5Ys0" },
       { url: "ty3DT0ewHiw" },
       { url: "qOAdCdW6gg" },
@@ -246,7 +271,29 @@ module.exports = [
       { url: "ItYye9h_RXg" },
       { url: "W6NZfCO5SIk" },
       { url: "EhpmNyR2Za0" },
-      { url: "fju9ii8YsGs" }
+      { url: "fju9ii8YsGs" },
+      { url: "o-lt_Ju7EcA", pl: "SoleroWeb" },
+      { url: "2-eZ0lVysUE", pl: "SoleroWeb" },
+      { url: "oWxyj2QfI18", pl: "SoleroWeb" },
+      { url: "F6hLRLho0Lc", pl: "SoleroWeb" },
+      { url: "v-DtxN5ggiE", pl: "SoleroWeb" },
+      { url: "c7mqY6QtdQQ", pl: "SoleroWeb" },
+      { url: "HFQOANBmEtI", pl: "SoleroWeb" },
+      { url: "ZfJMR6_l8w4", pl: "SoleroWeb" },
+      { url: "y1SW1reExx4", pl: "SoleroWeb" },
+      { url: "MjWRRk5kaPA", pl: "SoleroWeb" },
+      { url: "drU-Rm21uJQ", pl: "SoleroWeb" },
+      { url: "TP0qXQe6hz0", pl: "SoleroWeb" },
+      { url: "BozHofB7ZzA", pl: "SoleroWeb" },
+      { url: "9ChJYpLRB3w", pl: "SoleroWeb" },
+      { url: "Kmd7M_Ddaa4", pl: "SoleroWeb" },
+      { url: "WwCoANnPui8", pl: "SoleroWeb" },
+      { url: "QQ03LKe3Rds", pl: "SoleroWeb" },
+      { url: "adAsTcW79b4", pl: "SoleroWeb" },
+      { url: "p39Tn8nrfyU", pl: "SoleroWeb" },
+      { url: "ctmXEDclb7c", pl: "SoleroWeb" },
+      { url: "PaPMOL12V3g", pl: "SoleroWeb" },
+      { url: "-c055WT4-NU", pl: "SoleroWeb" }
     ],
     color: "#c2b134"
   },
@@ -402,5 +449,18 @@ module.exports = [
       { url: "BHBLjRuzb7s" },
       { url: "Rv_RX3SxdHM" }
     ]
+  },
+
+  {
+    name: "PostgresSQL",
+    hebrewName: "PostgresSQL",
+    officialSite: "https://www.postgresql.org/",
+    videoTutorials: [
+      { url: "DNPVqK_woRQ" },
+      { url: "lmDeXYF217w" },
+      { url: "u0tX9sRN51g" },
+      { url: "e1MwsT5FJRQ" }
+    ],
+    color: "#306693"
   }
 ];
