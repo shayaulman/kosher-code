@@ -15,7 +15,7 @@
     </div>
 
     <div class="p-6">
-      <g-link :to="`https://${link}`" target="_blank" class="px-8">
+      <g-link :to="`${link}`" target="_blank" class="px-8">
         <h1 :style="`color: ${color}`" class="text-xl text-custom-text-primary">
           {{ name }}
         </h1>
