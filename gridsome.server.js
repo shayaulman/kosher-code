@@ -76,7 +76,6 @@ module.exports = function(api) {
         allVideo {
           edges {
             node {
-              ind
               id
               title
               description
@@ -89,11 +88,8 @@ module.exports = function(api) {
     `);
 
     data.allVideo.edges.forEach(({ node }) => {
-      if (node.category === "elementor") {
-        // console.log(node.id);
-      }
       createPage({
-        path: `/video-tutorials/:category/${node.id}`,
+        path: `/video-tutorials/${node.category}/${node.id}`,
         component: "./src/templates/VideoPage.vue",
         context: {
           id: node.id,

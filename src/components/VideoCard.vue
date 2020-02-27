@@ -48,6 +48,7 @@ export default {
     id: String,
     title: String,
     description: String,
+    isHebrew: Boolean,
     category: String,
     thumbnail: String,
     color: String
@@ -62,11 +63,6 @@ export default {
     doesContainHebrewLetters(textArr) {
       const HEBREW = RegExp("[\u0590-\u05FF]");
       return textArr.some(txt => HEBREW.test(txt));
-    },
-
-    doesContainWordHebrew(textArr) {
-      const WORD_HEBREW = new RegExp("hebrew", "i");
-      return textArr.some(txt => WORD_HEBREW.test(txt));
     }
   },
 
@@ -91,13 +87,6 @@ export default {
 
     direction() {
       return this.doesContainHebrewLetters([this.title]) ? "rtl" : "ltr";
-    },
-
-    isHebrew() {
-      return (
-        this.doesContainHebrewLetters([this.title, this.description]) ||
-        this.doesContainWordHebrew([this.title, this.description])
-      );
     }
   }
 };

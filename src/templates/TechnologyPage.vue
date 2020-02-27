@@ -1,7 +1,6 @@
 <template>
   <Layout>
     <section class="p-12 mx-auto">
-      <!-- <button @click="debug">debug</button> -->
       <div style="width:100px" class="mb-12 mx-auto">
         <app-icon
           v-if="$context.technology !== 'elementor'"
@@ -39,6 +38,7 @@
         :id="course.node.id"
         :title="course.node.title"
         :description="course.node.description"
+        :is-hebrew="detectHebrew([course.node.title, course.node.description])"
         :category="$context.technology"
         :thumbnail="course.node.thumbnail"
         :color="course.node.color"
@@ -82,26 +82,30 @@ export default {
     toggle() {
       this.hebrewOnly = !this.hebrewOnly;
     },
-    doesContainHebrewLetters(textArr) {
+
+    detectHebrew(txtArr) {
       const HEBREW = RegExp("[\u0590-\u05FF]");
-      return textArr.some(txt => {
-        console.log(txt);
-        return HEBREW.test(txt);
-      });
+      const WORD_HEBREW = new RegExp("hebrew", "i");
+
+      const CONTAINS_HEBREW = txtArr.some(txt => HEBREW.test(txt));
+      const CONTAINS_THE_WORD_HEBREW = txtArr.some(txt =>
+        WORD_HEBREW.test(txt)
+      );
+
+      return CONTAINS_HEBREW || CONTAINS_THE_WORD_HEBREW;
     },
-    debug() {
-      console.log(this.technologies);
+
+    doesContainWordHebrew(textArr) {
+      const WORD_HEBREW = new RegExp("(hebrew)", "i");
+      return textArr.some(txt => WORD_HEBREW.test(txt));
     }
   },
   watch: {
     hebrewOnly: function(val) {
       if (val) {
-        this.technologies = this.technologies.filter((video, i) => {
-          const HEBREW = RegExp("[\u0590-\u05FF]");
-          return (
-            HEBREW.test(video.node.title) || HEBREW.test(video.node.description)
-          );
-        });
+        this.technologies = this.technologies.filter((video, i) =>
+          this.detectHebrew([video.node.title, video.node.description])
+        );
       } else {
         this.technologies = this.$page.videos.edges;
       }
