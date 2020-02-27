@@ -49,7 +49,7 @@
 
 <page-query>
  query Vid ($technology: String!){
- videos: allVideo (sortBy: "ind" order:ASC filter: {category: {eq: $technology}}) {
+ videos: allVideo (sortBy: "index" order:ASC filter: {category: {eq: $technology}}) {
     edges {
       node {
         id

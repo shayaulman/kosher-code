@@ -8,7 +8,10 @@
       :class="[hebrew ? 'rounded-r-md' : 'rounded-l-md']"
       class="h-full bg-custom-bg-card"
     >
-      <g-image class="w-12 h-12 m-4" :src="handleImage" />
+      <div class="w-12 h-12 m-4">
+        <g-image v-if="image.length > 0" :src="handleImage" />
+        <podcast-icon v-else small class="" />
+      </div>
     </div>
 
     <div class="p-6">
@@ -23,6 +26,7 @@
 </template>
 
 <script>
+import PodcastIcon from "~/components/UI/PodcastIcon.vue";
 export default {
   props: {
     name: String,
@@ -32,6 +36,8 @@ export default {
     color: String,
     hebrew: Boolean
   },
+
+  components: { PodcastIcon },
 
   computed: {
     handleImage() {

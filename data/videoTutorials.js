@@ -136,14 +136,34 @@ module.exports = [
     officialSite: "http://www.ecmascript.org/",
     videoTutorials: [
       { url: "88PXJAA6szs" },
-      { url: "b-lny3-7Lo" },
-      { url: "cw5f_P3pZs" },
-      { url: "dkP1rDqUll8" },
-      { url: "tZN6o0ylao" },
       { url: "Z55B-PN5Ys0" },
       { url: "qOAdCdW6gg" },
       { url: "5h-YgYXdnSQ" },
-      { url: "0FYFvvX2-A4" }
+      { url: "0FYFvvX2-A4" },
+      { url: "MNYlVTMNq4U" },
+      { url: "jYFxIfcxyWU" },
+      { url: "berqdtZ3nGo" },
+      { url: "r5cdYF2zf3I" },
+      { url: "tcIqpyeFhBE" },
+      { url: "AViI9CnMt6g" },
+      { url: "ftFK6ew-eCY" },
+      { url: "txl5daaEOAw" },
+      { url: "y7nXstqP2_s" },
+      { url: "YmqOMbn5ABY" },
+      { url: "ToRwe5WPZX4" },
+      { url: "dMSkc5ZTCWE" },
+      { url: "Qd-AjKNbN9s" },
+      { url: "2CtmoOIxvfE" },
+      { url: "Xg9De2kJ-vw" },
+      { url: "BW9o9HgUPEQ" },
+      { url: "3aDmK7pRfbU" },
+      { url: "vrSd1b4QzoU" },
+      { url: "Uuh3-nntbFk" },
+      { url: "7SvDTL4ZMz4" },
+      { url: "ZTqtPginCEI" },
+      { url: "weebWc8fjmo" },
+      { url: "YDhUJ1D4988" },
+      { url: "dkP1rDqUll8" }
     ],
     color: "#e65c18"
   },
@@ -222,11 +242,11 @@ module.exports = [
       { url: "BZSSLQjVf1U" },
       { url: "dO6QdlFBozw" },
       { url: "3_TAJGaW1J8" },
-      { url: "cLBc8S21rRM" }
-      // { url: "SUOATIrsqwM" },
-      // { url: "Pp_NuiCJFhs" },
-      // { url: "i-OFd0oE9BU" },
-      // { url: "tJ0kzKaUHKs" }
+      { url: "cLBc8S21rRM" },
+      { url: "SUOATIrsqwM" },
+      { url: "Pp_NuiCJFhs" },
+      { url: "i-OFd0oE9BU" },
+      { url: "tJ0kzKaUHKs" }
     ]
   },
   {

@@ -1,8 +1,8 @@
 <template>
   <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
   <svg
-    width="100"
-    height="100"
+    :width="[small ? 50 : 100]"
+    :height="[small ? 50 : 100]"
     version="1.1"
     id="Capa_1"
     xmlns="http://www.w3.org/2000/svg"
@@ -61,3 +61,11 @@
     <g></g>
   </svg>
 </template>
+
+<script>
+export default {
+  props: {
+    small: Boolean
+  }
+};
+</script>

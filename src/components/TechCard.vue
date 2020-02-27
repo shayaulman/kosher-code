@@ -13,7 +13,11 @@
           :icon="name.toLowerCase()"
           class="w-24"
         />
-        <g-image src="~/assets/icons/elementor.png" v-else class="mb-2 p-1" />
+        <g-image
+          src="!!assets-loader!~/assets/icons/elementor.png"
+          v-else
+          class="mb-2 p-1"
+        />
         <h3 class="py-1 px-2 text-center font-light">{{ hebrewName }}</h3>
       </g-link>
     </div>

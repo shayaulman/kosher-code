@@ -7,7 +7,7 @@
         <div class="absolute top-0 w-full flex justify-center z-0">
           <app-loader :color="color" />
         </div>
-        <img
+        <g-image
           style="height:180px;"
           :src="thumbnail"
           height="90"

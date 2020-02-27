@@ -1,5 +1,11 @@
 module.exports = [
   {
+    name: "מפתחים חסרי תרבות",
+    description: "פודקאסט בעברית על חיי היום יום של צוותי פיתוח",
+    link: "http://notarbut.co/",
+    color: "#919DCC"
+  },
+  {
     name: "רברס עם פלטפורמה",
     description: "הפודקאסט של אורי ורן",
     link: "www.reversim.com",
@@ -19,10 +25,5 @@ module.exports = [
     link: "syntax.fm",
     image: "syntaxfm.png",
     color: "#d0a650"
-  },
-  {
-    name: "מפתחים חסרי תרבות",
-    description: "פודקאסט בעברית על חיי היום יום של צוותי פיתוח",
-    link: "http://notarbut.co/"
   }
 ];
