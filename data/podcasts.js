@@ -23,6 +23,6 @@ module.exports = [
   {
     name: "מפתחים חסרי תרבות",
     description: "פודקאסט בעברית על חיי היום יום של צוותי פיתוח",
-    link: "http://notarbut.co/"
+    link: "notarbut.co"
   }
 ];
