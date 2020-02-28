@@ -5,6 +5,7 @@ import DefaultLayout from "~/layouts/Default.vue";
 import "~/assets/tailwind.css";
 import "~/assets/global.css";
 import vueSmoothScroll from "vue-smooth-scroll";
+import InfiniteLoading from "vue-infinite-loading";
 
 export default function(Vue, { router, head, isClient, appOptions }) {
   // Set default layout as a global component
@@ -12,6 +13,7 @@ export default function(Vue, { router, head, isClient, appOptions }) {
   Vue.use(router);
   Vue.use(Vuex);
   Vue.use(vueSmoothScroll);
+  Vue.use(InfiniteLoading);
 
   if (process.isClient) {
     const Paginate = require("vuejs-paginate");

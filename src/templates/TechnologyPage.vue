@@ -15,14 +15,11 @@
       </div>
       <div class="flex justify-between">
         <h3 class="text-xs text-custom-text-secondary opacity-75">
-          מציג
+          נמצאו
           <span class="text-custom-text-primary">{{
-            technologies.length
+            $context.amountOfVideos
           }}</span>
-          סרטונים מתוך
-          <span class="text-custom-text-primary">{{
-            technologies.length
-          }}</span>
+          סרטונים
         </h3>
         <button
           @click="toggle"
@@ -39,7 +36,7 @@
       class="mb-24 flex flex-wrap justify-center"
     >
       <video-card
-        v-for="course in technologies"
+        v-for="course in videos"
         :key="course.node.id"
         :id="course.node.id"
         :title="course.node.title"
@@ -50,12 +47,22 @@
         :color="course.node.color"
       />
     </transition-group>
+    <ClientOnly>
+      <infinite-loading @infinite="infiniteHandler">
+        <div slot="no-more" class="text-custom-text-3"></div>
+        <div slot="no-results" class="text-custom-text-3"></div>
+      </infinite-loading>
+    </ClientOnly>
   </Layout>
 </template>
 
 <page-query>
- query Vid ($technology: String!){
- videos: allVideo (sortBy: "index" order:ASC filter: {category: {eq: $technology}}) {
+ query Vid ($technology: String! $page: Int){
+ videos: allVideo (sortBy: "index" order:ASC filter: {category: {eq: $technology}} perPage: 9, page: $page)  @paginate {
+   pageInfo {
+			totalPages
+			currentPage
+		}
     edges {
       node {
         id
@@ -81,10 +88,39 @@ export default {
   data() {
     return {
       technologies: [],
-      hebrewOnly: false
+      hebrewOnly: false,
+      loadedVideos: [],
+      currentPage: 1
     };
   },
+
+  computed: {
+    videos() {
+      return !this.hebrewOnly
+        ? this.loadedVideos
+        : this.loadedVideos.filter((video, i) =>
+            this.detectHebrew([video.node.title, video.node.description])
+          );
+    }
+  },
   methods: {
+    async infiniteHandler($state) {
+      if (this.currentPage + 1 > this.$page.videos.pageInfo.totalPages) {
+        $state.complete();
+      } else {
+        const { data } = await this.$fetch(
+          `/video-tutorials/${this.$context.technology}/${this.currentPage + 1}`
+        );
+        if (data.videos.edges.length) {
+          this.currentPage = data.videos.pageInfo.currentPage;
+          this.loadedVideos.push(...data.videos.edges);
+          $state.loaded();
+        } else {
+          $state.complete();
+        }
+      }
+    },
+
     toggle() {
       this.hebrewOnly = !this.hebrewOnly;
     },
@@ -106,16 +142,8 @@ export default {
       return textArr.some(txt => WORD_HEBREW.test(txt));
     }
   },
-  watch: {
-    hebrewOnly: function(val) {
-      if (val) {
-        this.technologies = this.technologies.filter((video, i) =>
-          this.detectHebrew([video.node.title, video.node.description])
-        );
-      } else {
-        this.technologies = this.$page.videos.edges;
-      }
-    }
+  created() {
+    this.loadedVideos.push(...this.$page.videos.edges);
   },
   mounted() {
     this.technologies = this.$page.videos.edges;
@@ -126,10 +154,10 @@ export default {
 <style scoped>
 .fade-enter-active,
 .fade-leave-active {
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
-  transform: scale(0.9);
+  transform: scale(0.93);
 }
 </style>

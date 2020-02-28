@@ -116,6 +116,7 @@ module.exports = function(api) {
           technology: category.name.toLowerCase(),
           category: category.category,
           hebrewName: category.hebrewName,
+          amountOfVideos: category.videoTutorials.length,
           color: category.color
         }
       });

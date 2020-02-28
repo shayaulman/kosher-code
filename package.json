@@ -12,6 +12,7 @@
     "gridsome-plugin-tailwindcss": "latest",
     "node-sass": "^4.13.1",
     "sass-loader": "^8.0.2",
+    "vue-infinite-loading": "^2.4.4",
     "vue-smooth-scroll": "^1.0.13",
     "vue2-smooth-scroll": "^1.2.0",
     "vuejs-paginate": "^2.1.0",

@@ -252,10 +252,7 @@ module.exports = [
       { url: "WLnje2cSknM", pl: "CodeSigner" },
       { url: "GGx7KF1uFR8", pl: "CodeSigner" },
       { url: "AumqUCEsvts", pl: "CodeSigner" },
-      { url: "oLTcBaqbox4", pl: "CodeSigner" },
-      { url: "", pl: "CodeSigner" },
-      { url: "", pl: "CodeSigner" },
-      { url: "", pl: "CodeSigner" }
+      { url: "oLTcBaqbox4", pl: "CodeSigner" }
     ],
     color: "#1673b6"
   },
@@ -321,7 +318,7 @@ module.exports = [
       { url: "HVsySz-h9r4" },
       { url: "dnGeRjP8oxw" },
       { url: "0fKg7e37bQE" },
-      { url: "U-eUHI6euM" },
+      { url: "-U-eUHI6euM" },
       { url: "IHaTbJPdB-s" },
       { url: "XpvA00MRZ0o" },
       { url: "_d4fFFAJKVA" },
