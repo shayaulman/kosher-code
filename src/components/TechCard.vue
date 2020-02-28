@@ -1,6 +1,6 @@
 <template>
   <section
-    class="m-2 w-32 bg-custom-bg-card rounded-md transform hover:scale-105 transition ease-in duration-200"
+    class="m-2 w-34 bg-custom-bg-card rounded-md transform hover:scale-105 transition ease-in duration-200"
   >
     <div class="pt-2 px-5">
       <g-link
@@ -11,19 +11,22 @@
         <app-icon
           v-if="name !== 'Elementor'"
           :icon="name.toLowerCase()"
-          class="w-24"
+          class="p-2 w-18"
         />
         <g-image
           src="!!assets-loader!~/assets/icons/elementor.png"
           v-else
           class="mb-2 p-1"
         />
-        <h3 class="py-1 px-2 text-sm text-center font-light">
+        <h3 class="py-1 text-sm text-center font-light">
           {{ hebrewName }}
         </h3>
       </g-link>
     </div>
     <div class="px-4 pb-2 flex justify-between items-center">
+      <div class="flex items-center text-xs text-gray-700">
+        <p class="ml-2">{{ amountOfVideos }}</p>
+      </div>
       <g-link
         :to="`https://${link}`"
         target="_blank"
@@ -31,10 +34,6 @@
         class="link text-gray-600 transition ease-in duration-200"
         ><external-icon
       /></g-link>
-      <div class="flex items-center text-xs text-gray-700">
-        <!-- <youtube-icon /> -->
-        <p class="ml-2">{{ amountOfVideos }}</p>
-      </div>
     </div>
   </section>
 </template>

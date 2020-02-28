@@ -40,12 +40,7 @@ module.exports = function(api) {
           description: item.snippet.description,
           thumbnail: item.snippet.thumbnails.medium.url,
           publishedAt: item.snippet.publishedAt,
-          color: technologyName.color,
-          ind: videoTutorials
-            .map(tech =>
-              tech.videoTutorials.findIndex(vid => vid.url === item.id)
-            )
-            .filter(i => i !== -1)
+          color: technologyName.color
         });
       }
     }
@@ -66,6 +61,18 @@ module.exports = function(api) {
         link: podcast.link,
         color: podcast.color,
         image: podcast.image
+      });
+    });
+
+    const Categories = actions.addCollection("Category");
+
+    videoTutorials.forEach(category => {
+      Categories.addNode({
+        name: category.name,
+        hebrewName: category.hebrewName,
+        color: category.color,
+        officialSite: category.officialSite,
+        amountOfVideos: category.videoTutorials.length
       });
     });
   });
@@ -101,14 +108,15 @@ module.exports = function(api) {
       });
     });
 
-    const videoCategories = videoTutorials.map(tech => tech.name);
-    videoCategories.forEach(cat => {
+    videoTutorials.forEach(category => {
       createPage({
-        path: `/video-tutorials/${cat.toLowerCase()}`,
+        path: `/video-tutorials/${category.name.toLowerCase()}`,
         component: "./src/templates/TechnologyPage.vue",
         context: {
-          technology: cat.toLowerCase(),
-          color: videoTutorials.find(tech => tech.name === cat).color
+          technology: category.name.toLowerCase(),
+          category: category.category,
+          hebrewName: category.hebrewName,
+          color: category.color
         }
       });
     });

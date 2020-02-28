@@ -1,7 +1,10 @@
+const topics = require("./topicVideos");
 module.exports = [
+  ...topics,
   {
     name: "React",
     hebrewName: "ריאקט",
+    category: "framework",
     officialSite: "he.reactjs.org",
     videoTutorials: [
       { url: "sBws8MSXN7A" },
@@ -33,10 +36,10 @@ module.exports = [
   {
     name: "Vue",
     hebrewName: "ויו",
+    category: "framework",
     officialSite: "vuejs.org",
     videoTutorials: [
       { url: "zyWNA2SdZU4", pl: "gocode" },
-      { url: "h7hR2_LGlGs", pl: "gocode" },
       { url: "h7hR2_LGlGs", pl: "gocode" },
       { url: "togm3q-uvH4", pl: "gocode" },
       { url: "XfSzcS93990", pl: "gocode" },
@@ -73,8 +76,9 @@ module.exports = [
   },
   {
     name: "Angular",
-    officialSite: "angular.io",
     hebrewName: "אנגולר",
+    category: "framework",
+    officialSite: "angular.io",
     videoTutorials: [
       { url: "GWws2gi9JEM" },
       { url: "9P5DTlg9oLc" },
@@ -115,8 +119,9 @@ module.exports = [
   },
   {
     name: "AngularJS",
-    officialSite: "angularjs.org",
     hebrewName: "אנגולר JS",
+    category: "framework",
+    officialSite: "angularjs.org",
     videoTutorials: [
       { url: "KyWkKvpr_Sk" },
       { url: "nebg6X1El2g" },
@@ -141,6 +146,7 @@ module.exports = [
   {
     name: "Python",
     hebrewName: "פייתון",
+    category: "Programming Language",
     officialSite: "python.org",
     videoTutorials: [
       { url: "-wikR15AYWY" },
@@ -155,6 +161,7 @@ module.exports = [
   {
     name: "HTML",
     hebrewName: "HTML",
+    category: "Programming Language",
     officialSite: "http://www.ecmascript.org/",
     videoTutorials: [
       { url: "88PXJAA6szs" },
@@ -195,6 +202,7 @@ module.exports = [
   {
     name: "CSS",
     hebrewName: "CSS",
+    category: "Programming Language",
     officialSite: "https://www.w3.org/css/",
     videoTutorials: [
       { url: "J35jug1uHzE" },
@@ -228,7 +236,6 @@ module.exports = [
       { url: "QB6gSA87RSQ", pl: "ReshetTech" },
       { url: "WjL0ys_oAtw", pl: "ReshetTech" },
       { url: "0QEo1_i4AqQ", pl: "ReshetTech" },
-
       { url: "x9pwni_6QxY", pl: "CodeSigner" },
       { url: "hjg-0o__pRg", pl: "CodeSigner" },
       { url: "6hN-xabkcTo", pl: "CodeSigner" },
@@ -255,6 +262,7 @@ module.exports = [
   {
     name: "JavaScript",
     hebrewName: "ג'אווהסקריפט",
+    category: "Programming Language",
     officialSite: "https://www.w3.org/javascript/",
     videoTutorials: [
       { url: "10ujZygJzMQ" },
@@ -300,6 +308,7 @@ module.exports = [
   {
     name: "Git",
     hebrewName: "גיט",
+    category: "Programming Language",
     officialSite: "https://git-scm.com/",
     videoTutorials: [
       { url: "SWYqp7iY_Tc" },
@@ -323,6 +332,7 @@ module.exports = [
   {
     name: "WordPress",
     hebrewName: "וורדפרס",
+    category: "Site Builder",
     officialSite: "https://wordpress.org/",
     color: "#d4d3d3",
     videoTutorials: [
@@ -357,6 +367,7 @@ module.exports = [
   {
     name: "Elementor",
     hebrewName: "אלמנטור",
+    category: "Site Builder",
     officialSite: "https://elementor.com/",
     videoTutorials: [
       { url: "3YJ9doorCqY" },
@@ -391,20 +402,76 @@ module.exports = [
   {
     name: "PHP",
     hebrewName: "PHP",
+    category: "Programming Language",
     officialSite: "https://www.php.net/",
     videoTutorials: [
       { url: "ZdP0KM49IVk" },
       { url: "y_gQ0dMJ0hU" },
       { url: "ZA0malVnbbE" },
       { url: "AKsf77W1ytA" },
-      { url: "cuBNeIWbnAw" }
+      { url: "cuBNeIWbnAw" },
+      { url: "I2PDR6Fj6ko", pl: "SoleroWeb" },
+      { url: "O6lR3knsjGU", pl: "SoleroWeb" },
+      { url: "FJNLF5-AL8g", pl: "SoleroWeb" },
+      { url: "ODcbkDCCobo", pl: "SoleroWeb" },
+      { url: "GyFF2-OlWM8", pl: "SoleroWeb" },
+      { url: "j2INbVD70HQ", pl: "SoleroWeb" },
+      { url: "b2OX95MW5T0", pl: "SoleroWeb" },
+      { url: "_ZvzTRSSkMU", pl: "SoleroWeb" },
+      { url: "EvhJf4maUU8", pl: "SoleroWeb" },
+      { url: "Qv5hNfGFgF8", pl: "SoleroWeb" },
+      { url: "HJ4DWSwWTjs", pl: "SoleroWeb" },
+      { url: "W2pEpkR2sG8", pl: "SoleroWeb" },
+      { url: "xVNfqXB3LJA", pl: "SoleroWeb" },
+      { url: "XIzjgA4s5Ls", pl: "SoleroWeb" },
+      { url: "ZGm4LrPwxyo", pl: "SoleroWeb" },
+      { url: "LF_D4fDOWdw", pl: "SoleroWeb" },
+      { url: "NSgOdibzFYk", pl: "SoleroWeb" },
+      { url: "_b7L9M_mZEU", pl: "SoleroWeb" },
+      { url: "_ATLtWIvmIQ", pl: "SoleroWeb" },
+      { url: "VOc6PTbOoLQ", pl: "SoleroWeb" },
+      { url: "t2L2fJJJl9Q", pl: "SoleroWeb" },
+      { url: "tmvYxEH3Xuk", pl: "SoleroWeb" },
+      { url: "y6vmvhJfmqw", pl: "SoleroWeb" },
+      { url: "T2dM2Eitwtg", pl: "SoleroWeb" },
+      { url: "swJ08iaFT5k", pl: "SoleroWeb" },
+      { url: "gehSmLKet6E", pl: "SoleroWeb" },
+      { url: "JrnMb1QIQs4", pl: "SoleroWeb" },
+      { url: "7q1aA1wWvcE", pl: "SoleroWeb" },
+      { url: "dNBn75VhHVc", pl: "SoleroWeb" },
+      { url: "nZNRyRJaflQ", pl: "SoleroWeb" },
+      { url: "u0UecAYwziE", pl: "SoleroWeb" },
+      { url: "umm7rOBK1p8", pl: "SoleroWeb" },
+      { url: "M6Q8Udw323s", pl: "SoleroWeb" },
+      { url: "fMfCgJy1_rI", pl: "SoleroWeb" },
+      { url: "fMwIRrT2T-o", pl: "SoleroWeb" },
+      { url: "XkedYaZRUOQ", pl: "SoleroWeb" },
+      { url: "5dJn3paYI1o", pl: "SoleroWeb" },
+      { url: "8ZzLI3LpfDE", pl: "SoleroWeb" },
+      { url: "tnni6ypscYs", pl: "SoleroWeb" },
+      { url: "1R_1IRN0fZw", pl: "SoleroWeb" },
+      { url: "4B_k6GIPvJw", pl: "SoleroWeb" },
+      { url: "4OADH1PZDEo", pl: "SoleroWeb" },
+      { url: "5-IrmoMynNw", pl: "SoleroWeb" },
+      { url: "K742nP5UEbY", pl: "SoleroWeb" },
+      { url: "cMTOiIW5fGY", pl: "SoleroWeb" },
+      { url: "c8CIX2TLGgw", pl: "SoleroWeb" },
+      { url: "uGk6erhPrfs", pl: "SoleroWeb" },
+      { url: "FsYszJuiJmg", pl: "SoleroWeb" },
+      { url: "g1m3Rj0epc8", pl: "SoleroWeb" },
+      { url: "kph0mL10Y-w", pl: "SoleroWeb" },
+      { url: "", pl: "SoleroWeb" },
+      { url: "", pl: "SoleroWeb" },
+      { url: "", pl: "SoleroWeb" },
+      { url: "", pl: "SoleroWeb" }
     ],
     color: "#6181B6"
   },
 
   {
     name: "NodeJS",
-    hebrewName: "JS נוד",
+    hebrewName: "נוד JS",
+    category: "Programming Language",
     officialSite: "https://nodejs.org/en/",
     videoTutorials: [
       { url: "AA2G9ZFIN8o" },
@@ -420,7 +487,6 @@ module.exports = [
       { url: "UrUirVYByGI" },
       { url: "Z1ktxiqyiLA" },
       { url: "DZ_bRk8JWDM" },
-      { url: "DNPVqK_woRQ" },
       { url: "9neEE_HowzM" }
     ],
     color: "#83CD29"
@@ -429,6 +495,7 @@ module.exports = [
   {
     name: "Ionic",
     hebrewName: "איאוניק",
+    category: "framework",
     officialSite: "https://ionicframework.com/",
     color: "#4688ff",
     videoTutorials: [
@@ -454,6 +521,7 @@ module.exports = [
   {
     name: "PostgresSQL",
     hebrewName: "PostgresSQL",
+    category: "framework",
     officialSite: "https://www.postgresql.org/",
     videoTutorials: [
       { url: "DNPVqK_woRQ" },

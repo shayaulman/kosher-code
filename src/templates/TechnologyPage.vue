@@ -6,6 +6,12 @@
           v-if="$context.technology !== 'elementor'"
           :icon="$context.technology"
         />
+        <h1
+          :style="`color: ${$context.color}`"
+          class="p-2 text-lg text-center text-custom-text-primary"
+        >
+          {{ $context.hebrewName }}
+        </h1>
       </div>
       <div class="flex justify-between">
         <h3 class="text-xs text-custom-text-secondary opacity-75">

@@ -2,7 +2,7 @@
   <Layout dontShowFooter>
     <section :style="`direction: ${direction}`" class="m-3">
       <div
-        class="flex flex-col items-center md:flex-row-reverse md:justify-between md:align-top"
+        class="flex flex-col items-start md:flex-row-reverse md:justify-between md:align-top"
       >
         <g-link
           :title="`-חזור ל${$context.category}`"
@@ -48,7 +48,7 @@
         ></p>
         <button
           @click="showMore = !showMore"
-          class="m-2 p-2 rounded text-custom-text-secondary font-bold"
+          class="m-2 p-2 rounded text-custom-text-secondary font-bold outline-none"
         >
           {{
             isHebrew

@@ -1,34 +1,54 @@
 <template>
-  <section class="ltr max-w-3xl mx-auto flex flex-wrap justify-center">
+  <section class="rtl max-w-4xl mx-auto flex flex-wrap justify-center">
     <tech-card
-      v-for="(tech, i) in technologiesSorted"
+      v-for="(category, i) in categories"
       :key="i"
-      :name="tech.name"
-      :hebrewName="tech.hebrewName"
-      :icon="tech.icon"
-      :color="tech.color"
-      :link="tech.officialSite"
+      :name="category.node.name"
+      :hebrewName="category.node.hebrewName"
+      :icon="category.icon"
+      :color="category.node.color"
+      :link="category.node.officialSite"
     />
   </section>
 </template>
+
+<static-query>
+{
+  categories: allCategory {
+    edges {
+      node {
+        name
+        hebrewName
+        color
+        officialSite
+        amountOfVideos
+      }
+    }
+  }
+}
+</static-query>
 
 <script>
 import TechCard from "~/components/TechCard";
 export default {
   data() {
     return {
-      technologies: require("../../data/videoTutorials")
+      technologies: require("../../data/videoTutorials"),
+      categories: []
     };
   },
   components: {
     TechCard
   },
-  computed: {
-    technologiesSorted() {
-      return this.technologies.sort((a, b) =>
-        a.name.toLowerCase().localeCompare(b.name.toLowerCase())
+  methods: {
+    sortAlphabeically(array) {
+      return array.sort((a, b) =>
+        a.node.name.toLowerCase().localeCompare(b.node.name.toLowerCase())
       );
     }
+  },
+  mounted() {
+    this.categories = this.sortAlphabeically(this.$static.categories.edges);
   }
 };
 </script>
