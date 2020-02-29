@@ -1,54 +1,29 @@
 <template>
-  <section class="rtl max-w-4xl mx-auto flex flex-wrap justify-center">
-    <tech-card
-      v-for="(category, i) in categories"
-      :key="i"
-      :name="category.node.name"
-      :hebrewName="category.node.hebrewName"
-      :icon="category.icon"
-      :color="category.node.color"
-      :link="category.node.officialSite"
+  <section>
+    <tech-category
+      v-for="category in listOfCategories"
+      :key="category.en"
+      :category="category.en"
+      :hebrew-name="category.he"
     />
   </section>
 </template>
 
-<static-query>
-{
-  categories: allCategory {
-    edges {
-      node {
-        name
-        hebrewName
-        color
-        officialSite
-        amountOfVideos
-      }
-    }
-  }
-}
-</static-query>
-
 <script>
-import TechCard from "~/components/TechCard";
+import TechCategory from "~/components/TechCategory";
 export default {
+  components: {
+    TechCategory
+  },
+
   data() {
     return {
-      technologies: require("../../data/videoTutorials"),
-      categories: []
+      listOfCategories: [
+        { en: "programming language", he: "שפות תכנות" },
+        { en: "framework", he: "פריימוורקים שונים" },
+        { en: "special topics", he: "נושאים מיוחדים" }
+      ]
     };
-  },
-  components: {
-    TechCard
-  },
-  methods: {
-    sortAlphabeically(array) {
-      return array.sort((a, b) =>
-        a.node.name.toLowerCase().localeCompare(b.node.name.toLowerCase())
-      );
-    }
-  },
-  mounted() {
-    this.categories = this.sortAlphabeically(this.$static.categories.edges);
   }
 };
 </script>

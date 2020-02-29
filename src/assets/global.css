@@ -22,6 +22,7 @@ h1 {
   --text-primary: white;
   --text-secondary: #cbd5e0;
   --text-3: #cbd5e0;
+  --gray-1: #60718a;
 }
 
 .theme-light {
@@ -31,4 +32,5 @@ h1 {
   --text-primary: black;
   --text-secondary: #2d3748;
   --text-3: #4a5568;
+  --gray-1: #242a33;
 }

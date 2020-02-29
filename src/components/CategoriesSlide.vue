@@ -11,7 +11,7 @@
         פודקאסטים
       </div>
       <div v-show="currentText == 3" key="3">
-        SubReddits
+        Sub Reddits
       </div>
     </transition-group>
   </section>

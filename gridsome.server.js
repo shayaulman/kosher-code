@@ -70,6 +70,7 @@ module.exports = function(api) {
       Categories.addNode({
         name: category.name,
         hebrewName: category.hebrewName,
+        category: category.category,
         color: category.color,
         officialSite: category.officialSite,
         amountOfVideos: category.videoTutorials.length

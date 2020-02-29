@@ -146,7 +146,7 @@ module.exports = [
   {
     name: "Python",
     hebrewName: "פייתון",
-    category: "Programming Language",
+    category: "programming language",
     officialSite: "python.org",
     videoTutorials: [
       { url: "-wikR15AYWY" },
@@ -161,7 +161,7 @@ module.exports = [
   {
     name: "HTML",
     hebrewName: "HTML",
-    category: "Programming Language",
+    category: "programming language",
     officialSite: "http://www.ecmascript.org/",
     videoTutorials: [
       { url: "88PXJAA6szs" },
@@ -202,7 +202,7 @@ module.exports = [
   {
     name: "CSS",
     hebrewName: "CSS",
-    category: "Programming Language",
+    category: "programming language",
     officialSite: "https://www.w3.org/css/",
     videoTutorials: [
       { url: "J35jug1uHzE" },
@@ -259,7 +259,7 @@ module.exports = [
   {
     name: "JavaScript",
     hebrewName: "ג'אווהסקריפט",
-    category: "Programming Language",
+    category: "programming language",
     officialSite: "https://www.w3.org/javascript/",
     videoTutorials: [
       { url: "10ujZygJzMQ" },
@@ -305,7 +305,7 @@ module.exports = [
   {
     name: "Git",
     hebrewName: "גיט",
-    category: "Programming Language",
+    category: "programming language",
     officialSite: "https://git-scm.com/",
     videoTutorials: [
       { url: "SWYqp7iY_Tc" },
@@ -329,7 +329,7 @@ module.exports = [
   {
     name: "WordPress",
     hebrewName: "וורדפרס",
-    category: "Site Builder",
+    category: "framework",
     officialSite: "https://wordpress.org/",
     color: "#d4d3d3",
     videoTutorials: [
@@ -364,7 +364,7 @@ module.exports = [
   {
     name: "Elementor",
     hebrewName: "אלמנטור",
-    category: "Site Builder",
+    category: "framework",
     officialSite: "https://elementor.com/",
     videoTutorials: [
       { url: "3YJ9doorCqY" },
@@ -399,7 +399,7 @@ module.exports = [
   {
     name: "PHP",
     hebrewName: "PHP",
-    category: "Programming Language",
+    category: "programming language",
     officialSite: "https://www.php.net/",
     videoTutorials: [
       { url: "ZdP0KM49IVk" },
@@ -468,7 +468,7 @@ module.exports = [
   {
     name: "NodeJS",
     hebrewName: "נוד JS",
-    category: "Programming Language",
+    category: "programming language",
     officialSite: "https://nodejs.org/en/",
     videoTutorials: [
       { url: "AA2G9ZFIN8o" },
@@ -518,7 +518,7 @@ module.exports = [
   {
     name: "PostgresSQL",
     hebrewName: "PostgresSQL",
-    category: "framework",
+    category: "programming language",
     officialSite: "https://www.postgresql.org/",
     videoTutorials: [
       { url: "DNPVqK_woRQ" },

@@ -29,7 +29,7 @@ export default {
         { item: "בית", link: "/" },
         { item: "סרטוני הדרכה", link: "/#video-tutorials" },
         { item: "בלוגים", link: "/blogs" },
-        { item: "פודאקסטים", link: "/podcasts" },
+        { item: "פודקאסטים", link: "/podcasts" },
         { item: "Reddit", link: "/reddit" }
       ]
     };

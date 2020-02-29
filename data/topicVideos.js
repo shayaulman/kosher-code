@@ -26,5 +26,16 @@ module.exports = [
       { url: "jroQQT8_wRI" },
       { url: "QM1NphlHWCo" }
     ]
+  },
+  {
+    name: "Machine Learning",
+    hebrewName: "למידת מכונה",
+    category: "special topics",
+    color: "#ff6466",
+    videoTutorials: [
+      { url: "u2BmFI4qwmw" },
+      { url: "PPLop4L2eGk" },
+      { url: "UzxYlbK2c7E" }
+    ]
   }
 ];

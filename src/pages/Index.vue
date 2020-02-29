@@ -27,10 +27,9 @@
         </h1>
 
         <h1
-          class="font m-4 p-2 text-center text-custom-text-secondary font-thin"
+          class="font m-4 p-2 text-center text-xs text-custom-text-3 font-thin"
         >
-          במאגר יש כעת <span>{{ amountOfVideos }}</span> סרטונים על
-          <span>{{ amountOfTecnologies }}</span> טכנולוגיות שונות
+          במאגר יש כעת <span>{{ amountOfVideos }}</span> סרטונים
         </h1>
         <tech-list />
       </div>

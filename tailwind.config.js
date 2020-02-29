@@ -12,7 +12,8 @@ module.exports = {
           "text-secondary": "var(--text-secondary)",
           "text-3": "var(--text-3)",
           "green-1": "var(--green-1)",
-          "yellow-1": "var(--yellow-1)"
+          "yellow-1": "var(--yellow-1)",
+          "gray-1": "var(--gray-1)"
         }
       },
       spacing: {
