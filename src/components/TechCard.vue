@@ -24,9 +24,6 @@
       </g-link>
     </div>
     <div class="px-4 pb-2 flex justify-between items-center">
-      <div class="flex items-center text-xs text-gray-700">
-        <p class="ml-2">{{ amountOfVideos }}</p>
-      </div>
       <g-link
         :to="`https://${link}`"
         target="_blank"
@@ -34,6 +31,9 @@
         class="link text-gray-600 transition ease-in duration-200"
         ><external-icon
       /></g-link>
+      <div class="flex items-center text-xs text-gray-700">
+        <p class="ml-2">{{ amountOfVideos }}</p>
+      </div>
     </div>
   </section>
 </template>

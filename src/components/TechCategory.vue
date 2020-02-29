@@ -1,6 +1,8 @@
 <template>
   <section class="my-12">
-    <h1 class="text-custom-gray-1 mr-16">{{ hebrewName }}</h1>
+    <h1 class="p-3 text-center text-custom-yellow-1 opacity-75">
+      {{ hebrewName }}
+    </h1>
     <div class="rtl max-w-4xl mx-auto flex flex-wrap justify-center">
       <tech-card
         v-for="(category, i) in filteredCategories"

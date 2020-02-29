@@ -44,7 +44,7 @@ body {
 }
 
 .header-bar {
-  background: linear-gradient(90deg, #d32e9d, #8ed6fb 50%, #00835c);
+  background: linear-gradient(90deg, #ea3e78, #8ed6fb 50%, #00835c);
   padding: 2px;
   text-align: center;
   color: #fff;
