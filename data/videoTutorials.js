@@ -143,7 +143,7 @@ module.exports = [
     ],
     color: "#c5002a"
   },
-   {
+  {
     name: "Python",
     hebrewName: "פייתון",
     category: "programming language",
