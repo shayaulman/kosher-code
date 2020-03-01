@@ -163,9 +163,7 @@ module.exports = [
     hebrewName: "GO",
     category: "programming language",
     officialSite: "https://go.dev",
-    videoTutorials: [
-      { url: "YS4e4q9oBaU" }
-    ],
+    videoTutorials: [{ url: "YS4e4q9oBaU" }],
     color: "#1673b6"
   },
   {
@@ -537,5 +535,26 @@ module.exports = [
       { url: "e1MwsT5FJRQ" }
     ],
     color: "#306693"
+  },
+
+  {
+    name: "CSharp",
+    hebrewName: "סי שארפ",
+    category: "programming language",
+    officialSite: "https://docs.microsoft.com/en-us/dotnet/csharp/",
+    color: "#9B4F96",
+    videoTutorials: [
+      { url: "V2A8tcb_YyY" },
+      { url: "vQ2QjRr3toM" },
+      { url: "-FkNRQ7ubH0" },
+      { url: "lisiwUZJXqQ" },
+      { url: "hpBFoTWOadk" },
+      { url: "30OVzUpwZvY" },
+      { url: "8aZc4drjU-E" },
+      { url: "qbIxRIUrDT4" },
+      { url: "c0lY7KYAZR0" },
+      { url: "aZ_xRq02FJo" },
+      { url: "2K8JvTNojjc" }
+    ]
   }
 ];
