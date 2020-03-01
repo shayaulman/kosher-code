@@ -58,7 +58,7 @@
 
 <page-query>
  query Vid ($technology: String! $page: Int){
- videos: allVideo (sortBy: "index" order:ASC filter: {category: {eq: $technology}} perPage: 15, page: $page)  @paginate {
+ videos: allVideo (sortBy: "index" order:ASC filter: {category: {eq: $technology}} perPage: 16, page: $page)  @paginate {
    pageInfo {
 			totalPages
 			currentPage
@@ -158,7 +158,7 @@ export default {
   transition: all 0.2s ease;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-  transform: scale(0.93);
+  opacity: 0.5;
+  transform: scale(0.975);
 }
 </style>

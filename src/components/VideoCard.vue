@@ -1,7 +1,7 @@
 <template>
   <section
     :style="`border-top: 2px solid ${color}`"
-    class="relative w-48 mx-2 my-8 rounded-t"
+    class="relative w-56 mx-2 my-8"
   >
     <g-link :to="`video-tutorials/${category}/${id}`">
       <div class="relative">
@@ -18,22 +18,20 @@
           <israel-flag-icon />
         </div>
         <g-image
-          style="width:210px;height:117px"
+          style="width:224px;height:120px"
           :src="thumbnail"
           height="90"
-          class="relative rounded-t z-10"
+          class="relative z-10"
         />
       </div>
       <div>
         <h2
           :class="{ rtl: doesContainHebrewLetters([title]) }"
-          class="pt-2 pb-6 text-custom-text-primary font-thin text-xs"
+          class="pt-2 pb-6 text-custom-text-primary text-xs"
         >
           {{ formattedTitle }}
         </h2>
-        <p
-          class="absolute bottom-0 right-0 text-custom-text-3 font-hairline text-xxs"
-        >
+        <p class="absolute bottom-0 right-0 text-custom-text-3 text-xxs">
           {{ publishTime }}
         </p>
       </div>
@@ -96,9 +94,7 @@ export default {
       //   addSuffix: true,
       //   locale: he
       // });
-      return format(formattedDate, "MM/dd/yyyy", {
-        locale: he
-      });
+      return format(formattedDate, "MM/dd/yy");
     },
 
     direction() {
