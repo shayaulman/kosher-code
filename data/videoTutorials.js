@@ -159,7 +159,7 @@ module.exports = [
     color: "#ffd530"
   },
   {
-    name: "Go",
+    name: "GO",
     hebrewName: "GO",
     category: "programming language",
     officialSite: "https://go.dev",
