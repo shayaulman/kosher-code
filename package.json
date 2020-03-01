@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "date-fns": "^2.10.0",
     "gridsome": "latest",
     "gridsome-plugin-tailwindcss": "latest",
     "node-sass": "^4.13.1",

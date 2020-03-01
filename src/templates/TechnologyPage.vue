@@ -40,7 +40,7 @@
         :key="course.node.id"
         :id="course.node.id"
         :title="course.node.title"
-        :description="course.node.description"
+        :pub-date="course.node.publishedAt"
         :is-hebrew="detectHebrew([course.node.title, course.node.description])"
         :category="$context.technology"
         :thumbnail="course.node.thumbnail"
@@ -58,7 +58,7 @@
 
 <page-query>
  query Vid ($technology: String! $page: Int){
- videos: allVideo (sortBy: "index" order:ASC filter: {category: {eq: $technology}} perPage: 9, page: $page)  @paginate {
+ videos: allVideo (sortBy: "index" order:ASC filter: {category: {eq: $technology}} perPage: 15, page: $page)  @paginate {
    pageInfo {
 			totalPages
 			currentPage
@@ -71,6 +71,7 @@
         category
         thumbnail
         color
+        publishedAt
       }
     }
   }

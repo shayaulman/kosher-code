@@ -1,38 +1,40 @@
 <template>
   <section
-    class="w-72 m-3 rounded-md bg-custom-bg-card transform hover:-translate-y-1 ease-in duration-100"
+    :style="`border-top: 2px solid ${color}`"
+    class="relative w-48 mx-2 my-8 rounded-t"
   >
     <g-link :to="`video-tutorials/${category}/${id}`">
       <div class="relative">
-        <div class="absolute top-0 w-full flex justify-center z-0">
+        <div
+          :style="`background: ${color}`"
+          class="absolute top-0 w-full flex justify-center z-0"
+        >
           <app-loader :color="color" />
         </div>
-        <g-image
-          style="height:180px;"
-          :src="thumbnail"
-          height="90"
-          class="relative z-10 rounded-t-md"
-        />
-      </div>
-      <div class="relative p-4">
         <div
           v-if="isHebrew"
-          class="-mt-4 mr-3 absolute top-0 right-0 z-20 rounded-full overflow-hidden bg-white shadow-lg"
+          class="w-6 mr-1 absolute top-0 right-0 z-20 overflow-hidden shadow-lg"
         >
           <israel-flag-icon />
         </div>
+        <g-image
+          style="width:210px;height:117px"
+          :src="thumbnail"
+          height="90"
+          class="relative rounded-t z-10"
+        />
+      </div>
+      <div>
         <h2
-          :style="`color: ${color}`"
           :class="{ rtl: doesContainHebrewLetters([title]) }"
-          class="py-2 font-thin"
+          class="pt-2 pb-6 text-custom-text-primary font-thin text-xs"
         >
-          {{ title }}
+          {{ formattedTitle }}
         </h2>
         <p
-          :class="{ rtl: doesContainHebrewLetters([formattedDescription]) }"
-          class="py-2 text-custom-text-secondary font-hairline text-xs"
+          class="absolute bottom-0 right-0 text-custom-text-3 font-hairline text-xxs"
         >
-          {{ formattedDescription }}
+          {{ publishTime }}
         </p>
       </div>
     </g-link>
@@ -42,12 +44,15 @@
 <script>
 import AppLoader from "~/components/UI/AppLoader";
 import IsraelFlagIcon from "~/components/UI/IsraelFlagIcon";
+import { formatDistance } from "date-fns";
+import { format } from "date-fns";
+import { he } from "date-fns/locale";
 
 export default {
   props: {
     id: String,
     title: String,
-    description: String,
+    pubDate: String,
     isHebrew: Boolean,
     category: String,
     thumbnail: String,
@@ -59,6 +64,12 @@ export default {
     IsraelFlagIcon
   },
 
+  data() {
+    return {
+      now: new Date()
+    };
+  },
+
   methods: {
     doesContainHebrewLetters(textArr) {
       const HEBREW = RegExp("[\u0590-\u05FF]");
@@ -67,22 +78,27 @@ export default {
   },
 
   computed: {
-    formattedDescription() {
-      const spliced =
-        this.description
-          .split(" ")
-          .slice(0, 20)
-          .join(" ") + "...";
-
-      if (spliced.length > 250) {
-        return (
-          spliced
-            .split("")
-            .slice(0, 250)
-            .join("") + "..."
-        );
+    formattedTitle() {
+      const titleLength = this.title.split(" ").length;
+      if (titleLength < 8) {
+        return this.title;
       }
-      return spliced;
+      return (
+        this.title
+          .split(" ")
+          .slice(0, 9)
+          .join(" ") + "..."
+      );
+    },
+    publishTime() {
+      const formattedDate = new Date(this.pubDate);
+      // return formatDistance(formattedDate, this.now, {
+      //   addSuffix: true,
+      //   locale: he
+      // });
+      return format(formattedDate, "MM/dd/yyyy", {
+        locale: he
+      });
     },
 
     direction() {

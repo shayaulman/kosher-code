@@ -3,8 +3,8 @@
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     style="margin: auto;  none repeat scroll 0% 0%; display: block; shape-rendering: auto;"
-    width="140px"
-    height="140px"
+    width="110px"
+    height="110px"
     viewBox="0 0 100 100"
     preserveAspectRatio="xMidYMid"
   >
