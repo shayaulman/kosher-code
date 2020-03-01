@@ -159,6 +159,16 @@ module.exports = [
     color: "#ffd530"
   },
   {
+    name: "GO",
+    hebrewName: "GO",
+    category: "programming language",
+    officialSite: "https://go.dev",
+    videoTutorials: [
+      { url: "YS4e4q9oBaU" }
+    ],
+    color: "#1673b6"
+  },
+  {
     name: "HTML",
     hebrewName: "HTML",
     category: "programming language",
