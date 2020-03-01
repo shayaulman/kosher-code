@@ -8,15 +8,11 @@
         :style="`color: ${color}`"
         class="text-center"
       >
-        <app-icon
-          v-if="name !== 'Elementor' && name !== 'playlist'"
-          :icon="name.toLowerCase()"
-          class="p-2 w-18"
-        />
+        <app-icon :icon="name.toLowerCase()" />
         <g-image
           src="!!assets-loader!~/assets/icons/elementor.png"
           v-if="name === 'Elementor'"
-          class="mb-2 p-1"
+          class="pt-2"
         />
         <h3 class="py-1 text-sm text-center font-light">
           {{ hebrewName }}

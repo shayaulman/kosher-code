@@ -9,13 +9,7 @@
           :to="`video-tutorials/${$context.name}`"
         >
           <div class="p-8">
-            <app-icon
-              v-if="
-                $context.name !== 'elementor' && $context.name !== 'playlist'
-              "
-              class=" w-12 h-12"
-              :icon="$context.name"
-            /></div
+            <app-icon class="w-12 h-12" :icon="$context.name" /></div
         ></g-link>
         <div
           class="video-container relative w-full h-full  bg-black container rounded-md overflow-hidden shadow-lg"
