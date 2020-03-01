@@ -143,7 +143,21 @@ module.exports = [
     ],
     color: "#c5002a"
   },
-  
+   {
+    name: "Python",
+    hebrewName: "פייתון",
+    category: "programming language",
+    officialSite: "python.org",
+    videoTutorials: [
+      { url: "-wikR15AYWY" },
+      { url: "1Xa_iDqvg94" },
+      { url: "A1HUzrvS-Pw" },
+      { url: "qmWCT_OgrKQ" },
+      { url: "ukxMIsNeqU" },
+      { url: "1AGyBuVCTeE" }
+    ],
+    color: "#ffd530"
+  },
   {
     name: "Go",
     hebrewName: "GO",
