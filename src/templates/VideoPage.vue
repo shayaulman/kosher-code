@@ -5,14 +5,16 @@
         class="flex flex-col items-start md:flex-row-reverse md:justify-between md:align-top"
       >
         <g-link
-          :title="`-חזור ל${$context.category}`"
-          :to="`video-tutorials/${$context.category}`"
+          :title="`-חזור ל${$context.name}`"
+          :to="`video-tutorials/${$context.name}`"
         >
           <div class="p-8">
             <app-icon
-              v-if="$context.category !== 'elementor'"
+              v-if="
+                $context.name !== 'elementor' && $context.name !== 'playlist'
+              "
               class=" w-12 h-12"
-              :icon="$context.category"
+              :icon="$context.name"
             /></div
         ></g-link>
         <div

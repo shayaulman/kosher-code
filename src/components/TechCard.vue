@@ -9,13 +9,13 @@
         class="text-center"
       >
         <app-icon
-          v-if="name !== 'Elementor'"
+          v-if="name !== 'Elementor' && name !== 'playlist'"
           :icon="name.toLowerCase()"
           class="p-2 w-18"
         />
         <g-image
           src="!!assets-loader!~/assets/icons/elementor.png"
-          v-else
+          v-if="name === 'Elementor'"
           class="mb-2 p-1"
         />
         <h3 class="py-1 text-sm text-center font-light">

@@ -30,17 +30,18 @@ module.exports = function(api) {
     for (const d of data) {
       for (const item of d.items) {
         // API returns reversed
-        const technologyName = videoTutorials.find(tech =>
+        const category = videoTutorials.find(tech =>
           tech.videoTutorials.find(video => video.url === item.id)
         );
         VideoCollection.addNode({
           id: item.id,
-          category: technologyName.name.toLowerCase(),
+          name: category.name.toLowerCase(),
+          category: category.category,
           title: item.snippet.title,
           description: item.snippet.description,
           thumbnail: item.snippet.thumbnails.medium.url,
           publishedAt: item.snippet.publishedAt,
-          color: technologyName.color
+          color: category.color
         });
       }
     }
@@ -71,6 +72,7 @@ module.exports = function(api) {
         name: category.name,
         hebrewName: category.hebrewName,
         category: category.category,
+        tags: category.tags,
         color: category.color,
         officialSite: category.officialSite,
         amountOfVideos: category.videoTutorials.length
@@ -96,17 +98,35 @@ module.exports = function(api) {
     `);
 
     data.allVideo.edges.forEach(({ node }) => {
-      createPage({
-        path: `/video-tutorials/${node.category}/${node.id}`,
-        component: "./src/templates/VideoPage.vue",
-        context: {
-          id: node.id,
-          title: node.title,
-          description: node.description,
-          category: node.category,
-          publishedAt: node.publishedAt
-        }
-      });
+      if (node.category !== "playlist") {
+        createPage({
+          path: `/video-tutorials/${node.category}/${node.id}`,
+          component: "./src/templates/VideoPage.vue",
+          context: {
+            id: node.id,
+            title: node.title,
+            description: node.description,
+            category: node.category,
+            publishedAt: node.publishedAt
+          }
+        });
+      } else {
+        const playlist = videoTutorials.find(category =>
+          category.videoTutorials.some(vid => vid.url === node.id)
+        );
+        createPage({
+          path: `/video-tutorials/playlists/${playlist.name}/${node.id}`,
+          component: "./src/templates/VideoPage.vue",
+          context: {
+            id: node.id,
+            title: node.title,
+            description: node.description,
+            category: node.category,
+            tags: playlist.tags,
+            publishedAt: node.publishedAt
+          }
+        });
+      }
     });
 
     videoTutorials.forEach(category => {

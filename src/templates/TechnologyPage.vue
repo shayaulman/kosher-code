@@ -3,7 +3,10 @@
     <section class="p-12 mx-auto">
       <div style="width:100px" class="mb-12 mx-auto">
         <app-icon
-          v-if="$context.technology !== 'elementor'"
+          v-if="
+            $context.technology !== 'elementor' &&
+              $context.technology !== 'playlist'
+          "
           :icon="$context.technology"
         />
         <h1
@@ -28,6 +31,13 @@
           {{ hebrewOnly ? "הצג כל הסרטונים" : "הצג רק סרטונים בעברית" }}
         </button>
       </div>
+    </section>
+    <section>
+      <playlist-card
+        v-for="(playlist, i) in playlists"
+        :key="i"
+        :name="playlist.node.name"
+      />
     </section>
     <transition-group
       name="fade"
@@ -58,7 +68,7 @@
 
 <page-query>
  query Vid ($technology: String! $page: Int){
- videos: allVideo (sortBy: "index" order:ASC filter: {category: {eq: $technology}} perPage: 9, page: $page)  @paginate {
+ videos: allVideo (sortBy: "index" order:ASC filter: {name: {eq: $technology}} perPage: 9, page: $page)  @paginate {
    pageInfo {
 			totalPages
 			currentPage
@@ -68,6 +78,7 @@
         id
         title
         description
+        name
         category
         thumbnail
         color
@@ -77,17 +88,34 @@
 }
  </page-query>
 
+<static-query>
+{
+  categories: allCategory (filter: {category: {eq: "playlist"}})  {
+    edges {
+      node {
+        name
+        category
+        tags
+      }
+    }
+  }
+}
+ </static-query>
+
 <script>
 import VideoCard from "~/components/VideoCard";
+import PlaylistCard from "~/components/PlaylistCard";
 import AppIcon from "~/components/UI/AppIcon";
 export default {
   components: {
     VideoCard,
+    PlaylistCard,
     AppIcon
   },
   data() {
     return {
       technologies: [],
+      playlists: [],
       hebrewOnly: false,
       loadedVideos: [],
       currentPage: 1
@@ -147,6 +175,10 @@ export default {
   },
   mounted() {
     this.technologies = this.$page.videos.edges;
+    this.playlists = this.$static.categories.edges.filter(edge =>
+      edge.node.tags.includes(this.$context.technology.toUpperCase())
+    );
+    console.log(this.playlists);
   }
 };
 </script>
