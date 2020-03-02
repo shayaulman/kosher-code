@@ -30,18 +30,17 @@ module.exports = function(api) {
     for (const d of data) {
       for (const item of d.items) {
         // API returns reversed
-        const category = videoTutorials.find(tech =>
+        const technologyName = videoTutorials.find(tech =>
           tech.videoTutorials.find(video => video.url === item.id)
         );
         VideoCollection.addNode({
           id: item.id,
-          name: category.name.toLowerCase(),
-          category: category.category,
+          category: technologyName.name.toLowerCase(),
           title: item.snippet.title,
           description: item.snippet.description,
-          thumbnail: item.snippet.thumbnails.medium.url,
+          thumbnail: item.snippet.thumbnails.default.url,
           publishedAt: item.snippet.publishedAt,
-          color: category.color
+          color: technologyName.color
         });
       }
     }
@@ -72,7 +71,6 @@ module.exports = function(api) {
         name: category.name,
         hebrewName: category.hebrewName,
         category: category.category,
-        tags: category.tags,
         color: category.color,
         officialSite: category.officialSite,
         amountOfVideos: category.videoTutorials.length
@@ -110,37 +108,22 @@ module.exports = function(api) {
             publishedAt: node.publishedAt
           }
         });
-      } else {
-        const playlist = videoTutorials.find(category =>
-          category.videoTutorials.some(vid => vid.url === node.id)
-        );
-        createPage({
-          path: `/video-tutorials/playlists/${playlist.name}/${node.id}`,
-          component: "./src/templates/VideoPage.vue",
-          context: {
-            id: node.id,
-            title: node.title,
-            description: node.description,
-            category: node.category,
-            tags: playlist.tags,
-            publishedAt: node.publishedAt
-          }
-        });
       }
     });
 
     videoTutorials.forEach(category => {
-      createPage({
-        path: `/video-tutorials/${category.name.toLowerCase()}`,
-        component: "./src/templates/TechnologyPage.vue",
-        context: {
-          technology: category.name.toLowerCase(),
-          category: category.category,
-          hebrewName: category.hebrewName,
-          amountOfVideos: category.videoTutorials.length,
-          color: category.color
-        }
-      });
+      if (category.category !== "playlist")
+        createPage({
+          path: `/video-tutorials/${category.name.toLowerCase()}`,
+          component: "./src/templates/TechnologyPage.vue",
+          context: {
+            technology: category.name.toLowerCase(),
+            category: category.category,
+            hebrewName: category.hebrewName,
+            amountOfVideos: category.videoTutorials.length,
+            color: category.color
+          }
+        });
     });
   });
 };

@@ -68,7 +68,7 @@
 
 <page-query>
  query Vid ($technology: String! $page: Int){
- videos: allVideo (sortBy: "index" order:ASC filter: {name: {eq: $technology}} perPage: 9, page: $page)  @paginate {
+ videos: allVideo (sortBy: "index" order:ASC filter: {cstegory: {eq: $technology}} perPage: 9, page: $page)  @paginate {
    pageInfo {
 			totalPages
 			currentPage
@@ -93,9 +93,8 @@
   categories: allCategory (filter: {category: {eq: "playlist"}})  {
     edges {
       node {
-        name
+  
         category
-        tags
       }
     }
   }
