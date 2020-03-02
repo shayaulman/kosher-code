@@ -53,11 +53,13 @@ export default {
 
   computed: {
     amountOfVideos() {
-      return this.technologies.reduce((a, b) => a + b.videoTutorials.length, 0);
+      return 0;
+      // return this.technologies.reduce((a, b) => a + b.videoTutorials.length, 0);
     },
 
     amountOfTecnologies() {
-      return this.technologies.length;
+      return 0;
+      // return this.technologies.length;
     }
   }
 };

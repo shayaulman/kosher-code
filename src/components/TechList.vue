@@ -21,7 +21,8 @@ export default {
       listOfCategories: [
         { en: "programming language", he: "שפות תכנות" },
         { en: "framework", he: "פריימוורקים שונים" },
-        { en: "special topics", he: "נושאים מיוחדים" }
+        { en: "special topics", he: "נושאים מיוחדים" },
+        { en: "playlist", he: "פלייליסטים" }
       ]
     };
   }
