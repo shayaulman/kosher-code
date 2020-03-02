@@ -77,5 +77,43 @@ module.exports = [
       { url: "3NU-_WV4YbI" },
       { url: "ipsMstssE1E" }
     ]
+  },
+
+  {
+    name: "SEO",
+    hebrewName: "קידום אתרים",
+    category: "special topics",
+    color: "#de873c",
+    videoTutorials: [
+      { url: "oYkvbbKlosc" },
+      { url: "UJi2EpO5LoE" },
+      { url: "5jGb0_r7bw0" },
+      { url: "sNjVEu7YtJI" },
+      { url: "4En8qaCvkYo" },
+      { url: "P5BnDragTzs" },
+      { url: "0xwda8RtExM" },
+      { url: "GgSDDfgikGQ" },
+      { url: "3xFLbIR_GAE" },
+      { url: "4O4nY4u4gYw" },
+      { url: "xxlyisZz_rw" },
+      { url: "3SE9t7oOk1A" },
+      { url: "Rkpq0EJvULU" },
+      { url: "a2gIuctkVbY" },
+      { url: "xp7qRtVEzWg" },
+      { url: "8wy576QAAes" },
+      { url: "wA506rENAq0" },
+      { url: "emXF01CYmVI" },
+      { url: "YpxGPN-Wvo8" },
+      { url: "qCeonc_aaMM" },
+      { url: "BM5TSuQ1YO4" },
+      { url: "OVGiSMSmu0o" },
+      { url: "RUCoZxfovH4" },
+      { url: "PJig5CFhI6I" },
+      { url: "i2d6hkQ-s0M" },
+      { url: "nw9GyUpkaS4" },
+      { url: "F1KXuKybt44" },
+      { url: "HL_uUjVWV4w" },
+      { url: "IiGvUtCKyMw" }
+    ]
   }
 ];

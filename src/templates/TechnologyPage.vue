@@ -1,14 +1,16 @@
 <template>
   <Layout>
     <section class="p-12 mx-auto">
-      <div style="width:100px" class="mb-12 mx-auto">
+      <div class="w-16 mx-auto">
         <app-icon
           v-if="$context.technology !== 'elementor'"
           :icon="$context.technology"
         />
+      </div>
+      <div>
         <h1
           :style="`color: ${$context.color}`"
-          class="p-2 text-lg text-center text-custom-text-primary"
+          class="p-2 mb-12 text-lg text-center text-custom-text-primary"
         >
           {{ $context.hebrewName }}
         </h1>
