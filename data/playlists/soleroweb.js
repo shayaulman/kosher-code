@@ -6,6 +6,7 @@ module.exports = [
     tags: ["PHP"],
     color: "#6080B8",
     videoTutorials: [
+      { url: "BJV6WngtOCI" },
       { url: "I2PDR6Fj6ko" },
       { url: "O6lR3knsjGU" },
       { url: "FJNLF5-AL8g" },
