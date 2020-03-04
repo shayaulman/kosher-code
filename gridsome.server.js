@@ -103,6 +103,7 @@ module.exports = function(api) {
         component: "./src/templates/VideoPage.vue",
         context: {
           id: node.id,
+          name: node.name,
           title: node.title,
           description: node.description,
           category: node.category,
