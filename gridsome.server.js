@@ -66,14 +66,14 @@ module.exports = function(api) {
     });
 
     const Categories = actions.addCollection("Category");
-
     videoTutorials.forEach(category => {
       Categories.addNode({
         name: category.name,
         hebrewName: category.hebrewName,
         category: category.category,
+        tags: category.tags,
+        thumbnail: category.thumbnail,
         color: category.color,
-        officialSite: category.officialSite,
         amountOfVideos: category.videoTutorials.length
       });
     });

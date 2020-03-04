@@ -5,7 +5,7 @@
   >
     <div class="header-bar"></div>
     <app-header />
-    <div class="relative max-w-6xl min-h-screen mx-auto mt-12 pb-24">
+    <div class="relative max-w-screen-xl min-h-screen mx-auto mt-12 pb-24">
       <h1>{{ title }}</h1>
       <h2>{{ subTitle }}</h2>
       <slot />

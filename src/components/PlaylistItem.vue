@@ -1,15 +1,16 @@
 <template>
   <section
     @click="$emit('video-selected', index)"
-    class="p-1 text-xs text-custom-text-primary cursor-pointer"
+    :class="{ 'bg-custom-bg-card-2': isActive }"
+    class="p-1 bg-custom-bg-card text-xs text-custom-text-primary cursor-pointer hover:bg-custom-bg-card-2"
   >
     <div class="flex items-center">
-      <h5 class="px-2 text-custom-text-3">
-        {{ active === index + 1 ? "ac" : index + 1 }}
+      <h5 class="w-8 p-2 text-custom-text-3">
+        {{ isActive ? "&#9658;" : index + 1 }}
       </h5>
       <img
-        style="width:90px;height:60px"
-        width="90"
+        style="width:100px;height:60px"
+        width="100"
         height="60"
         :src="thumbnail"
         alt=""
@@ -21,6 +22,11 @@
 
 <script>
 export default {
-  props: { title: String, index: Number, thumbnail: String, active: Number }
+  props: { title: String, index: Number, thumbnail: String, active: Number },
+  computed: {
+    isActive() {
+      return this.active === this.index + 1;
+    }
+  }
 };
 </script>

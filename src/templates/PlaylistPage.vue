@@ -2,9 +2,10 @@
   <Layout dontShowFooter>
     <section :style="`direction: ${direction}`" class="m-3">
       <div class="flex flex-col lg:flex-row lg:align-start">
-        <div class="flex-col">
+        <div class="flex-col w-2/3">
           <div
-            class="video-container relative bg-black container rounded-md overflow-hidden shadow-lg"
+            ref="video"
+            class="w-screen lg:w-full video-container relative bg-black container rounded-md overflow-hidden shadow-lg"
           >
             <div class="absolute z-0 inset-0 flex items-center justify-center">
               <app-loader youtube />
@@ -41,7 +42,10 @@
             </button>
           </section>
         </div>
-        <section class="mx-4">
+        <section
+          :style="`height: ${videoFrameHeight}px`"
+          class="w-1/3 mx-4 overflow-scroll"
+        >
           <playlist-list
             @selection="handle"
             :videos="$page.videos.edges"
@@ -92,7 +96,8 @@ export default {
     return {
       playlistVideos: [],
       activeVideo: 1,
-      showMore: false
+      showMore: false,
+      videoFrameHeight: 0
     };
   },
   computed: {
@@ -130,6 +135,7 @@ export default {
       );
     }
   },
+
   methods: {
     handle(value) {
       console.log(value);
@@ -156,7 +162,8 @@ export default {
     this.playlistVideos = this.$page.videos.edges;
   },
   mounted() {
-    console.log(this.$page.videos.edges);
+    // console.log(this.$static.categories.edges);
+    this.videoFrameHeight = this.$refs.video.clientHeight;
   }
 };
 </script>
@@ -165,7 +172,7 @@ export default {
 .video-container {
   overflow: hidden;
   position: relative;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .video-container::after {

@@ -1,5 +1,5 @@
 <template>
-  <section class="p-3 bg-custom-bg-card h-full rounded">
+  <section class="h-full rounded">
     <playlist-item
       @video-selected="$emit('selection', $event)"
       v-for="(video, i) in videos"
@@ -17,6 +17,7 @@ import PlaylistItem from "~/components/PlaylistItem";
 export default {
   props: { videos: Array, active: Number },
   components: { PlaylistItem },
+  computed: {},
   methods: {}
 };
 </script>

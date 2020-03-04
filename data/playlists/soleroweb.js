@@ -3,8 +3,8 @@ module.exports = [
     name: "SoleroWeb",
     hebrewName: "",
     category: "playlist",
-    tags: ["PHP"],
-    color: "#6080B8",
+    tags: ["php"],
+    thumbnail: "https://i.ytimg.com/vi/I2PDR6Fj6ko/mqdefault.jpg",
     videoTutorials: [
       { url: "BJV6WngtOCI" },
       { url: "I2PDR6Fj6ko" },
