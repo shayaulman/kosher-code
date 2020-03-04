@@ -35,7 +35,8 @@ module.exports = function(api) {
         );
         VideoCollection.addNode({
           id: item.id,
-          category: technologyName.name.toLowerCase(),
+          name: technologyName.name.toLowerCase(),
+          category: technologyName.category,
           title: item.snippet.title,
           description: item.snippet.description,
           thumbnail: item.snippet.thumbnails.medium.url,
@@ -65,14 +66,14 @@ module.exports = function(api) {
     });
 
     const Categories = actions.addCollection("Category");
-
     videoTutorials.forEach(category => {
       Categories.addNode({
         name: category.name,
         hebrewName: category.hebrewName,
         category: category.category,
+        tags: category.tags,
+        thumbnail: category.thumbnail,
         color: category.color,
-        officialSite: category.officialSite,
         amountOfVideos: category.videoTutorials.length
       });
     });
@@ -84,6 +85,7 @@ module.exports = function(api) {
         allVideo {
           edges {
             node {
+              name
               id
               title
               description
@@ -97,10 +99,11 @@ module.exports = function(api) {
 
     data.allVideo.edges.forEach(({ node }) => {
       createPage({
-        path: `/video-tutorials/${node.category}/${node.id}`,
+        path: `/video-tutorials/${node.name}/${node.id}`,
         component: "./src/templates/VideoPage.vue",
         context: {
           id: node.id,
+          name: node.name,
           title: node.title,
           description: node.description,
           category: node.category,
@@ -110,17 +113,31 @@ module.exports = function(api) {
     });
 
     videoTutorials.forEach(category => {
-      createPage({
-        path: `/video-tutorials/${category.name.toLowerCase()}`,
-        component: "./src/templates/TechnologyPage.vue",
-        context: {
-          technology: category.name.toLowerCase(),
-          category: category.category,
-          hebrewName: category.hebrewName,
-          amountOfVideos: category.videoTutorials.length,
-          color: category.color
-        }
-      });
+      if (category.category !== "playlist") {
+        createPage({
+          path: `/video-tutorials/${category.name.toLowerCase()}`,
+          component: "./src/templates/TechnologyPage.vue",
+          context: {
+            technology: category.name.toLowerCase(),
+            category: category.category,
+            hebrewName: category.hebrewName,
+            amountOfVideos: category.videoTutorials.length,
+            color: category.color
+          }
+        });
+      } else if (category.category === "playlist") {
+        createPage({
+          path: `/video-tutorials/playlists/${category.name.toLowerCase()}`,
+          component: "./src/templates/PlaylistPage.vue",
+          context: {
+            name: category.name.toLowerCase(),
+            hebrewName: category.hebrewName,
+            amountOfVideos: category.videoTutorials.length,
+            allVideos: category.videoTutorials,
+            color: category.color
+          }
+        });
+      }
     });
   });
 };

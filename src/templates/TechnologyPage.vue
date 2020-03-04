@@ -31,24 +31,34 @@
         </button>
       </div>
     </section>
-    <transition-group
-      name="fade"
-      mode="in-out"
-      style="direction:ltr"
-      class="mb-24 flex flex-wrap justify-center"
-    >
-      <video-card
-        v-for="course in videos"
-        :key="course.node.id"
-        :id="course.node.id"
-        :title="course.node.title"
-        :pub-date="course.node.publishedAt"
-        :is-hebrew="detectHebrew([course.node.title, course.node.description])"
-        :category="$context.technology"
-        :thumbnail="course.node.thumbnail"
-        :color="course.node.color"
-      />
+    <transition-group name="fade" mode="in-out" style="direction:ltr">
+      <section
+        key="213"
+        class="max-w-6xl mx-auto mb-24 flex flex-wrap justify-center"
+      >
+        <playlist-card
+          v-for="playlist in playlists"
+          :key="playlist.node.id"
+          :name="playlist.node.name"
+          :amount-of-videos="playlist.node.amountOfVideos"
+          :thumbnail="playlist.node.thumbnail"
+        />
+        <video-card
+          v-for="course in videos"
+          :key="course.node.id"
+          :id="course.node.id"
+          :title="course.node.title"
+          :pub-date="course.node.publishedAt"
+          :is-hebrew="
+            detectHebrew([course.node.title, course.node.description])
+          "
+          :category="$context.technology"
+          :thumbnail="course.node.thumbnail"
+          :color="course.node.color"
+        />
+      </section>
     </transition-group>
+
     <ClientOnly>
       <infinite-loading @infinite="infiniteHandler">
         <div slot="no-more" class="text-custom-text-3"></div>
@@ -60,7 +70,7 @@
 
 <page-query>
  query Vid ($technology: String! $page: Int){
- videos: allVideo (sortBy: "index" order:ASC filter: {category: {eq: $technology}} perPage: 16, page: $page)  @paginate {
+ videos: allVideo (sortBy: "index" order:ASC filter: {name: {eq: $technology}} perPage: 16, page: $page)  @paginate {
    pageInfo {
 			totalPages
 			currentPage
@@ -70,6 +80,7 @@
         id
         title
         description
+        name
         category
         thumbnail
         color
@@ -80,12 +91,31 @@
 }
  </page-query>
 
+<static-query>
+ {
+    categories: allCategory (filter: {category: {eq: "playlist"}}) {
+        edges {
+            node {
+              name
+              amountOfVideos
+              hebrewName
+              tags
+              thumbnail
+            }
+        }
+    }
+
+}
+ </static-query>
+
 <script>
 import VideoCard from "~/components/VideoCard";
+import PlaylistCard from "~/components/PlaylistCard";
 import AppIcon from "~/components/UI/AppIcon";
 export default {
   components: {
     VideoCard,
+    PlaylistCard,
     AppIcon
   },
   data() {
@@ -93,17 +123,25 @@ export default {
       technologies: [],
       hebrewOnly: false,
       loadedVideos: [],
+      loadedPlaylists: [],
       currentPage: 1
     };
   },
 
   computed: {
     videos() {
-      return !this.hebrewOnly
+      let videos = !this.hebrewOnly
         ? this.loadedVideos
         : this.loadedVideos.filter((video, i) =>
             this.detectHebrew([video.node.title, video.node.description])
           );
+      return videos;
+    },
+
+    playlists() {
+      return this.loadedPlaylists.filter(playlist =>
+        playlist.node.tags.includes(this.$context.technology)
+      );
     }
   },
   methods: {
@@ -150,6 +188,7 @@ export default {
   },
   mounted() {
     this.technologies = this.$page.videos.edges;
+    this.loadedPlaylists = this.$static.categories.edges;
   }
 };
 </script>
