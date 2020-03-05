@@ -1,14 +1,35 @@
 <template>
-  <section
-    :style="`border-top: 2px solid ${color}`"
-    class="relative w-56 mx-2 my-8"
-  >
-    <g-link :to="`video-tutorials/${category}/${id}`">
-      <div class="relative">
-        <div
-          :style="`background: ${color}`"
-          class="absolute top-0 w-full flex justify-center z-0"
+  <g-link :to="`video-tutorials/${category}/${id}`" class="m-1">
+    <section
+      style="height: 180px;"
+      class="relative bg-custom-bg-card w-64 rounded overflow-hidden"
+    >
+      <img
+        style="width:320px;height:180px"
+        :src="thumbnail"
+        alt=""
+        class="opacity-75 rounded hover:opacity-50 transition duration-300"
+      />
+      <div
+        class="overlay-top absolute top-0  h-16 w-full z-10 pointer-events-none"
+      >
+        <h2
+          :class="{ rtl: doesContainHebrewLetters([title]) }"
+          class="absolute  top-0 p-2 px-3 font-light text-sm text-custom-text-primary"
         >
+          {{ formattedTitle }}
+        </h2>
+      </div>
+      <div
+        class="overlay-bottom absolute bottom-0 h-8 w-full z-10 pointer-events-none"
+      >
+        <p class="absolute top-0 p-2 px-3 text-xxs font-hairline text-gray-500">
+          {{ publishTime }}
+        </p>
+      </div>
+
+      <!-- <div class="relative">
+        <div class="absolute top-0 w-full flex justify-center -z-10">
           <app-loader :color="color" />
         </div>
         <div
@@ -17,26 +38,12 @@
         >
           <israel-flag-icon />
         </div>
-        <g-image
-          style="width:224px;height:120px"
-          :src="thumbnail"
-          height="90"
-          class="relative z-10"
-        />
       </div>
-      <div>
-        <h2
-          :class="{ rtl: doesContainHebrewLetters([title]) }"
-          class="pt-2 pb-6 text-custom-text-primary text-xs"
-        >
-          {{ formattedTitle }}
-        </h2>
-        <p class="absolute bottom-0 right-0 text-custom-text-3 text-xxs">
-          {{ publishTime }}
-        </p>
-      </div>
-    </g-link>
-  </section>
+      <div class="z-40">
+      
+      </div> -->
+    </section>
+  </g-link>
 </template>
 
 <script>
@@ -78,13 +85,13 @@ export default {
   computed: {
     formattedTitle() {
       const titleLength = this.title.split(" ").length;
-      if (titleLength < 8) {
+      if (titleLength < 6) {
         return this.title;
       }
       return (
         this.title
           .split(" ")
-          .slice(0, 9)
+          .slice(0, 6)
           .join(" ") + "..."
       );
     },
@@ -103,3 +110,13 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.overlay-top {
+  background: linear-gradient(0deg, transparent, var(--bg-card) 70%);
+}
+
+.overlay-bottom {
+  background: linear-gradient(0deg, var(--bg-card) 20%, transparent);
+}
+</style>
