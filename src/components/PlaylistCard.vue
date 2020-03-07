@@ -1,5 +1,8 @@
 <template>
-  <g-link :to="`video-tutorials/playlists/${name}`" class="m-1">
+  <g-link
+    :to="`video-tutorials/playlists/${name.replace(' ', '-').toLowerCase()}`"
+    class="m-1"
+  >
     <section
       style="height: 180px;"
       class="relative bg-custom-bg-card w-64 rounded overflow-hidden "

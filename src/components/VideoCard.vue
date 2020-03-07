@@ -2,16 +2,16 @@
   <g-link :to="`video-tutorials/${category}/${id}`" class="m-2">
     <section
       style="height: 180px;"
-      class="relative bg-custom-bg-card w-64 rounded overflow-hidden"
+      class="relative  w-64 rounded-md overflow-hidden"
     >
       <img
         style="width:320px;height:180px"
         :src="thumbnail"
         alt=""
-        class="opacity-75 rounded hover:opacity-100 transition duration-300"
+        class="opacity-75 rounded-md hover:opacity-100 transition duration-300"
       />
       <div
-        class="overlay-top absolute top-0  h-32 w-full z-10 pointer-events-none"
+        class="overlay-top absolute top-0 h-16 w-full z-10 pointer-events-none"
       >
         <h2
           :class="{ 'rtl right-0': doesContainHebrewLetters([title]) }"
@@ -21,7 +21,7 @@
         </h2>
       </div>
       <div
-        class="overlay-bottom absolute bottom-0 h-32 w-full z-10 pointer-events-none"
+        class="overlay-bottom absolute bottom-0 h-12 w-full z-10 pointer-events-none"
       >
         <p
           class="absolute bottom-0 p-2 px-3 text-xxs font-hairline text-gray-500"

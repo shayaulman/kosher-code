@@ -98,18 +98,20 @@ module.exports = function(api) {
     `);
 
     data.allVideo.edges.forEach(({ node }) => {
-      createPage({
-        path: `/video-tutorials/${node.name}/${node.id}`,
-        component: "./src/templates/VideoPage.vue",
-        context: {
-          id: node.id,
-          name: node.name,
-          title: node.title,
-          description: node.description,
-          category: node.category,
-          publishedAt: node.publishedAt
-        }
-      });
+      if (node.category !== "playlist") {
+        createPage({
+          path: `/video-tutorials/${node.name}/${node.id}`,
+          component: "./src/templates/VideoPage.vue",
+          context: {
+            id: node.id,
+            name: node.name,
+            title: node.title,
+            description: node.description,
+            category: node.category,
+            publishedAt: node.publishedAt
+          }
+        });
+      }
     });
 
     videoTutorials.forEach(category => {
@@ -126,8 +128,9 @@ module.exports = function(api) {
           }
         });
       } else if (category.category === "playlist") {
+        const PRETTY_PATH = category.name.replace(" ", "-").toLowerCase();
         createPage({
-          path: `/video-tutorials/playlists/${category.name.toLowerCase()}`,
+          path: `/video-tutorials/playlists/${PRETTY_PATH}`,
           component: "./src/templates/PlaylistPage.vue",
           context: {
             name: category.name.toLowerCase(),

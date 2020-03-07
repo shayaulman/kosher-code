@@ -1,0 +1,42 @@
+module.exports = [
+  {
+    name: "SoleroWeb html",
+    hebrewName: "",
+    category: "playlist",
+    tags: ["html"],
+    thumbnail: "https://i.ytimg.com/vi/Qd-AjKNbN9s/mqdefault.jpg",
+    videoTutorials: [
+      { url: "MNYlVTMNq4U" },
+      { url: "jYFxIfcxyWU" },
+      { url: "berqdtZ3nGo" },
+      { url: "dMSkc5ZTCWE" },
+      { url: "Qd-AjKNbN9s" },
+      { url: "2CtmoOIxvfE" },
+      { url: "r5cdYF2zf3I" },
+      { url: "tcIqpyeFhBE" },
+      { url: "AViI9CnMt6g" },
+      { url: "ftFK6ew-eCY" },
+      { url: "txl5daaEOAw" },
+      { url: "y7nXstqP2_s" },
+      { url: "YmqOMbn5ABY" },
+      { url: "ToRwe5WPZX4" },
+      { url: "Ybg6DPnJA3I" },
+      { url: "Xg9De2kJ-vw" },
+      { url: "HHwEPj5MPAk" },
+      { url: "BW9o9HgUPEQ" },
+      { url: "3aDmK7pRfbU" },
+      { url: "tNn6-mYAQjs" },
+      { url: "XmqfDqNpW8E" },
+      { url: "vrSd1b4QzoU" },
+      { url: "3gvmputCe6Y" },
+      { url: "Uuh3-nntbFk" },
+      { url: "pw3KM5UPXFM" },
+      { url: "EfKgjh1Qa5Q" },
+      { url: "Rril6Vl_H9U" },
+      { url: "1V43yoEdBEA" },
+      { url: "6BVTVDWG2go" },
+      { url: "Q4go0uVAmgc" },
+      { url: "pIcBBBdXSCU" }
+    ]
+  }
+];
