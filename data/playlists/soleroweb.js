@@ -6,6 +6,9 @@ module.exports = [
     tags: ["php"],
     thumbnail: "https://i.ytimg.com/vi/I2PDR6Fj6ko/mqdefault.jpg",
     videoTutorials: [
+      { url: "F7zK71cnSK4" },
+      { url: "BJV6WngtOCI" },
+      { url: "hw8c0TtASdc" },
       { url: "BJV6WngtOCI" },
       { url: "I2PDR6Fj6ko" },
       { url: "O6lR3knsjGU" },

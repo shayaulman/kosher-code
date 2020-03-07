@@ -37,6 +37,18 @@
   </Layout>
 </template>
 
+<static-query>
+{
+  categories: allCategory {
+    edges {
+      node {
+        amountOfVideos
+      }
+    }
+  }
+}
+</static-query>
+
 <script>
 import TechList from "@/components/TechList";
 import CategoriesSlide from "@/components/CategoriesSlide";
@@ -45,19 +57,17 @@ export default {
     TechList,
     CategoriesSlide
   },
-  data() {
-    return {
-      technologies: require("../../data/videoTutorials")
-    };
-  },
 
   computed: {
     amountOfVideos() {
-      return this.technologies.reduce((a, b) => a + b.videoTutorials.length, 0);
+      return this.$static.categories.edges.reduce(
+        (a, b) => a + b.node.amountOfVideos,
+        0
+      );
     },
 
     amountOfTecnologies() {
-      return this.technologies.length;
+      return this.$static.categories.edges.length;
     }
   }
 };

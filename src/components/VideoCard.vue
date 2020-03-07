@@ -1,5 +1,5 @@
 <template>
-  <g-link :to="`video-tutorials/${category}/${id}`" class="m-1">
+  <g-link :to="`video-tutorials/${category}/${id}`" class="m-2">
     <section
       style="height: 180px;"
       class="relative bg-custom-bg-card w-64 rounded overflow-hidden"
@@ -8,22 +8,24 @@
         style="width:320px;height:180px"
         :src="thumbnail"
         alt=""
-        class="opacity-75 rounded hover:opacity-50 transition duration-300"
+        class="opacity-75 rounded hover:opacity-100 transition duration-300"
       />
       <div
-        class="overlay-top absolute top-0  h-16 w-full z-10 pointer-events-none"
+        class="overlay-top absolute top-0  h-32 w-full z-10 pointer-events-none"
       >
         <h2
-          :class="{ rtl: doesContainHebrewLetters([title]) }"
-          class="absolute  top-0 p-2 px-3 font-light text-sm text-custom-text-primary"
+          :class="{ 'rtl right-0': doesContainHebrewLetters([title]) }"
+          class="absolute top-0 p-2 px-3 font-light text-sm text-custom-text-primary"
         >
           {{ formattedTitle }}
         </h2>
       </div>
       <div
-        class="overlay-bottom absolute bottom-0 h-8 w-full z-10 pointer-events-none"
+        class="overlay-bottom absolute bottom-0 h-32 w-full z-10 pointer-events-none"
       >
-        <p class="absolute top-0 p-2 px-3 text-xxs font-hairline text-gray-500">
+        <p
+          class="absolute bottom-0 p-2 px-3 text-xxs font-hairline text-gray-500"
+        >
           {{ publishTime }}
         </p>
       </div>
@@ -113,10 +115,10 @@ export default {
 
 <style scoped>
 .overlay-top {
-  background: linear-gradient(0deg, transparent, var(--bg-card) 70%);
+  background: linear-gradient(0deg, transparent, var(--bg-card) 100%);
 }
 
 .overlay-bottom {
-  background: linear-gradient(0deg, var(--bg-card) 20%, transparent);
+  background: linear-gradient(0deg, var(--bg-card), transparent 100%);
 }
 </style>
