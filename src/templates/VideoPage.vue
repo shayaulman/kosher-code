@@ -133,7 +133,7 @@ export default {
 .video-container {
   overflow: hidden;
   position: relative;
-  width: 80%;
+  width: 65%;
 }
 
 .video-container::after {
