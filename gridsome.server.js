@@ -73,6 +73,7 @@ module.exports = function(api) {
         category: category.category,
         tags: category.tags,
         thumbnail: category.thumbnail,
+        officialSite: category.officialSite,
         color: category.color,
         amountOfVideos: category.videoTutorials.length
       });

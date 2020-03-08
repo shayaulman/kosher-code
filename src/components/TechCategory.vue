@@ -25,6 +25,7 @@
         name
         hebrewName
         category
+        officialSite
         color
       }
     }
