@@ -165,7 +165,13 @@ module.exports = [
     hebrewName: "GO",
     category: "programming language",
     officialSite: "https://go.dev",
-    videoTutorials: [{ url: "YS4e4q9oBaU" }],
+    videoTutorials: [
+      { url: "YS4e4q9oBaU" },
+      { url: "LYHUPuQCtpc" },
+      { url: "XCsL89YtqCs" },
+      { url: "ZGxVAZ-8i-g" },
+      { url: "vhviSej8b64" }
+    ],
     color: "#1673b6"
   },
   {
@@ -332,7 +338,12 @@ module.exports = [
       { url: "SUOATIrsqwM" },
       { url: "Pp_NuiCJFhs" },
       { url: "i-OFd0oE9BU" },
-      { url: "tJ0kzKaUHKs" }
+      { url: "tJ0kzKaUHKs" },
+      { url: "ppNNqAKlHe4" },
+      { url: "45yEQvE_WE8" },
+      { url: "MkAPyqtypFU" },
+      { url: "Vs5UtNam10c" },
+      { url: "_UEGeMFUW1w" }
     ]
   },
   {
@@ -468,5 +479,18 @@ module.exports = [
       { url: "aZ_xRq02FJo" },
       { url: "2K8JvTNojjc" }
     ]
+  },
+
+  {
+    name: "Tensorflow",
+    hebrewName: "טנסורפלו",
+    category: "programming language",
+    officialSite: "https://www.tensorflow.org/",
+    videoTutorials: [
+      { url: "DFKHh7_zzJc" },
+      { url: "UbMDK4UNtPA" },
+      { url: "E8n_k6HNAgs" }
+    ],
+    color: "#ff7000"
   }
 ];
