@@ -19,6 +19,24 @@ module.exports = [
     link: "https://camelcase.blog/"
   },
   {
+    name: "savvy",
+    author: "רועי יוסף",
+    desc: "מדברים וורדפרס",
+    link: "https://he.savvy.co.il/blog/"
+  },
+  {
+    name: "רשתטק",
+    author: "יוסי בן הרוש",
+    desc: "מדריכים לתכנות ופיתוח אתרי אינטרנט",
+    link: "https://reshetech.co.il/"
+  },
+  {
+    name: "הבלוג של ינון פרק",
+    author: "ינון פרק",
+    desc: "טיפים קצרים וחדשות למתכנתים",
+    link: "https://www.tocode.co.il/blog"
+  },
+  {
     name: "",
     author: "Aayush Wadhwa",
     desc: "Passionately Curious",
