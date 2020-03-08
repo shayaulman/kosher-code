@@ -5,8 +5,8 @@
         class="flex flex-col items-start md:flex-row-reverse md:justify-between md:align-top"
       >
         <g-link
-          :title="`-חזור ל${$context.category}`"
-          :to="`video-tutorials/${$context.category}`"
+          :title="`${$context.name}-חזור ל`"
+          :to="`video-tutorials/${$context.name}`"
         >
           <div class="p-8">
             <app-icon
