@@ -11,7 +11,7 @@
           <div class="p-8">
             <app-icon
               v-if="$context.category !== 'elementor'"
-              class=" w-12 h-12"
+              class="w-12 h-12"
               :icon="$context.name"
             /></div
         ></g-link>

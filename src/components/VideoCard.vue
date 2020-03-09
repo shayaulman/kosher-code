@@ -8,7 +8,7 @@
         style="width:320px;height:180px"
         :src="thumbnail"
         alt=""
-        class="opacity-75 rounded-md hover:opacity-100 transition duration-300"
+        class="opacity-75 rounded-md object-cover hover:opacity-100 transition duration-300"
       />
       <div
         class="overlay-top absolute top-0 h-16 w-full z-10 pointer-events-none"
@@ -30,20 +30,18 @@
         </p>
       </div>
 
-      <!-- <div class="relative">
-        <div class="absolute top-0 w-full flex justify-center -z-10">
+      <div class="relative">
+        <!-- <div class="absolute top-0 w-full flex justify-center -z-10">
           <app-loader :color="color" />
-        </div>
+        </div> -->
         <div
           v-if="isHebrew"
-          class="w-6 mr-1 absolute top-0 right-0 z-20 overflow-hidden shadow-lg"
+          class="w-6 m-1 absolute bottom-0 right-0 opacity-75 z-20 overflow-hidden shadow-lg"
         >
           <israel-flag-icon />
         </div>
       </div>
-      <div class="z-40">
-      
-      </div> -->
+      <div class="z-40"></div>
     </section>
   </g-link>
 </template>
