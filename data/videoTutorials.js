@@ -294,7 +294,10 @@ module.exports = [
       { url: "p39Tn8nrfyU", pl: "SoleroWeb" },
       { url: "ctmXEDclb7c", pl: "SoleroWeb" },
       { url: "PaPMOL12V3g", pl: "SoleroWeb" },
-      { url: "-c055WT4-NU", pl: "SoleroWeb" }
+      { url: "-c055WT4-NU", pl: "SoleroWeb" },
+      { url: "BMUiFMZr7vk"},
+      { url: "bCqtb-Z5YGQ"},
+      { url: "Wl98eZpkp-c"}
     ],
     color: "#c2b134"
   },
