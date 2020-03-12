@@ -1,14 +1,14 @@
 <template>
   <g-link :to="`video-tutorials/${category}/${id}`" class="m-2">
     <section
-      style="height: 180px;"
+      style="height: 160px;"
       class="relative  w-64 rounded-md overflow-hidden"
     >
       <img
-        style="width:320px;height:180px"
+        style="width:320px;height:160px"
         :src="thumbnail"
         alt=""
-        class="opacity-75 rounded-md object-cover hover:opacity-100 transition duration-300"
+        class="opacity-75 rounded-md hover:opacity-100 transition duration-300"
       />
       <div
         class="overlay-top absolute top-0 h-16 w-full z-10 pointer-events-none"
@@ -91,7 +91,7 @@ export default {
       return (
         this.title
           .split(" ")
-          .slice(0, 6)
+          .slice(0, 7)
           .join(" ") + "..."
       );
     },

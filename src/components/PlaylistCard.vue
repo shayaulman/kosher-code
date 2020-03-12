@@ -4,11 +4,11 @@
     class="m-1"
   >
     <section
-      style="height: 180px;"
+      style="height: 160px;"
       class="relative bg-custom-bg-card w-64 rounded overflow-hidden "
     >
       <img
-        style="width:320px;height:180px"
+        style="width:320px;height:160px"
         :src="thumbnail"
         height="90"
         class="opacity-75 rounded hover:opacity-50 transition duration-300"
@@ -17,13 +17,15 @@
         class="overlay-top absolute top-0 h-16 w-full z-10 pointer-events-none"
       >
         <h2
-          class="rtl absolute top-0 p-2 px-3 font-light text-sm text-custom-text-primary"
+          :class="direction"
+          class="absolute top-0 p-2 px-3 font-light text-sm text-custom-text-primary Z-40"
         >
-          {{ name }}
+          {{ hebrewName || name }}
         </h2>
       </div>
       <div
-        class="flex flex-col justify-center items-center text-white absolute top-0 right-0 w-1/2 min-h-full bg-black z-20 opacity-85 hover:w-full"
+        :class="amountDirection"
+        class="flex flex-col justify-center items-center text-white absolute top-0 w-1/2 min-h-full bg-black z-0 opacity-85 hover:w-full"
       >
         <h1 class="z-20">{{ amountOfVideos }}</h1>
         <svg class="w-8" viewBox="0 0 24 24" fill="white">
@@ -54,6 +56,7 @@ import { he } from "date-fns/locale";
 export default {
   props: {
     name: String,
+    hebrewName: String,
     amountOfVideos: Number,
     isHebrew: Boolean,
     thumbnail: String
@@ -72,13 +75,21 @@ export default {
   },
 
   computed: {
+    direction() {
+      return this.hebrewName.length === 0 ? "left-0" : "right-0";
+    },
+
     publishTime() {
       const formattedDate = new Date(this.pubDate);
       return format(formattedDate, "MM/dd/yy");
     },
 
-    direction() {
+    textDirection() {
       return this.doesContainHebrewLetters([this.name]) ? "rtl" : "ltr";
+    },
+
+    amountDirection() {
+      return this.hebrewName.length === 0 ? "right-0" : "left-0";
     }
   }
 };

@@ -1,7 +1,7 @@
 module.exports = [
   {
     name: "SoleroWeb PHP",
-    hebrewName: "",
+    hebrewName: "סולרו ווב",
     category: "playlist",
     tags: ["php"],
     thumbnail: "https://i.ytimg.com/vi/I2PDR6Fj6ko/mqdefault.jpg",

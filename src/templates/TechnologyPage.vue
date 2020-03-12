@@ -40,6 +40,7 @@
           v-for="playlist in playlists"
           :key="playlist.node.id"
           :name="playlist.node.name"
+          :hebrew-name="playlist.node.hebrewName"
           :amount-of-videos="playlist.node.amountOfVideos"
           :thumbnail="playlist.node.thumbnail"
         />
@@ -142,6 +143,12 @@ export default {
       return this.loadedPlaylists.filter(playlist =>
         playlist.node.tags.includes(this.$context.technology)
       );
+    },
+
+    direction() {
+      this.loadedVideos.some(video => !this.detectHebrew([video.node.title]))
+        ? "rtl"
+        : "ltr";
     }
   },
   methods: {

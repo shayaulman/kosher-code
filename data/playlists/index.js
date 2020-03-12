@@ -5,6 +5,7 @@ const htmlCssBeginners = require("./html-css-beginners");
 const hightechReact = require("./hightech-react");
 const learncodeacadamyReact = require("./learncodeacadamy-react");
 const tocodeReact = require("./tocode-react");
+const automationcourseJava = require("./automationcourse-java");
 
 module.exports = [
   ...solerowebPHP,
@@ -13,5 +14,6 @@ module.exports = [
   ...htmlCssBeginners,
   ...hightechReact,
   ...learncodeacadamyReact,
-  ...tocodeReact
+  ...tocodeReact,
+  ...automationcourseJava
 ];

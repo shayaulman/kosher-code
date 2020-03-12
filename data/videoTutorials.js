@@ -508,5 +508,29 @@ module.exports = [
       { url: "E8n_k6HNAgs" }
     ],
     color: "#ff7000"
+  },
+
+  {
+    name: "Automation",
+    hebrewName: "אוטומציה",
+    category: "special topics",
+    videoTutorials: [
+      { url: "rqcGfE1ft9g" },
+      { url: "t58fWd1KIXY" },
+      { url: "o9d5Wk-Fjkc" },
+      { url: "RB7PrITqXDA" },
+      { url: "3D82n1bK64k" },
+      { url: "n_eH5dixU_8" },
+      { url: "qls_3SYq3_Y" },
+      { url: "28gHSHBUc-A" },
+      { url: "LDuUf2txvPA" },
+      { url: "zoQrpDg9eys" },
+      { url: "AnAA2-8iIpQ" },
+      { url: "5Ob0LsgbgoE" },
+      { url: "x_w05ubdwgs" },
+      { url: "-sWvsUsrqjI" },
+      { url: "wY8sryzMJvY" }
+    ],
+    color: "#ef5249"
   }
 ];
