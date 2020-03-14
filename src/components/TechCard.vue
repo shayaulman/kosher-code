@@ -38,6 +38,20 @@
   </section>
 </template>
 
+<static-query>
+{
+  categories: allCategory {
+    edges {
+      node {
+        name
+        category
+        amountOfVideos
+      }
+    }
+  }
+}
+</static-query>
+
 <script>
 import AppIcon from "~/components/UI/AppIcon";
 import ExternalIcon from "~/components/UI/ExternalIcon";
@@ -47,13 +61,14 @@ export default {
     name: String,
     hebrewName: String,
     icon: String,
+    amountOfVideos: Number,
     color: String,
     link: String
   },
   data() {
     return {
-      technologies: require("../../data/videoTutorials"),
-      icons: require("~/assets/icons/SvgIcons")
+      icons: require("~/assets/icons/SvgIcons"),
+      playlists: []
     };
   },
   components: {
@@ -61,12 +76,7 @@ export default {
     ExternalIcon,
     YoutubeIcon
   },
-  // I'm so excited with this solution! the power of CSS custom props...
   computed: {
-    amountOfVideos() {
-      return this.technologies.find(t => t.name === this.name).videoTutorials
-        .length;
-    },
     hoverColor() {
       return {
         "--color-hover": this.color

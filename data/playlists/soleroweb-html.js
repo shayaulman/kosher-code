@@ -4,7 +4,6 @@ module.exports = [
     hebrewName: "",
     category: "playlist",
     tags: ["html"],
-    thumbnail: "https://i.ytimg.com/vi/Qd-AjKNbN9s/mqdefault.jpg",
     videoTutorials: [
       { url: "MNYlVTMNq4U" },
       { url: "jYFxIfcxyWU" },

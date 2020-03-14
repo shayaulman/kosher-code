@@ -10,6 +10,7 @@
         :name="category.node.name"
         :hebrewName="category.node.hebrewName"
         :icon="category.icon"
+        :amount-of-videos="amountOfVideos(category.node.name)"
         :color="category.node.color"
         :link="category.node.officialSite"
       />
@@ -25,6 +26,8 @@
         name
         hebrewName
         category
+        tags
+        amountOfVideos
         officialSite
         color
       }
@@ -46,7 +49,8 @@ export default {
 
   data() {
     return {
-      categories: []
+      categories: [],
+      playlists: []
     };
   },
 
@@ -57,6 +61,20 @@ export default {
   },
 
   methods: {
+    amountOfVideos(name) {
+      const playlistVideos = this.playlists.filter(playlist =>
+        playlist.node.tags.includes(name.toLowerCase())
+      );
+
+      const amountOfVideos = this.categories.find(t => t.node.name === name)
+        .node.amountOfVideos;
+
+      const amountOfPlaylistVideos = playlistVideos.reduce(
+        (a, v) => a + v.node.amountOfVideos,
+        0
+      );
+      return amountOfVideos + amountOfPlaylistVideos;
+    },
     sortAlphabeically(array) {
       return array.sort((a, b) =>
         a.node.name.toLowerCase().localeCompare(b.node.name.toLowerCase())
@@ -65,6 +83,10 @@ export default {
   },
   mounted() {
     this.categories = this.sortAlphabeically(this.$static.categories.edges);
+    this.playlists = this.categories.filter(
+      cat => cat.node.category === "playlist"
+    );
+    console.log(this.playlists);
   }
 };
 </script>

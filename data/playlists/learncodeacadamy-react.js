@@ -4,7 +4,6 @@ module.exports = [
     hebrewName: "",
     category: "playlist",
     tags: ["react"],
-    thumbnail: "https://i.ytimg.com/vi/MhkGQAoc7bc/mqdefault.jpg",
     videoTutorials: [
       { url: "MhkGQAoc7bc" },
       { url: "fd2Cayhez58" },

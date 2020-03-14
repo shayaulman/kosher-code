@@ -4,7 +4,6 @@ module.exports = [
     hebrewName: "מה זה פייתון",
     category: "playlist",
     tags: ["python"],
-    thumbnail: "https://i.ytimg.com/vi/FSq6ghoEFq8/mqdefault.jpg",
     videoTutorials: [
       { url: "FSq6ghoEFq8" },
       { url: "DzTDjSu3qcU" },

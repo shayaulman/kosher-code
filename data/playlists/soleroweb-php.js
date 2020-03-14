@@ -1,10 +1,9 @@
 module.exports = [
   {
     name: "SoleroWeb PHP",
-    hebrewName: "סולרו ווב",
+    hebrewName: "סולרו ווב - PHP",
     category: "playlist",
     tags: ["php"],
-    thumbnail: "https://i.ytimg.com/vi/I2PDR6Fj6ko/mqdefault.jpg",
     videoTutorials: [
       { url: "F7zK71cnSK4" },
       { url: "hw8c0TtASdc" },

@@ -4,7 +4,6 @@ module.exports = [
     hebrewName: "HTML ו-CSS למתחילים",
     category: "playlist",
     tags: ["html", "css"],
-    thumbnail: "https://i.ytimg.com/vi/Nu3aG3V9Ydc/mqdefault.jpg",
     videoTutorials: [
       { url: "x9pwni_6QxY" },
       { url: "hjg-0o__pRg" },

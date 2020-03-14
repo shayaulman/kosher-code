@@ -72,7 +72,7 @@ module.exports = function(api) {
         hebrewName: category.hebrewName,
         category: category.category,
         tags: category.tags,
-        thumbnail: category.thumbnail,
+        thumbnail: `https://i.ytimg.com/vi/${category.videoTutorials[0].url}/mqdefault.jpg`,
         officialSite: category.officialSite,
         color: category.color,
         amountOfVideos: category.videoTutorials.length
