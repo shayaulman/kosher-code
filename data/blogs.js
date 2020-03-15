@@ -19,6 +19,16 @@ module.exports = [
     link: "https://camelcase.blog/"
   },
   {
+    name: "בלוג ארכיטקטורת תוכנה",
+    author: "ליאור בר-און",
+    link: "http://www.softwarearchiblog.com/"
+  },
+  {
+    name: "ריאקט ישראל",
+    author: "רועי ברקוביץ",
+    link: "https://www.react-israel.co.il/"
+  },
+  {
     name: "savvy",
     author: "רועי יוסף",
     desc: "מדברים וורדפרס",
@@ -35,6 +45,15 @@ module.exports = [
     author: "ינון פרק",
     desc: "טיפים קצרים וחדשות למתכנתים",
     link: "https://www.tocode.co.il/blog"
+  },
+  {
+    name: "גו-קוד",
+    author: "אלעד כהן",
+    link: "https://blog.gocode.co.il/"
+  },
+  {
+    name: "דורזקי",
+    link: "dorzki.co.il/blog/"
   },
   {
     name: "",
