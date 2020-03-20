@@ -160,6 +160,7 @@ export default {
   },
   created() {
     this.playlistVideos = this.$page.videos.edges;
+    console.log(this.playlistVideos)
   },
   mounted() {
     // console.log(this.$static.categories.edges);

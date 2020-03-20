@@ -141,7 +141,9 @@ module.exports = [
     category: "framework",
     officialSite: "angularjs.org",
     videoTutorials: [
+      { url: "OPxeCiy0RdY" },
       { url: "KyWkKvpr_Sk" },
+      { url: "BTVSIYeiCss" },
       { url: "nebg6X1El2g" },
       { url: "CGhJBNkYv8M" },
       { url: "NeE8zUm5NZE" },
@@ -150,8 +152,6 @@ module.exports = [
       { url: "TRrL5j3MIvo" },
       { url: "cdG_T6ufcbE" },
       { url: "gu6TfGZXUZs" },
-      { url: "OPxeCiy0RdY" },
-      { url: "BTVSIYeiCss" },
       { url: "3TWiSyjCAtw" },
       { url: "Yj-kygWJEgg" },
       { url: "hAh2xJ7Yd6Y" },
@@ -567,5 +567,43 @@ module.exports = [
       { url: "uK2RnIzrQ0M" }
     ],
     color: "#ff3c00"
+  },
+
+  {
+    name: "Google",
+    hebrewName: "גוגל",
+    category: "frameworks",
+    officialSite: "",
+    videoTutorials: [
+      // { url: "cNPCgJW8c-" },
+      { url: "8sGY55yxicA" },
+      { url: "U5aeM5dvUpA" },
+      { url: "jsRVHeQd5kU" },
+      { url: "sioEY4tWmLI" },
+      { url: "2Vf1D-rUMwE" },
+      { url: "H4ae9Jv5B3I" },
+      { url: "k1D0_wFlXgo" },
+      { url: "Qd64idiKZWw" },
+      { url: "I5-yxvuUY_U" },
+      { url: "ZE8ODPL2VPI" },
+      { url: "Zxf1mnP5zcw" },
+      { url: "5oG2Q2GMOBE" },
+      { url: "urLA8z6-l3k" },
+      { url: "oVr6unKZbg4" },
+      { url: "LbKzTxr0tPw" },
+      { url: "idfCgazSkmM" },
+      { url: "vBtNTIkUFGo" },
+      { url: "9v3xEt0nLRU" },
+      { url: "A_ipmbJPWv0" },
+      { url: "AG3Ftz0I678" },
+      { url: "6p_2Ev9BeoE" },
+      { url: "SzHP-1To_KE" },
+      { url: "gErFFj1FnQQ" },
+      { url: "kKGCD0XwBxk" },
+      { url: "MmYFGAYr8gY" },
+      { url: "bE309sLiHUw" },
+      { url: "hYBxbPqvRZk" },
+    ],
+    color: "#3c79e6"
   }
 ];
