@@ -572,7 +572,7 @@ module.exports = [
   {
     name: "Google",
     hebrewName: "גוגל",
-    category: "frameworks",
+    category: "framework",
     officialSite: "",
     videoTutorials: [
       // { url: "cNPCgJW8c-" },

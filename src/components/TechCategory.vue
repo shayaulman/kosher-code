@@ -86,7 +86,6 @@ export default {
     this.playlists = this.categories.filter(
       cat => cat.node.category === "playlist"
     );
-    console.log(this.playlists);
   }
 };
 </script>
