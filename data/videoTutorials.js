@@ -88,7 +88,7 @@ module.exports = [
       { url: "EMFBOb6cBBs" },
       { url: "k-bPNMY63DI" },
       { url: "8e0XHPylhj0" },
-      { url: "zvxgWzr5rwE" }
+      { url: "zvxgWzr5rwE" },
     ],
     color: "#41b883"
   },
@@ -147,6 +147,7 @@ module.exports = [
       { url: "nebg6X1El2g" },
       { url: "CGhJBNkYv8M" },
       { url: "NeE8zUm5NZE" },
+      { url: "sKriDWgnbf8" },
       { url: "nqUvSkZyAZU" },
       { url: "6J08m1H2BME" },
       { url: "TRrL5j3MIvo" },
@@ -605,5 +606,51 @@ module.exports = [
       { url: "hYBxbPqvRZk" },
     ],
     color: "#3c79e6"
-  }
+  },
+
+  {
+    name: "ASP.NET",
+    hebrewName: "ASP.NET",
+    category: "framework",
+    officialSite: "https://dotnet.microsoft.com/apps/aspnet",
+    videoTutorials: [
+      { url: "E7Voso411Vs" },
+      { url: "Lp7nSImO5vk" },
+      { url: "Mu2jol8EmVo" },
+      { url: "4EGDxkWoUOY" },
+      { url: "z5CIMlLNOe4" },
+      { url: "KVlXccl-XBA" },
+      { url: "_gqpBLNo7wo" },
+      { url: "MFVhhjQhUFU" },
+      { url: "mDYJziUrESk" },
+      { url: "IAq7JhGEKQU" },
+      { url: "TsH3BzIPzeU" },
+      { url: "d4rYl3LpIxA" },
+      { url: "YNuPqJ-oX80" },
+      { url: "CnZ-tQxWRmU" },
+      { url: "pvma3fe_JII" },
+      { url: "ShQRrrhrNCY" },
+      { url: "yDp-sHGKTWo" },
+      { url: "k0Xy-5zE9to" },
+      { url: "HyGMH1hG73A" },
+      { url: "IkWnZFdbMwc" },
+      { url: "6rl7-tVzHc0" },
+    ],
+    color: "#a96af6"
+  },
+
+  {
+    name: "typescript",
+    hebrewName: "טייפסקריפט",
+    category: "programming language",
+    officialSite: "https://www.typescriptlang.org/",
+    videoTutorials: [
+      { url: "hwHS-9gWgXQ" },
+      { url: "-PR_XqW9JJU" },
+      { url: "5o3UTbCC6MQ" },
+      { url: "TvD_ia7vkkA" },
+      { url: "qWSPog9Fz-o" },
+    ],
+    color: "#007acc"
+  },
 ];

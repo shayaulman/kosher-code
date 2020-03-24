@@ -9,6 +9,7 @@ const tocodeReact = require("./tocode-react");
 const automationcourseJava = require("./automationcourse-java");
 const es6InHebrew = require("./es6inhebrew");
 const reshetechCss = require("./reshetech-css");
+const onlineschoolAspnet = require("./onlineschool-aspnet");
 
 module.exports = [
   ...solerowebPHP,
@@ -21,5 +22,6 @@ module.exports = [
   ...tocodeReact,
   ...automationcourseJava,
   ...es6InHebrew,
-  ...reshetechCss
+  ...reshetechCss,
+  ...onlineschoolAspnet
 ];

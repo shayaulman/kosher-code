@@ -4,7 +4,6 @@ module.exports = [
     hebrewName: "ES6 בעברית",
     category: "playlist",
     tags: ["javascript"],
-    thumbnail: "https://i.ytimg.com/vi/gB-xkaYGyBM/mqdefault.jpg",
     videoTutorials: [
       { url: "aPnnFWkGKcI" },
       { url: "hgN2_iwXZIA" },
