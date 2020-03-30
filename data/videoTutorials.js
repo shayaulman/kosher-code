@@ -640,7 +640,7 @@ module.exports = [
   },
 
   {
-    name: "typescript",
+    name: "Typescript",
     hebrewName: "טייפסקריפט",
     category: "programming language",
     officialSite: "https://www.typescriptlang.org/",
@@ -652,5 +652,21 @@ module.exports = [
       { url: "qWSPog9Fz-o" },
     ],
     color: "#007acc"
+  },
+
+  {
+    name: "Sequelize",
+    hebrewName: "Sequelize",
+    category: "framework",
+    officialSite: "https://sequelize.org",
+    videoTutorials: [
+      { url: "vDdJBpOhTNo" },
+      { url: "53bdrz7cZ-c" },
+      { url: "n6zS5etfaTg" },
+      { url: "bOHysWYMZM0" },
+      { url: "hNWDLifTh3s" },
+      { url: "jVJUD6Kl8CM" },
+    ],
+    color: "#2f406a"
   },
 ];
