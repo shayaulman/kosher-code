@@ -10,6 +10,7 @@ const automationcourseJava = require("./automationcourse-java");
 const es6InHebrew = require("./es6inhebrew");
 const reshetechCss = require("./reshetech-css");
 const onlineschoolAspnet = require("./onlineschool-aspnet");
+const angular4Hebrew = require("./angular4-hebrew");
 
 module.exports = [
   ...solerowebPHP,
@@ -23,5 +24,6 @@ module.exports = [
   ...automationcourseJava,
   ...es6InHebrew,
   ...reshetechCss,
-  ...onlineschoolAspnet
+  ...onlineschoolAspnet,
+  ...angular4Hebrew
 ];
