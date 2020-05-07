@@ -11,6 +11,7 @@ const es6InHebrew = require("./es6inhebrew");
 const reshetechCss = require("./reshetech-css");
 const onlineschoolAspnet = require("./onlineschool-aspnet");
 const angular4Hebrew = require("./angular4-hebrew");
+const jsvideotutorial = require("./js-videotutorial");
 
 module.exports = [
   ...solerowebPHP,
@@ -25,5 +26,6 @@ module.exports = [
   ...es6InHebrew,
   ...reshetechCss,
   ...onlineschoolAspnet,
-  ...angular4Hebrew
+  ...angular4Hebrew,
+  ...jsvideotutorial
 ];
