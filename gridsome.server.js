@@ -28,13 +28,14 @@ module.exports = function(api) {
 
     const VideoCollection = actions.addCollection("Video");
     for (const d of data) {
-      for (const item of d.items) {
+      for (const [index, item] of d.items.entries()) {
         // API returns reversed
         const technologyName = videoTutorials.find(tech =>
           tech.videoTutorials.find(video => video.url === item.id)
         );
         VideoCollection.addNode({
           id: item.id,
+          index,
           name: technologyName.name.toLowerCase(),
           category: technologyName.category,
           title: item.snippet.title,

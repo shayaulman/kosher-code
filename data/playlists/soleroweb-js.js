@@ -27,9 +27,6 @@ module.exports = [
       { url: "ctmXEDclb7c" },
       { url: "PaPMOL12V3g" },
       { url: "-c055WT4-NU" },
-      { url: "klLMeL7I4O0" },
-      { url: "Jakoi0G8lBg" },
-      { url: "O8wwnhdkPE4" }
     ]
   }
 ];

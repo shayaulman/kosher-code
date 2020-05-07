@@ -66,7 +66,7 @@
 
 <page-query>
  query Vid ($name: String! $page: Int){
- videos: allVideo (sortBy: "index" order:ASC filter: {name: {eq: $name}} perPage: 100, page: $page)  @paginate {
+ videos: allVideo (filter: {name: {eq: $name}} perPage: 100, page: $page)  @paginate {
    pageInfo {
 			totalPages
 			currentPage
@@ -74,6 +74,7 @@
     edges {
       node {
         id
+        index
         title
         description
         name
@@ -159,8 +160,10 @@ export default {
     }
   },
   created() {
-    this.playlistVideos = this.$page.videos.edges;
-    console.log(this.playlistVideos)
+    this.playlistVideos = this.$page.videos.edges.sort((a, b) => {
+      return a.node.index > b.node.index;
+    });
+    console.log(this.playlistVideos);
   },
   mounted() {
     // console.log(this.$static.categories.edges);
