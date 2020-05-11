@@ -572,7 +572,6 @@ module.exports = [
       { url: "zyvCj36_Yiw" },
       { url: "n7D22ru2Oss" },
       { url: "iUtcTEX6cps" },
-      { url: "lisiwUZJXqQ" },
       { url: "e7Yj6vLyYOI" },
       { url: "iJqB6UsM-hs" },
       { url: "a40yI62Kqh8" },
@@ -793,5 +792,25 @@ module.exports = [
       { url: "4XtDKOg3e1M" },
     ],
     color: "#f5be06",
+  },
+
+  {
+    name: "GraphQL",
+    hebrewName: "Graphql",
+    category: "framework",
+    officialSite: "https://graphql.org/",
+    videoTutorials: [
+      { url: "VjXb3PRL9WI" },
+      { url: "anW5Qpuh5kI" },
+      { url: "7wzR4Ig5pTI" },
+      { url: "PeAOEAmR0D0" },
+      { url: "lAJWHHUz8_8" },
+      { url: "Y0lDGjwRYKw" },
+      { url: "00TqfHWQRoM" },
+      { url: "-cCbTcNyk-Y" },
+      { url: "OFT9bSv3aYA" },
+      { url: "eMjju1nQ1F8" },
+    ],
+    color: "#E535AB",
   },
 ];
