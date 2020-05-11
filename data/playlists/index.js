@@ -12,6 +12,7 @@ const reshetechCss = require("./reshetech-css");
 const onlineschoolAspnet = require("./onlineschool-aspnet");
 const angular4Hebrew = require("./angular4-hebrew");
 const jsvideotutorial = require("./js-videotutorial");
+const linuxOnlineschool = require("./linux-onlineschool");
 
 module.exports = [
   ...solerowebPHP,
@@ -27,5 +28,6 @@ module.exports = [
   ...reshetechCss,
   ...onlineschoolAspnet,
   ...angular4Hebrew,
-  ...jsvideotutorial
+  ...jsvideotutorial,
+  ...linuxOnlineschool
 ];
