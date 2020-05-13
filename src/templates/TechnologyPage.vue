@@ -71,7 +71,7 @@
 
 <page-query>
  query Vid ($technology: String! $page: Int){
- videos: allVideo (sortBy: "index" order:ASC filter: {name: {eq: $technology}} perPage: 16, page: $page)  @paginate {
+ videos: allVideo (sortBy: "index" order:ASC filter: {name: {eq: $technology}} perPage: 20, page: $page)  @paginate {
    pageInfo {
 			totalPages
 			currentPage
