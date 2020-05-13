@@ -813,4 +813,24 @@ module.exports = [
     ],
     color: "#E535AB",
   },
+
+  {
+    name: "Deno",
+    hebrewName: "דנו",
+    category: "programming language",
+    officialSite: "https://deno.land/",
+    videoTutorials: [
+      { url: "lcoU9jtsK24" },
+      { url: "1gIiZfSbEAE" },
+      { url: "zFf_fcn0cI0" },
+      { url: "HjdJzNoT_qg" },
+      { url: "z6JRlx5NC9E" },
+      { url: "F0G9lZ7gecE" },
+      { url: "948by_y1VKI" },
+      { url: "1gIiZfSbEAE" },
+      { url: "z6JRlx5NC9E" },
+      { url: "zFf_fcn0cI0" }
+    ],
+    color: "#818385",
+  },
 ];
