@@ -818,6 +818,7 @@ module.exports = [
     category: "programming language",
     officialSite: "https://deno.land/",
     videoTutorials: [
+      { url: "gzRYCrMUDQU" },
       { url: "lcoU9jtsK24" },
       { url: "1gIiZfSbEAE" },
       { url: "zFf_fcn0cI0" },
