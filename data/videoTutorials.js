@@ -188,8 +188,6 @@ module.exports = [
       { url: "EO9Ck9vUhmo" },
       { url: "zYq0jLT252I" },
       { url: "blXtHRbQm_s" },
-      { url: "nqUvSkZyAZU" },
-      { url: "NeE8zUm5NZE" },
     ],
     color: "#c5002a",
   },
