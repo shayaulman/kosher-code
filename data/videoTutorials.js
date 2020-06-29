@@ -186,6 +186,8 @@ module.exports = [
       { url: "i9MHigUZKEM" },
       { url: "h_JaD1wnt6Y" },
       { url: "EO9Ck9vUhmo" },
+      { url: "zYq0jLT252I" },
+      { url: "blXtHRbQm_s" },
     ],
     color: "#c5002a",
   },
@@ -818,6 +820,7 @@ module.exports = [
     category: "programming language",
     officialSite: "https://deno.land/",
     videoTutorials: [
+      { url: "gzRYCrMUDQU" },
       { url: "lcoU9jtsK24" },
       { url: "1gIiZfSbEAE" },
       { url: "zFf_fcn0cI0" },
