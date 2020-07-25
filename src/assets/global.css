@@ -2,7 +2,7 @@
 
 html {
   direction: rtl;
-  font-family: "Noto Sans Hebrew", "Roboto", sans-serif;
+  font-family: Merriweather, "Noto Sans Hebrew", "Roboto", serif;
   moz-osx-font-smoothing: grayscale;
 }
 
@@ -16,8 +16,8 @@ h1 {
 }
 
 .theme-dark {
-  --bg-primary: #36393f;
-  --bg-card: #292b2f;
+  --bg-primary: #222831;
+  --bg-card: #191c23;
   --bg-card-2: #282e39;
   --text-primary: white;
   --text-secondary: #cbd5e0;

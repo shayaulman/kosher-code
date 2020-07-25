@@ -3,10 +3,9 @@
     @mouseenter.native="hover=true"
     @mouseleave.native="hover=false"
     :to="`video-tutorials/${category}/${id}`"
-    :class="{'elevation-high': hover}"
     class="m-2"
   >
-    <section class="relative w-64 rounded-md overflow-hidden">
+    <section :class="{'elevation-high': hover}" class="relative w-64 rounded-md overflow-hidden">
       <img
         style="width:320px;height:150px"
         :src="thumbnail"
@@ -16,21 +15,19 @@
       />
       <div
         style="height: 150px;"
-        :class="[ hover? 'bg-black' : 'bg-custom-bg-card' ]"
-        class="relative py-4 w-full z-10 transition duration-300"
+        class="relative px-1 py-3 w-full bg-custom-bg-card z-10 transition duration-300"
       >
         <div v-if="isHebrew" class="israel-icon w-10 absolute left-0 z-20 rounded">
           <israel-flag-icon />
         </div>
         <h2
           :class="{ 'rtl right-0': doesContainHebrewLetters([title]) }"
-          class="p-2 px-3 font-light text-sm text-gray-300"
+          class="p-2 px-3 font-light text-sm text-custom-text-secondary"
         >{{ formattedTitle }}</h2>
-        <p class="absolute bottom-0 p-2 px-3 text-xxs font-hairline text-gray-400">{{ publishTime }}</p>
+        <p
+          class="absolute bottom-0 p-2 px-3 text-xxs font-hairline text-custom-text-3"
+        >{{ publishTime }}</p>
       </div>
-      <!-- <div class="overlay-bottom  bottom-0 h-12 w-full z-10 pointer-events-none">
-      </div>-->
-
       <div class="relative"></div>
       <div class="z-40"></div>
     </section>
@@ -52,26 +49,26 @@ export default {
     isHebrew: Boolean,
     category: String,
     thumbnail: String,
-    color: String
+    color: String,
   },
 
   components: {
     AppLoader,
-    IsraelFlagIcon
+    IsraelFlagIcon,
   },
 
   data() {
     return {
       now: new Date(),
-      hover: false
+      hover: false,
     };
   },
 
   methods: {
     doesContainHebrewLetters(textArr) {
       const HEBREW = RegExp("[\u0590-\u05FF]");
-      return textArr.some(txt => HEBREW.test(txt));
-    }
+      return textArr.some((txt) => HEBREW.test(txt));
+    },
   },
 
   computed: {
@@ -96,8 +93,8 @@ export default {
 
     direction() {
       return this.doesContainHebrewLetters([this.title]) ? "rtl" : "ltr";
-    }
-  }
+    },
+  },
 };
 </script>
 

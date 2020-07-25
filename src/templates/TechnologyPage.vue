@@ -2,40 +2,32 @@
   <Layout>
     <section class="p-12 mx-auto">
       <div class="w-16 mx-auto">
-        <app-icon
-          v-if="$context.technology !== 'elementor'"
-          :icon="$context.technology"
-        />
+        <app-icon v-if="$context.technology !== 'elementor'" :icon="$context.technology" />
       </div>
       <div>
         <h1
           :style="`color: ${$context.color}`"
           class="p-2 mb-12 text-lg text-center text-custom-text-primary"
-        >
-          {{ $context.hebrewName }}
-        </h1>
+        >{{ $context.hebrewName }}</h1>
       </div>
       <div class="flex justify-between">
         <h3 class="text-xs text-custom-text-secondary opacity-75">
           נמצאו
-          <span class="text-custom-text-primary">{{
+          <span class="text-custom-text-primary">
+            {{
             $context.amountOfVideos
-          }}</span>
+            }}
+          </span>
           סרטונים
         </h3>
         <button
           @click="toggle"
           class="my-1 px-4 py-1 text-white text-xs bg-black rounded-full shadow-outline focus:outline-none"
-        >
-          {{ hebrewOnly ? "הצג כל הסרטונים" : "הצג רק סרטונים בעברית" }}
-        </button>
+        >{{ hebrewOnly ? "הצג את כל הסרטונים" : "הצג רק סרטונים בעברית" }}</button>
       </div>
     </section>
     <transition-group name="fade" mode="in-out" style="direction:ltr">
-      <section
-        key="213"
-        class="max-w-6xl mx-auto mb-24 flex flex-wrap justify-center"
-      >
+      <section key="213" class="max-w-6xl mx-auto mb-24 flex flex-wrap justify-center">
         <playlist-card
           v-for="playlist in playlists"
           :key="playlist.node.id"
@@ -43,6 +35,7 @@
           :hebrew-name="playlist.node.hebrewName"
           :amount-of-videos="playlist.node.amountOfVideos"
           :thumbnail="playlist.node.thumbnail"
+          :is-hebrew="!!playlist.node.hebrewName.length"
         />
         <video-card
           v-for="course in videos"
@@ -117,7 +110,7 @@ export default {
   components: {
     VideoCard,
     PlaylistCard,
-    AppIcon
+    AppIcon,
   },
   data() {
     return {
@@ -125,7 +118,7 @@ export default {
       hebrewOnly: false,
       loadedVideos: [],
       loadedPlaylists: [],
-      currentPage: 1
+      currentPage: 1,
     };
   },
 
@@ -140,16 +133,16 @@ export default {
     },
 
     playlists() {
-      return this.loadedPlaylists.filter(playlist =>
+      return this.loadedPlaylists.filter((playlist) =>
         playlist.node.tags.includes(this.$context.technology)
       );
     },
 
     direction() {
-      this.loadedVideos.some(video => !this.detectHebrew([video.node.title]))
+      this.loadedVideos.some((video) => !this.detectHebrew([video.node.title]))
         ? "rtl"
         : "ltr";
-    }
+    },
   },
   methods: {
     async infiniteHandler($state) {
@@ -177,8 +170,8 @@ export default {
       const HEBREW = RegExp("[\u0590-\u05FF]");
       const WORD_HEBREW = new RegExp("hebrew", "i");
 
-      const CONTAINS_HEBREW = txtArr.some(txt => HEBREW.test(txt));
-      const CONTAINS_THE_WORD_HEBREW = txtArr.some(txt =>
+      const CONTAINS_HEBREW = txtArr.some((txt) => HEBREW.test(txt));
+      const CONTAINS_THE_WORD_HEBREW = txtArr.some((txt) =>
         WORD_HEBREW.test(txt)
       );
 
@@ -187,8 +180,8 @@ export default {
 
     doesContainWordHebrew(textArr) {
       const WORD_HEBREW = new RegExp("(hebrew)", "i");
-      return textArr.some(txt => WORD_HEBREW.test(txt));
-    }
+      return textArr.some((txt) => WORD_HEBREW.test(txt));
+    },
   },
   created() {
     this.loadedVideos.push(...this.$page.videos.edges);
@@ -196,7 +189,7 @@ export default {
   mounted() {
     this.technologies = this.$page.videos.edges;
     this.loadedPlaylists = this.$static.categories.edges;
-  }
+  },
 };
 </script>
 

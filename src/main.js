@@ -23,13 +23,18 @@ export default function(Vue, { router, head, isClient, appOptions }) {
 
   appOptions.store = new Vuex.Store({
     state: {
-      theme: "theme-dark"
+      theme: getTheme(),
     },
     mutations: {
-      toggleTheme() {
-        this.state.theme =
-          this.state.theme === "theme-dark" ? "theme-light" : "theme-dark";
-      }
-    }
+      toggleTheme(state) {
+        state.theme =
+          state.theme === "theme-dark" ? "theme-light" : "theme-dark";
+        localStorage.setItem("theme", state.theme);
+      },
+    },
   });
+}
+
+function getTheme() {
+  return localStorage.getItem("theme") || "theme-dark";
 }
