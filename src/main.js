@@ -36,5 +36,7 @@ export default function(Vue, { router, head, isClient, appOptions }) {
 }
 
 function getTheme() {
-  return localStorage.getItem("theme") || "theme-dark";
+  if (process.isClient) {
+    return localStorage.getItem("theme") || "theme-dark";
+  }
 }
