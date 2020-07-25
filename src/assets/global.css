@@ -2,7 +2,7 @@
 
 html {
   direction: rtl;
-  font-family: "Noto Sans Hebrew", "Roboto", sans-serif;
+  font-family: Merriweather, "Noto Sans Hebrew", "Roboto", serif;
   moz-osx-font-smoothing: grayscale;
 }
 

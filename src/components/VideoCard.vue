@@ -1,46 +1,34 @@
 <template>
-  <g-link :to="`video-tutorials/${category}/${id}`" class="m-2">
-    <section
-      style="height: 160px;"
-      class="relative  w-64 rounded-md overflow-hidden"
-    >
+  <g-link
+    @mouseenter.native="hover=true"
+    @mouseleave.native="hover=false"
+    :to="`video-tutorials/${category}/${id}`"
+    class="m-2"
+  >
+    <section :class="{'elevation-high': hover}" class="relative w-64 rounded-md overflow-hidden">
       <img
-        style="width:320px;height:160px"
+        style="width:320px;height:150px"
         :src="thumbnail"
-        alt=""
-        class="opacity-75 rounded-md hover:opacity-100 transition duration-300"
+        alt
+        :class="{'zoom-in': hover}"
+        class="rounded-t-md transition duration-300"
       />
       <div
-        class="overlay-top absolute top-0 h-16 w-full z-10 pointer-events-none"
+        style="height: 150px;"
+        class="relative px-1 py-3 w-full bg-custom-bg-card z-10 transition duration-300"
       >
-        <h2
-          :class="{ 'rtl right-0': doesContainHebrewLetters([title]) }"
-          class="absolute top-0 p-2 px-3 font-light text-sm text-custom-text-primary"
-        >
-          {{ formattedTitle }}
-        </h2>
-      </div>
-      <div
-        class="overlay-bottom absolute bottom-0 h-12 w-full z-10 pointer-events-none"
-      >
-        <p
-          class="absolute bottom-0 p-2 px-3 text-xxs font-hairline text-gray-500"
-        >
-          {{ publishTime }}
-        </p>
-      </div>
-
-      <div class="relative">
-        <!-- <div class="absolute top-0 w-full flex justify-center -z-10">
-          <app-loader :color="color" />
-        </div> -->
-        <div
-          v-if="isHebrew"
-          class="w-6 m-1 absolute bottom-0 right-0 opacity-75 z-20 overflow-hidden shadow-lg"
-        >
+        <div v-if="isHebrew" class="israel-icon w-10 absolute left-0 z-20 rounded">
           <israel-flag-icon />
         </div>
+        <h2
+          :class="{ 'rtl right-0': doesContainHebrewLetters([title]) }"
+          class="p-2 px-3 font-light text-sm text-custom-text-secondary"
+        >{{ formattedTitle }}</h2>
+        <p
+          class="absolute bottom-0 p-2 px-3 text-xxs font-hairline text-custom-text-3"
+        >{{ publishTime }}</p>
       </div>
+      <div class="relative"></div>
       <div class="z-40"></div>
     </section>
   </g-link>
@@ -61,25 +49,26 @@ export default {
     isHebrew: Boolean,
     category: String,
     thumbnail: String,
-    color: String
+    color: String,
   },
 
   components: {
     AppLoader,
-    IsraelFlagIcon
+    IsraelFlagIcon,
   },
 
   data() {
     return {
-      now: new Date()
+      now: new Date(),
+      hover: false,
     };
   },
 
   methods: {
     doesContainHebrewLetters(textArr) {
       const HEBREW = RegExp("[\u0590-\u05FF]");
-      return textArr.some(txt => HEBREW.test(txt));
-    }
+      return textArr.some((txt) => HEBREW.test(txt));
+    },
   },
 
   computed: {
@@ -88,12 +77,10 @@ export default {
       if (titleLength < 6) {
         return this.title;
       }
-      return (
-        this.title
-          .split(" ")
-          .slice(0, 7)
-          .join(" ") + "..."
-      );
+      return this.title;
+      // .split(" ")
+      // .slice(0, 13)
+      // .join(" ") + "..."
     },
     publishTime() {
       const formattedDate = new Date(this.pubDate);
@@ -106,17 +93,25 @@ export default {
 
     direction() {
       return this.doesContainHebrewLetters([this.title]) ? "rtl" : "ltr";
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style scoped>
-.overlay-top {
-  background: linear-gradient(0deg, transparent, var(--bg-card) 100%);
+.israel-icon {
+  top: -17px;
+  left: 80%;
 }
 
-.overlay-bottom {
-  background: linear-gradient(0deg, var(--bg-card), transparent 100%);
+.zoom-in {
+  transform: scale(1.02);
+}
+
+.elevation-high {
+  transition: 0.3s ease;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.24);
 }
 </style>

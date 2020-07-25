@@ -19,38 +19,28 @@
             ></iframe>
           </div>
           <section style="width:640px" class="my-3">
-            <h1 class="my-1 py-2 text-custom-text-primary text-lg">
-              {{ $page.videos.edges[activeVideo - 1].node.title }}
-            </h1>
-            <p
-              v-html="description"
-              class="text-custom-text-3 text-sm font-thin"
-            ></p>
+            <h1
+              class="my-1 py-2 text-custom-text-primary text-lg"
+            >{{ $page.videos.edges[activeVideo - 1].node.title }}</h1>
+            <p v-html="description" class="text-custom-text-3 text-sm font-thin"></p>
             <button
               @click="showMore = !showMore"
               class="m-2 p-2 rounded text-custom-text-secondary font-bold outline-none"
             >
               {{
-                isHebrew
-                  ? showMore
-                    ? "הצג פחות"
-                    : "הצג יותר"
-                  : showMore
-                  ? "Show Less"
-                  : "Show More"
+              isHebrew
+              ? showMore
+              ? "הצג פחות"
+              : "הצג יותר"
+              : showMore
+              ? "Show Less"
+              : "Show More"
               }}
             </button>
           </section>
         </div>
-        <section
-          :style="`height: ${videoFrameHeight}px`"
-          class="w-1/3 mx-4 overflow-scroll"
-        >
-          <playlist-list
-            @selection="handle"
-            :videos="$page.videos.edges"
-            :active="activeVideo"
-          />
+        <section :style="`height: ${videoFrameHeight}px`" class="w-1/3 mx-4 overflow-scroll">
+          <playlist-list @selection="handle" :videos="$page.videos.edges" :active="activeVideo" />
         </section>
       </div>
 
@@ -59,7 +49,7 @@
         class="py-6 mt-3 text-xs text-custom-text-3 font-hairline border-b border-custom-bg-card"
       >
         {{ formattedTime }}
-      </h4> -->
+      </h4>-->
     </section>
   </Layout>
 </template>
@@ -98,7 +88,7 @@ export default {
       playlistVideos: [],
       activeVideo: 1,
       showMore: false,
-      videoFrameHeight: 0
+      videoFrameHeight: 0,
     };
   },
   computed: {
@@ -134,7 +124,7 @@ export default {
       return this.formatter(
         this.playlistVideos[this.activeVideo].node.description
       );
-    }
+    },
   },
 
   methods: {
@@ -145,9 +135,9 @@ export default {
     formatter(text) {
       let createTextLinks = (text || "").replace(
         /([^\S]|^)(((https?\:\/\/)|(www\.))(\S+))/gi,
-        function(match, space, url) {
+        function (match, space, url) {
           var hyperlink = url;
-          if (!hyperlink.match("^https?:\/\/")) {
+          if (!hyperlink.match("^https?://")) {
             hyperlink = "http://" + hyperlink;
           }
           return (
@@ -157,18 +147,17 @@ export default {
       );
 
       return createTextLinks.replace(/\n/g, "<br/>");
-    }
+    },
   },
   created() {
     this.playlistVideos = this.$page.videos.edges.sort((a, b) => {
       return a.node.index > b.node.index;
     });
-    console.log(this.playlistVideos);
   },
   mounted() {
     // console.log(this.$static.categories.edges);
     this.videoFrameHeight = this.$refs.video.clientHeight;
-  }
+  },
 };
 </script>
 
