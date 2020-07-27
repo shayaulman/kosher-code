@@ -26,10 +26,15 @@ export default function(Vue, { router, head, isClient, appOptions }) {
       theme: getTheme(),
     },
     mutations: {
-      toggleTheme(state) {
+      TOGGLE_THEME(state) {
         state.theme =
           state.theme === "theme-dark" ? "theme-light" : "theme-dark";
-        localStorage.setItem("theme", state.theme);
+        if (process.isClient) {
+          localStorage.setItem("theme", state.theme);
+        }
+      },
+      SET_THEME(state) {
+        state.theme = getTheme();
       },
     },
   });
@@ -39,4 +44,5 @@ function getTheme() {
   if (process.isClient) {
     return localStorage.getItem("theme") || "theme-dark";
   }
+  return "theme-dark";
 }
