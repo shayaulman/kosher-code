@@ -1,18 +1,6 @@
-# Gridsome
+# Kosher-code
+More on the project see [here](https://www.prog.co.il/threads/%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA%D7%99%D7%9D-%D7%9E%D7%90%D7%92%D7%A8-%D7%9E%D7%99%D7%95%D7%97%D7%93-%D7%9C%D7%97%D7%95%D7%9E%D7%A8%D7%99-%D7%9C%D7%9E%D7%99%D7%93%D7%94.523947/#post-7357839) (Hebrew).
 
-If you don't have an existing Gridsome project, check out their docs on how to get started.
-
-This plugin makes use of the gridsome-plugin-tailwindcss plugin to add
-Tailwind, PurgeCSS, postcss-preset-env, and postcss-import to your build chain.
-It includes both gridsome-plugin-tailwindcss and the regular tailwindcss so
-that you can write your own plugins and access the default config in
-`tailwind.config.js`.
-
-The plugin adds Tailwind directives under the hood using Gridsome's Client API
-so Tailwind works out-of-the-box, requiring no further declaration of Tailwind
-directives.
-
-It's recommended to use `tailwind.config.js` to add [global base styles](https://tailwindcss.com/docs/adding-base-styles#using-a-plugin),
-components, and utilities instead of adding them in CSS files.
-
-Now you should be all set to start using Tailwind, postcss-preset-env, postcss-import, and PurgeCSS in your Gridsome project!
+### Contribute
+Any contributions are welcome!
+Please read [this](https://www.prog.co.il/threads/%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA%D7%99%D7%9D-%D7%9E%D7%90%D7%92%D7%A8-%D7%9E%D7%99%D7%95%D7%97%D7%93-%D7%9C%D7%97%D7%95%D7%9E%D7%A8%D7%99-%D7%9C%D7%9E%D7%99%D7%93%D7%94.523947/#post-7357839) (Hebrew).
