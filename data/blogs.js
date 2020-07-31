@@ -2,76 +2,99 @@ module.exports = [
   {
     name: "אינטרנט ישראל",
     author: "רן בר-זיק",
-    link: "https://internet-israel.com/"
+    desc: "אתר המוקדש לפיתוח אינטרנט מתקדם",
+    link: "https://internet-israel.com/",
+    logo:
+      "https://internet-israel.com/wp-content/uploads/2015/11/internet_israel_header_logo.png",
   },
 
   {
-    name: "אלעד פלג",
+    name: "Datapoint",
     author: "אלעד פלג",
     desc: "בסיסי נתונים, פיתוח ובינה עסקית",
-    link: "https://www.eladpeleg.co.il/blog"
+    link: "https://www.datapoint.training/blog",
+    logo:
+      "https://static.wixstatic.com/media/2fd63d_6edd10df788c49ceb22f7fa20ce12ee0~mv2.png/v1/fill/w_580,h_300,al_c,lg_1,q_85/datapoint--logo.webp",
   },
 
   {
     name: "camelCase",
     author: "אמיתי שטרן ודוד וינברג",
     desc: "אבטחת מידע, טסטים, מתודולוגיות בתכנות, ארכיטקטורה וכדומה. ",
-    link: "https://camelcase.blog/"
+    link: "https://camelcase.blog/",
   },
   {
     name: "בלוג ארכיטקטורת תוכנה",
+    desc: "ארכיטקטורה טובה יותר: טכנולוגיים ואנושיים.",
     author: "ליאור בר-און",
-    link: "http://www.softwarearchiblog.com/"
+    link: "http://www.softwarearchiblog.com/",
+    logo: "",
   },
   {
     name: "ריאקט ישראל",
     author: "רועי ברקוביץ",
-    link: "https://www.react-israel.co.il/"
+    desc: "ריאקט ישראל",
+    link: "https://www.react-israel.co.il/",
+    logo:
+      "https://www.react-israel.co.il/wp-content/uploads/2019/05/React.js_logo-512.png",
   },
   {
     name: "savvy",
     author: "רועי יוסף",
     desc: "מדברים וורדפרס",
-    link: "https://he.savvy.co.il/blog/"
+    link: "https://he.savvy.co.il/blog/",
+    logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327.95 254.28"><title>savvy-logo-new</title>
+    <path d="M252.61,80.25l-24.85,70.6-.17.45-.19-.45L207.25,94.58l-5.76,15.72,18.93,50.85v.07h13.42v-.07l29.37-78.88c.06-.18.12-.38.18-.58a4.85,4.85,0,0,0,.14-.58c0-.18.06-.37.09-.58a.79.79,0,0,0,0-.28Zm-202,50.28a18.91,18.91,0,0,0-4.69-5.79,29.86,29.86,0,0,0-6.62-4.13c-2.47-1.14-5-2.18-7.55-3.12s-5.08-1.89-7.55-2.84a37.93,37.93,0,0,1-6.62-3.24,16.15,16.15,0,0,1-4.68-4.34,10.29,10.29,0,0,1-1.77-6.16,11.86,11.86,0,0,1,1-4.91,10.77,10.77,0,0,1,3-3.92,14.32,14.32,0,0,1,5.16-2.58,26,26,0,0,1,7.29-.92,26.2,26.2,0,0,1,7.32.92,36.92,36.92,0,0,1,5.47,2c.76.35,1.44.69,2,1L46.21,85a20.73,20.73,0,0,0-2.63-1.5,28.35,28.35,0,0,0-4.19-1.62A38.31,38.31,0,0,0,34,80.68a39.53,39.53,0,0,0-6-.45A36.62,36.62,0,0,0,15.8,82.06a24.55,24.55,0,0,0-8.47,4.83,19,19,0,0,0-4.9,6.79,19.76,19.76,0,0,0-1.59,7.7,18.53,18.53,0,0,0,1.77,8.41,19.49,19.49,0,0,0,4.63,6A28.69,28.69,0,0,0,13.78,120c2.44,1.17,4.94,2.23,7.51,3.2l7.51,2.83a37.13,37.13,0,0,1,6.53,3.17A16.36,16.36,0,0,1,40,133.45a9.72,9.72,0,0,1,1.77,5.92,13,13,0,0,1-1.37,6.12,11.54,11.54,0,0,1-3.84,4.28,18,18,0,0,1-5.83,2.5,34.05,34.05,0,0,1-16.3-.34,43.46,43.46,0,0,1-6.62-2.54c-1.21-.6-2.24-1.15-3.19-1.69L0,155.7a17.07,17.07,0,0,0,3,1.87,32,32,0,0,0,5.07,2,49.9,49.9,0,0,0,6.71,1.58,46.07,46.07,0,0,0,7.87.62,43.37,43.37,0,0,0,12.09-1.59,28,28,0,0,0,9.41-4.58,20.58,20.58,0,0,0,6-7.29,21.59,21.59,0,0,0,2.12-9.71,17.29,17.29,0,0,0-1.77-8.12M121.4,96.65a20.7,20.7,0,0,0-5-8.89,22.75,22.75,0,0,0-9.13-5.55A43.16,43.16,0,0,0,93.4,80.28a47.34,47.34,0,0,0-8.48.77,55.06,55.06,0,0,0-7.9,2,47.68,47.68,0,0,0-6.48,2.71A20,20,0,0,0,67,87.93l3.78,7.6c1.29-.74,2.81-1.56,4.66-2.46a47.72,47.72,0,0,1,7.42-2.8A33.72,33.72,0,0,1,92.43,89a28.89,28.89,0,0,1,9.28,1.29,14.68,14.68,0,0,1,6.18,3.87,15.12,15.12,0,0,1,3.44,6.4,33.24,33.24,0,0,1,1.07,8.82v4H99.68A71.64,71.64,0,0,0,84,115a38.24,38.24,0,0,0-12.1,4.77,22.64,22.64,0,0,0-7.77,8A22.07,22.07,0,0,0,61.36,139a23.26,23.26,0,0,0,1.84,9.46,20.21,20.21,0,0,0,5.3,7.18,23.94,23.94,0,0,0,8.44,4.55,37,37,0,0,0,11.25,1.59,31.1,31.1,0,0,0,13.47-3.1,40.36,40.36,0,0,0,11.88-8.77v11.33h9.36V108.65a44.17,44.17,0,0,0-1.5-12m-9,43.55a51.9,51.9,0,0,1-11.53,9.67A22.91,22.91,0,0,1,89.17,153q-7.94,0-12.32-4a13.81,13.81,0,0,1-4.36-10.7A14.8,14.8,0,0,1,74,131.43a13.93,13.93,0,0,1,4.72-5.16,24,24,0,0,1,8-3.27,49.44,49.44,0,0,1,11.12-1.12h14.58Zm16.13-59.09c.09.3.23.69.4,1.17l29.37,78.88v.07h13.43v-.07l58.46-160c.06-.18.12-.37.18-.58A3.75,3.75,0,0,0,230.5,0H219.29L165.65,150.85l-.18.45-.18-.45L140,80.25H128.35v.14c0,.06.1.42.18.71m188.15-.85-24.84,70.6h-.37l-21-58.68-5.77,15.75,21.06,56.63-34.42,89.1a4.21,4.21,0,0,0-.2.63h11.67L297.3,162.9l30.26-81.21a6.34,6.34,0,0,0,.39-1.48Z"></path>
+    </svg>`,
   },
   {
     name: "רשתטק",
     author: "יוסי בן הרוש",
     desc: "מדריכים לתכנות ופיתוח אתרי אינטרנט",
-    link: "https://reshetech.co.il/"
+    link: "https://reshetech.co.il/",
+    logo: "https://reshetech.co.il/myApi/images/reshetech.jpg",
   },
   {
     name: "הבלוג של ינון פרק",
     author: "ינון פרק",
     desc: "טיפים קצרים וחדשות למתכנתים",
-    link: "https://www.tocode.co.il/blog"
+    link: "https://www.tocode.co.il/blog",
+    logo:
+      "https://https://www.tocode.co.il//system/brands/logos/000/000/001/original/logo.png?1453157317",
   },
   {
     name: "גו-קוד",
     author: "אלעד כהן",
-    link: "https://blog.gocode.co.il/"
+    desc: "בלוג בפיתוח ווב - עם קוד, קוד ועוד קצת קוד",
+    link: "https://blog.gocode.co.il/",
+    logo:
+      "https://blog.gocode.co.il/assets/static/logo.e6b6009.7a2d59a8ec13971916136faeac2e42ef.png",
   },
   {
     name: "דורזקי",
-    link: "dorzki.co.il/blog/"
+    author: "דורזקי",
+    link: "https://dorzki.co.il/blog/",
+    desc: "",
+    logo:
+      "https://www.dorzki.co.il/wp-content/themes/wp_dorzki/assets/images/dorzki-logo-white.svg",
   },
   {
     name: "",
     author: "Aayush Wadhwa",
     desc: "Passionately Curious",
-    link: "https://medium.com/@aayushwadhwa31"
+    link: "https://medium.com/@aayushwadhwa31",
   },
   {
     name: "",
     author: "Elad Shechter",
     desc: "CSS & HTML Expert",
-    link: "https://medium.com/@elad"
+    link: "https://medium.com/@elad",
   },
   {
     name: "Refactoring UI",
     author: "Adam Wathan & Steve Schoger",
     desc:
       "Learn UI design through case studies on improving user-submitted projects with specific tactics and actionable advice.",
-    link: "https://medium.com/refactoring-ui"
-  }
+    link: "https://medium.com/refactoring-ui",
+  },
 ];
