@@ -73,10 +73,11 @@ module.exports = function(api) {
     blogs.forEach((blog) => {
       BlogsCollection.addNode({
         name: blog.name,
-        author: blog.author,
         desc: blog.desc,
         link: blog.link,
-        logo: blog.logo,
+        color: blog.color,
+        isHebrew: blog.hebrew,
+        isMedium: isMediumBlog(blog.link),
       });
     });
 
@@ -163,3 +164,9 @@ module.exports = function(api) {
     });
   });
 };
+
+// helpers
+
+function isMediumBlog(urlString) {
+  return urlString.includes("://medium.com");
+}
