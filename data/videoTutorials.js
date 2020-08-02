@@ -920,8 +920,8 @@ module.exports = [
   },
 
   {
-    name: "++C",
-    hebrewName: "++C",
+    name: "C++",
+    hebrewName: "סי פלוס פלוס",
     category: "programming language",
     officialSite: "https://docs.microsoft.com/en-us/cpp/",
     videoTutorials: [
