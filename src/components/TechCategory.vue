@@ -1,8 +1,6 @@
 <template>
   <section class="my-12">
-    <h1 class="p-3 text-center text-custom-yellow-1 opacity-75">
-      {{ hebrewName }}
-    </h1>
+    <h1 class="p-3 text-center text-custom-yellow-1 opacity-75">{{ hebrewName }}</h1>
     <div class="rtl max-w-4xl mx-auto flex flex-wrap justify-center">
       <tech-card
         v-for="(category, i) in filteredCategories"
@@ -41,32 +39,34 @@ import TechCard from "~/components/TechCard";
 export default {
   props: {
     category: String,
-    hebrewName: String
+    hebrewName: String,
   },
   components: {
-    TechCard
+    TechCard,
   },
 
   data() {
     return {
       categories: [],
-      playlists: []
+      playlists: [],
     };
   },
 
   computed: {
     filteredCategories() {
-      return this.categories.filter(cat => cat.node.category === this.category);
-    }
+      return this.categories.filter(
+        (cat) => cat.node.category === this.category
+      );
+    },
   },
 
   methods: {
     amountOfVideos(name) {
-      const playlistVideos = this.playlists.filter(playlist =>
+      const playlistVideos = this.playlists.filter((playlist) =>
         playlist.node.tags.includes(name.toLowerCase())
       );
 
-      const amountOfVideos = this.categories.find(t => t.node.name === name)
+      const amountOfVideos = this.categories.find((t) => t.node.name === name)
         .node.amountOfVideos;
 
       const amountOfPlaylistVideos = playlistVideos.reduce(
@@ -79,13 +79,13 @@ export default {
       return array.sort((a, b) =>
         a.node.name.toLowerCase().localeCompare(b.node.name.toLowerCase())
       );
-    }
+    },
   },
   mounted() {
     this.categories = this.sortAlphabeically(this.$static.categories.edges);
     this.playlists = this.categories.filter(
-      cat => cat.node.category === "playlist"
+      (cat) => cat.node.category === "playlist"
     );
-  }
+  },
 };
 </script>

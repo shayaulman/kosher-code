@@ -13,7 +13,9 @@ const onlineschoolAspnet = require("./onlineschool-aspnet");
 const angular4Hebrew = require("./angular4-hebrew");
 const jsvideotutorial = require("./js-videotutorial");
 const linuxOnlineschool = require("./linux-onlineschool");
-const laravelFromscratch =  require("./laravelFromscratch");
+const laravelFromscratch = require("./laravelFromscratch");
+const cppOopHebrew = require("./cpp-oop-hebrew");
+const basicSqlHebrew = require("./basic-sql-hebrew");
 
 module.exports = [
   ...solerowebPHP,
@@ -31,5 +33,7 @@ module.exports = [
   ...angular4Hebrew,
   ...jsvideotutorial,
   ...linuxOnlineschool,
-  ...laravelFromscratch
+  ...laravelFromscratch,
+  ...cppOopHebrew,
+  ...basicSqlHebrew,
 ];

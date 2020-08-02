@@ -151,7 +151,7 @@ export default {
   },
   created() {
     this.playlistVideos = this.$page.videos.edges.sort((a, b) => {
-      return a.node.index > b.node.index;
+      return a.node.index - b.node.index;
     });
   },
   mounted() {

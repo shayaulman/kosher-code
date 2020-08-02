@@ -1,0 +1,28 @@
+module.exports = [
+  {
+    name: "C++ - OOP course",
+    hebrewName: "C++ - תכנות מונחה עצמים",
+    category: "playlist",
+    tags: ["c++"],
+    videoTutorials: [
+      { url: "r_wHsrYpwWU" },
+      { url: "bKHIrgGNxvE" },
+      { url: "7SqHCZzF930" },
+      { url: "PoiTWN1IUpM" },
+      { url: "AnlipK6okfw" },
+      { url: "zdEd9yrfNpM" },
+      { url: "YUNnZ5oQh4I" },
+      { url: "GcK7Vy16AD8" },
+      { url: "1DSSxzqJGIs" },
+      { url: "BMHjOiCx5Fs" },
+      { url: "ZWog2ZYSoX4" },
+      { url: "7RPfRFxnGNE" },
+      { url: "yPWN69ES-YE" },
+      { url: "JdyKHTq2OLM" },
+      { url: "FWo50bwH7rA" },
+      { url: "bYzh7gXqmB4" },
+      { url: "dUatUZcknew" },
+      { url: "kin6-f15cn0" },
+    ],
+  },
+];

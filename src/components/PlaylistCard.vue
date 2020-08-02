@@ -38,10 +38,10 @@
         >{{ hebrewName || name }}</h2>
         <div
           :class="amountDirection"
-          class="videos-anount flex justify-center items-center h-full text-white z-0"
+          class="videos-anount mt-4 flex justify-center items-center h-full text-white z-0 opacity-50"
         >
-          <h1 class="z-20 text-2xl text-custom-text-secondary">{{ amountOfVideos }}</h1>
-          <svg class="w-12 fill-current text-custom-text-secondary" viewBox="0 0 24 24">
+          <h1 class="z-20 text-3xl text-custom-text-secondary">{{ amountOfVideos }}</h1>
+          <svg class="w-16 fill-current text-custom-text-secondary" viewBox="0 0 24 24">
             <g>
               <path
                 d="M3.67 8.67h14V11h-14V8.67zm0-4.67h14v2.33h-14V4zm0 9.33H13v2.34H3.67v-2.34zm11.66 0v7l5.84-3.5-5.84-3.5z"
