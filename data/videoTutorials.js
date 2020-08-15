@@ -1021,4 +1021,18 @@ module.exports = [
     ],
     color: "#8690fa",
   },
+
+  {
+    name: "Rust",
+    hebrewName: "רוסט",
+    category: "programming language",
+    officialSite: "https://www.rust-lang.org/",
+    videoTutorials: [
+      { url: "DnT-LUQgc7s" },
+      { url: "h9Fh4jRDGLo" },
+      { url: "Y6SSTRr2mFU" },
+      { url: "_agDeiWek8w" },
+    ],
+    color: "#999",
+  },
 ];
