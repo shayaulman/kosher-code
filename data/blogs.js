@@ -81,9 +81,23 @@ module.exports = [
   },
   {
     name: "Refactoring UI",
-    desc:
-      "Learn UI design through case studies on improving user-submitted projects with specific tactics and actionable advice.",
+    desc: "Learn UI design",
     link: "https://medium.com/refactoring-ui",
-    color: "#",
+  },
+  {
+    name: "Digital Whisper",
+    desc: "ירחון טכנולוגי",
+    link: "https://digitalwhisper.co.il/",
+    color: "#6d6bbf",
+  },
+  {
+    name: "George Seif",
+    desc: "Certified Nerd",
+    link: "https://medium.com/@george.seif94",
+  },
+  {
+    name: "The Startup",
+    link: "https://medium.com/swlh",
+    desc: "Build something awesome",
   },
 ];

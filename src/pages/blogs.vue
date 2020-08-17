@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h3
-      class="inline-block rounded-full p-4 text-custom-text-secondary text-xs bg-custom-bg-card"
+      class="inline-block rounded-full py-2 px-4 text-custom-text-secondary text-xs bg-custom-bg-card shadow-outline"
     >הדף בבנייה</h3>
     <h3 class="mt-8 text-lg text-center text-custom-yellow-1">בלוגים בעברית</h3>
     <div class="ltr max-w-4xl mx-auto my-6 flex flex-wrap justify-center items-center">
