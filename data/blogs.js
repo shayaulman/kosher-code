@@ -106,5 +106,4 @@ module.exports = [
     link: "https://medium.com/flutter",
     desc: "Build beautiful native apps in record time",
   },
-  h,
 ];
