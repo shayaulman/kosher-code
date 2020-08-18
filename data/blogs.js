@@ -15,7 +15,7 @@ module.exports = [
   },
   {
     name: "camelCase",
-    desc: ".אבטחת מידע, טסטים, מתודולוגיות בתכנות, ארכיטקטורה וכדומה",
+    desc: "אבטחת מידע, טסטים, מתודולוגיות בתכנות, ארכיטקטורה וכדומה.",
     link: "https://camelcase.blog/",
     hebrew: true,
     color: "#bc9371",
