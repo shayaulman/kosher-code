@@ -88,6 +88,7 @@ module.exports = [
     name: "Digital Whisper",
     desc: "ירחון טכנולוגי",
     link: "https://digitalwhisper.co.il/",
+    hebrew: true,
     color: "#6d6bbf",
   },
   {
@@ -100,4 +101,10 @@ module.exports = [
     link: "https://medium.com/swlh",
     desc: "Build something awesome",
   },
+  {
+    name: "Flutter",
+    link: "https://medium.com/flutter",
+    desc: "Build beautiful native apps in record time",
+  },
+  h,
 ];

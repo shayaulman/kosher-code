@@ -1,8 +1,8 @@
 <template>
   <g-link
     :style="`background:${color}`"
-    :class="{'bg-custom-bg-card-2 text-custom-text-secondary': isMedium}"
-    class="m-2 py-2 px-6 text-center text-white text-lg rounded-md transform hover:scale-105 transition ease-in duration-200"
+    :class="{'bg text-custom-text-primary': isMedium}"
+    class="test m-2 py-4 px-6 w-64 h-24 text-center text-white text-lg rounded-md transform hover:scale-105 transition ease-in duration-200"
     :to="link"
   >
     <h1 class="text-lg">{{name}}</h1>
@@ -24,4 +24,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.bg {
+  background: repeating-linear-gradient(
+    45deg,
+    var(--bg-card-2),
+    var(--bg-card-2) 10px,
+    #03a87c70 10px,
+    #03a87c70 20px
+  );
+}
 </style>
