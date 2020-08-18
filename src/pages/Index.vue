@@ -12,7 +12,7 @@
               href="https://netfree.link/"
               style="color: #00b494"
               class="hover:underline"
-            >NetFree</a>
+            >נטפרי</a>
           </h3>
         </div>
       </div>
