@@ -5,8 +5,8 @@
     class="m-2 py-2 px-6 text-center text-white text-lg rounded-md transform hover:scale-105 transition ease-in duration-200"
     :to="link"
   >
-    <h1 class="text-lg">{{name}}</h1>
-    <p class="text-xs font-light opacity-75">{{desc}}</p>
+    <h1 class="text-lg" dir="auto">{{name}}</h1>
+    <p class="text-xs font-light opacity-75" dir="auto">{{desc}}</p>
   </g-link>
 </template>
 
