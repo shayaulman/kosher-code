@@ -1,3 +1,4 @@
+@@ -1,29 +1,36 @@
 module.exports = [
   {
     name: "מפתחים חסרי תרבות",
@@ -30,7 +31,7 @@ module.exports = [
     name: "Code[ish]",
     description: "A podcast from the team at Heroku, exploring code, technology, tools, tips, and the life of the developer.",
     link: "https://www.heroku.com/podcasts/codeish",
-    image: "https://www1.assets.heroku.com/assets/podcast/codeish/codeish-logo-square-purple-16a8ad4d7ee52d1e31726be3527a299057df336503828eadb48d595a5c8ad5e8.svg"
+    image: "https://www1.assets.heroku.com/assets/podcast/codeish/codeish-logo-square-purple-16a8ad4d7ee52d1e31726be3527a299057df336503828eadb48d595a5c8ad5e8.svg",
     color: "#79589F"
   }
 ];
