@@ -106,4 +106,9 @@ module.exports = [
     link: "https://medium.com/flutter",
     desc: "Build beautiful native apps in record time",
   },
+  {
+    name: "Microsoft Design",
+    link: "https://medium.com/microsoft-design",
+    desc: "Putting technology on a more human path, one design story at a time"
+  }
 ];
