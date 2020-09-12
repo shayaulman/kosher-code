@@ -70,6 +70,13 @@ module.exports = [
     color: "#214a81",
   },
   {
+    name: "codebrain",
+    link: "https://www.codebrain.co.il/",
+    desc: "web פיתוח",
+    hebrew: true,
+    color: "#214a81",
+  },
+  {
     name: "Aayush Wadhwa",
     desc: "Passionately Curious",
     link: "https://medium.com/@aayushwadhwa31",
