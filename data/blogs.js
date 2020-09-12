@@ -74,7 +74,7 @@ module.exports = [
     link: "https://www.codebrain.co.il/",
     desc: "web פיתוח",
     hebrew: true,
-    color: "#214a81",
+    color: "#50bbb7",
   },
   {
     name: "Aayush Wadhwa",
