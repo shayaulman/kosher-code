@@ -19,4 +19,5 @@ module.exports = [
   { name: "VSCode", color: "#21acf2" },
   { name: "Chrome", color: "#d54345" },
   { name: "PostgreSQL", color: "#014980" },
+  { name: "laravel", color: "#ff2d20" },
 ];
