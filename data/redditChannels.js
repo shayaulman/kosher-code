@@ -20,4 +20,5 @@ module.exports = [
   { name: "Chrome", color: "#d54345" },
   { name: "PostgreSQL", color: "#014980" },
   { name: "laravel", color: "#ff2d20" },
+  { name: "aws", color: "#146eb4" },
 ];
