@@ -117,5 +117,10 @@ module.exports = [
     name: "Microsoft Design",
     link: "https://medium.com/microsoft-design",
     desc: "Putting technology on a more human path, one design story at a time"
-  }
+  },
+    {
+    name: "Better Marketing",
+    link: "https://medium.com/better-marketing",
+    desc: ""
+  },
 ];
