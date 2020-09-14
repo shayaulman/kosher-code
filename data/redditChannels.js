@@ -22,4 +22,5 @@ module.exports = [
   { name: "laravel", color: "#ff2d20" },
   { name: "web_design", color: "#4b43af"},
   { name: "aws", color: "#146eb4" },
+  { name: "Android", color: "#11483c" },
 ];
