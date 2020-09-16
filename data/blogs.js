@@ -118,9 +118,19 @@ module.exports = [
     link: "https://medium.com/microsoft-design",
     desc: "Putting technology on a more human path, one design story at a time"
   },
-    {
+  {
     name: "Better Marketing",
     link: "https://medium.com/better-marketing",
-    desc: ""
+    desc: "Marketing advice & case studies to help you market ethically, authentically, and efficiently."
+  },
+  {
+    name: "Javascript Scene",
+    link: "https://medium.com/javascript-scene",
+    desc: "JavaScript, software leadership, software development, and related technologies."
+  },
+  {
+    name: "Better Programming",
+    link: "https://medium.com/better-programming",
+    desc: "Advice for programmers."
   },
 ];
