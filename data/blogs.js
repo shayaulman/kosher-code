@@ -77,6 +77,13 @@ module.exports = [
     color: "#50bbb7",
   },
   {
+    name: "פינת הקפה",
+    link: "https://pinatkafe.com/",
+    desc: "חוויות של מנהל קטן בחברת הייטק גדולה",
+    hebrew: true,
+    color: "#6d4738",
+  },
+  {
     name: "Aayush Wadhwa",
     desc: "Passionately Curious",
     link: "https://medium.com/@aayushwadhwa31",
