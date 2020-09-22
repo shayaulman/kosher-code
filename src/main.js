@@ -14,6 +14,7 @@ export default function(Vue, { router, head, isClient, appOptions }) {
   Vue.use(Vuex);
   Vue.use(vueSmoothScroll);
   Vue.use(InfiniteLoading);
+  Vue.filter('number', (value) => isNaN(value) ? '' : Number(value).toLocaleString('en'));
 
   if (process.isClient) {
     const Paginate = require("vuejs-paginate");

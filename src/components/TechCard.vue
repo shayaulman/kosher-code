@@ -32,7 +32,7 @@
         ><external-icon
       /></g-link>
       <div class="flex items-center text-xs text-gray-700">
-        <p class="ml-2">{{ amountOfVideos }}</p>
+        <p class="ml-2">{{ amountOfVideos | number }}</p>
       </div>
     </div>
   </section>

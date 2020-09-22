@@ -23,7 +23,7 @@
 
         <h1 class="font m-4 p-2 text-center text-xs text-custom-text-3 font-thin">
           במאגר יש כעת
-          <span>{{ amountOfVideos }}</span> סרטונים
+          <span>{{ amountOfVideos | number }}</span> סרטונים
         </h1>
         <tech-list />
       </div>
