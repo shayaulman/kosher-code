@@ -2,11 +2,10 @@
   <section>
     <g-link
       :to="link"
-      :class="{ 'router-link-active': subIsActive('/video-tutorials') }"
+      :class="[{ 'router-link-active': subIsActive('/video-tutorials')},{'px-3 py-2 rounded-full bg-custom-bg-3 hover:bg-custom-bg-gray-1': item === 'אודות'}]"
       class="mx-3 text-custom-text-primary font-hairline opacity-75 hover:text-custom-brand transition duration-300"
       :v-smooth-scroll="link === 'video-tutorials'"
-      >{{ item }}</g-link
-    >
+    >{{ item }}</g-link>
   </section>
 </template>
 
@@ -14,17 +13,17 @@
 export default {
   props: {
     item: String,
-    link: String
+    link: String,
   },
 
   methods: {
     subIsActive(input) {
       const paths = Array.isArray(input) ? input : [input];
-      return paths.some(path => {
+      return paths.some((path) => {
         return this.$route.path.indexOf(path) === 0; // current path starts with this path string
       });
-    }
-  }
+    },
+  },
 };
 </script>
 
