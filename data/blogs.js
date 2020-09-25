@@ -140,4 +140,9 @@ module.exports = [
     link: "https://medium.com/better-programming",
     desc: "Advice for programmers."
   },
+  {
+    name: "Coding Blocks",
+    link: "https://medium.com/coding-blocks",
+    desc: "Code your way to success | codingblocks.com"
+  },
 ];
