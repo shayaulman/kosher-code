@@ -541,6 +541,8 @@ module.exports = [
       { url: "Z1ktxiqyiLA" },
       { url: "DZ_bRk8JWDM" },
       { url: "9neEE_HowzM" },
+      { url: "bS3se8lEFKU" },
+      { url: "JW_2czIfXIw" },
     ],
     color: "#83CD29",
   },
