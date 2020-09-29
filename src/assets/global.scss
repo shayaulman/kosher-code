@@ -6,8 +6,11 @@ html {
   moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
+body {
+  position: relative;
 }
+
+h1 {}
 
 :root {
   --brand: #ea3e78;

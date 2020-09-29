@@ -2,10 +2,14 @@
   <section>
     <g-link
       :to="link"
-      :class="[{ 'router-link-active': subIsActive('/video-tutorials')},{'px-3 py-2 rounded-full bg-custom-bg-3 hover:bg-custom-bg-gray-1': item === 'אודות'}]"
+      :class="[
+        { 'router-link-active': subIsActive('/video-tutorials') },
+        { 'text-custom-text-secondary': item === 'אודות' },
+      ]"
       class="mx-3 text-custom-text-primary font-hairline opacity-75 hover:text-custom-brand transition duration-300"
       :v-smooth-scroll="link === 'video-tutorials'"
-    >{{ item }}</g-link>
+      >{{ item }}</g-link
+    >
   </section>
 </template>
 

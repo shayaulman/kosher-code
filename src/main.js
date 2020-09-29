@@ -3,7 +3,7 @@
 import Vuex from "vuex";
 import DefaultLayout from "~/layouts/Default.vue";
 import "~/assets/tailwind.css";
-import "~/assets/global.css";
+import "~/assets/global.scss";
 import vueSmoothScroll from "vue-smooth-scroll";
 import InfiniteLoading from "vue-infinite-loading";
 

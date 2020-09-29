@@ -21,18 +21,18 @@ export default {
   props: {
     title: String,
     subTitle: String,
-    dontShowFooter: Boolean
+    dontShowFooter: Boolean,
   },
   components: {
     AppHeader,
-    AppFooter
+    AppFooter,
   },
 
   computed: {
     theme() {
       return this.$store.state.theme;
-    }
-  }
+    },
+  },
 };
 </script>
 
