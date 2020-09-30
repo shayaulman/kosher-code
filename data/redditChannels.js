@@ -27,4 +27,5 @@ module.exports = [
   { name: "androidthemes", color: "#009595" },
   { name: "Angular2", color: "#e4e8ea" },
   { name: "angularjs", color: "#0079D3" },
+  { name: "cscareerquestions", color: "#349e48" },
 ];
