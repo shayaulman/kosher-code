@@ -24,4 +24,5 @@ module.exports = [
   { name: "aws", color: "#146eb4" },
   { name: "Android", color: "#11483c" },
   { name: "cybersecurity", color: "#cc3600" },
+  { name: "androidthemes", color: "#009595" },
 ];
