@@ -31,4 +31,8 @@ module.exports = [
   { name: "PHPhelp", color: "#8f9ed1" },
   { name: "HTML", color: "#0079D3" },
   { name: "node", color: "#46d160" },
+  { name: "commandline", color: "#545452" },
+  { name: "firefox", color: "#9059ff" },
+  { name: "linux", color: "#282a36" },
+  { name: "vim", color: "#46d160" },
 ];
