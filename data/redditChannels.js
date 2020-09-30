@@ -40,4 +40,8 @@ module.exports = [
   { name: "SQLServer", color: "#b8001f" },
   { name: "datascience", color: "#32a852" },
   { name: "excel", color: "#1e7145" },
+  { name: "askscience", color: "#373c3f" },
+  { name: "devops", color: "#0079D3" },
+  { name: "linuxmint", color: "#94e044" },
+  { name: "linuxquestions", color: "#0079d3" },
 ];
