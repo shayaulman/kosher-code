@@ -36,4 +36,6 @@ module.exports = [
   { name: "linux", color: "#282a36" },
   { name: "vim", color: "#46d160" },
   { name: "graphql", color: "#e10098" },
+  { name: "Typescript", color: "#0079D3" },
+  { name: "SQLServer", color: "#b8001f" },
 ];
