@@ -23,4 +23,5 @@ module.exports = [
   { name: "web_design", color: "#4b43af"},
   { name: "aws", color: "#146eb4" },
   { name: "Android", color: "#11483c" },
+  { name: "cybersecurity", color: "#cc3600" },
 ];
