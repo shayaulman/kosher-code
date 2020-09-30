@@ -30,4 +30,5 @@ module.exports = [
   { name: "cscareerquestions", color: "#349e48" },
   { name: "PHPhelp", color: "#8f9ed1" },
   { name: "HTML", color: "#0079D3" },
+  { name: "node", color: "#46d160" },
 ];
