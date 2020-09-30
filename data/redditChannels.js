@@ -28,4 +28,5 @@ module.exports = [
   { name: "Angular2", color: "#e4e8ea" },
   { name: "angularjs", color: "#0079D3" },
   { name: "cscareerquestions", color: "#349e48" },
+  { name: "PHPhelp", color: "#8f9ed1" },
 ];
