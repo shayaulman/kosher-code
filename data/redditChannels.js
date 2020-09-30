@@ -25,4 +25,6 @@ module.exports = [
   { name: "Android", color: "#11483c" },
   { name: "cybersecurity", color: "#cc3600" },
   { name: "androidthemes", color: "#009595" },
+  { name: "Angular2", color: "#e4e8ea" },
+  { name: "angularjs", color: "#0079D3" },
 ];
