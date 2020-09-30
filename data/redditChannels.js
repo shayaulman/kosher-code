@@ -35,4 +35,5 @@ module.exports = [
   { name: "firefox", color: "#9059ff" },
   { name: "linux", color: "#282a36" },
   { name: "vim", color: "#46d160" },
+  { name: "graphql", color: "#e10098" },
 ];
