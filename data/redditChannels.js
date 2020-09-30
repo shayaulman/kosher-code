@@ -38,4 +38,6 @@ module.exports = [
   { name: "graphql", color: "#e10098" },
   { name: "Typescript", color: "#0079D3" },
   { name: "SQLServer", color: "#b8001f" },
+  { name: "datascience", color: "#32a852" },
+  { name: "excel", color: "#1e7145" },
 ];
