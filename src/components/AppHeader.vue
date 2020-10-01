@@ -17,6 +17,7 @@
       class="bmc-button bg-custom-bg-card text-custom-text-primary"
       target="_blank"
       href="https://www.buymeacoffee.com/shayaulman"
+      @click="track"
       ><img
         src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
         alt="Buy me a coffee"
@@ -49,6 +50,12 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    track() {
+      console.log(this.$analytics.trackEvent);
+      this.$analytics.trackEvent("Buy Me A Coffee", "Click");
+    },
   },
 };
 </script>
