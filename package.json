@@ -21,6 +21,7 @@
     "vuex": "^3.1.2"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.0.6"
+    "@fullhuman/postcss-purgecss": "^2.0.6",
+    "vue-ua": "^1.7.0"
   }
 }

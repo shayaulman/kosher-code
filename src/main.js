@@ -1,6 +1,7 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 import Vuex from "vuex";
+import VueAnalytics from "vue-ua";
 import DefaultLayout from "~/layouts/Default.vue";
 import "~/assets/tailwind.css";
 import "~/assets/global.scss";
@@ -14,7 +15,37 @@ export default function(Vue, { router, head, isClient, appOptions }) {
   Vue.use(Vuex);
   Vue.use(vueSmoothScroll);
   Vue.use(InfiniteLoading);
-  Vue.filter('number', (value) => isNaN(value) ? '' : Number(value).toLocaleString('en'));
+  Vue.use(VueAnalytics, {
+    // [Required] The name of your app as specified in Google Analytics.
+    appName: "kosherCode",
+    // [Required] The version of your app.
+    appVersion: "1.0.0",
+    // [Required] Your Google Analytics tracking ID.
+    trackingId: "UA-153721766-1",
+    // If you're using vue-router, pass the router instance here.
+    // vueRouter: router,
+
+    // Global Dimensions and Metrics can optionally be specified.
+    // globalDimensions: [
+    //   { dimension: 1, value: 'FirstDimension' },
+    //   { dimension: 2, value: 'SecondDimension' }
+    //   // Because websites are only 2D, obviously. WebGL? What's that?
+    // ],
+
+    // globalMetrics: [
+    //   { metric: 1, value: 'MyMetricValue' },
+    //   { metric: 2, value: 'AnotherMetricValue' }
+    // ]
+  });
+
+  router.beforeEach((to, from, next) => {
+    console.log(to.path);
+    Vue.analytics.trackView(to.path);
+    next();
+  });
+  Vue.filter("number", (value) =>
+    isNaN(value) ? "" : Number(value).toLocaleString("en")
+  );
 
   if (process.isClient) {
     const Paginate = require("vuejs-paginate");
