@@ -53,8 +53,11 @@ export default {
   },
   methods: {
     track() {
-      console.log(this.$analytics.trackEvent);
-      this.$analytics.trackEvent("Buy Me A Coffee", "Click");
+      console.log($gtag);
+      this.$gtag.event("click", {
+        event_category: "Coffee",
+        event_label: "ccc",
+      });
     },
   },
 };

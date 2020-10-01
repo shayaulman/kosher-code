@@ -14,6 +14,7 @@
     "gridsome-plugin-tailwindcss": "latest",
     "node-sass": "^4.13.1",
     "sass-loader": "^8.0.2",
+    "vue-gtag": "^1.9.1",
     "vue-infinite-loading": "^2.4.4",
     "vue-smooth-scroll": "^1.0.13",
     "vue2-smooth-scroll": "^1.2.0",
@@ -21,7 +22,6 @@
     "vuex": "^3.1.2"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.0.6",
-    "vue-ua": "^1.7.0"
+    "@fullhuman/postcss-purgecss": "^2.0.6"
   }
 }
