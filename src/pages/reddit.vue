@@ -104,10 +104,7 @@ export default {
       };
       const fuse = new Fuse(nodesExtracted, options);
       const results = fuse.search(this.searchString);
-      console.log(results.length);
-
       const filtered = this.filterByMaxScore(results, 0.34);
-      console.log(filtered.length);
       return filtered;
     },
   },

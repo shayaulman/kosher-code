@@ -32,12 +32,6 @@ export default function(Vue, { router, head, isClient, appOptions }) {
       },
       router
     );
-
-    router.beforeEach((to, from, next) => {
-      console.log(`${to.path}/`);
-      // Vue.analytics.trackView(`דג`);
-      next();
-    });
   }
 
   appOptions.store = new Vuex.Store({

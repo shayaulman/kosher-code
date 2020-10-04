@@ -53,11 +53,7 @@ export default {
   },
   methods: {
     track() {
-      console.log($gtag);
-      this.$gtag.event("click", {
-        event_category: "Coffee",
-        event_label: "ccc",
-      });
+      this.$gtag.pageview("buy-me-a-coffee");
     },
   },
 };
