@@ -14,7 +14,7 @@
       />
     </div>
     <a
-      class="bmc-button bg-custom-bg-card text-custom-text-primary"
+      class="bmc-button bg-custom-bg-card text-custom-text-secondary"
       target="_blank"
       href="https://www.buymeacoffee.com/shayaulman"
       @click="track"

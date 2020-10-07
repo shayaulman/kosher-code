@@ -16,7 +16,7 @@
             /></div
         ></g-link>
         <div
-          class="video-container relative w-full h-full  bg-black container rounded-md overflow-hidden shadow-lg"
+          class="video-container relative w-full h-full bg-black container rounded-md overflow-hidden shadow-lg"
         >
           <div class="absolute z-0 inset-0 flex items-center justify-center">
             <app-loader youtube />
@@ -27,6 +27,7 @@
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
+            autoplay="1"
           ></iframe>
         </div>
       </div>
@@ -38,7 +39,7 @@
         {{ formattedTime }}
       </h4>
 
-      <section style="width:640px" class="my-3">
+      <section style="width: 640px" class="my-3">
         <h1 class="my-1 py-2 text-custom-text-primary text-lg">
           {{ $context.title }}
         </h1>
@@ -71,12 +72,12 @@ import AppIcon from "~/components/UI/AppIcon";
 export default {
   components: {
     AppLoader,
-    AppIcon
+    AppIcon,
   },
 
   data() {
     return {
-      showMore: false
+      showMore: false,
     };
   },
   computed: {
@@ -105,16 +106,16 @@ export default {
 
     fullFormattedDescription() {
       return this.formatter(this.$context.description);
-    }
+    },
   },
 
   methods: {
     formatter(text) {
       let createTextLinks = (text || "").replace(
         /([^\S]|^)(((https?\:\/\/)|(www\.))(\S+))/gi,
-        function(match, space, url) {
+        function (match, space, url) {
           var hyperlink = url;
-          if (!hyperlink.match("^https?:\/\/")) {
+          if (!hyperlink.match("^https?://")) {
             hyperlink = "http://" + hyperlink;
           }
           return (
@@ -124,8 +125,8 @@ export default {
       );
 
       return createTextLinks.replace(/\n/g, "<br/>");
-    }
-  }
+    },
+  },
 };
 </script>
 

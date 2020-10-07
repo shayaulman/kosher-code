@@ -16,6 +16,7 @@ const linuxOnlineschool = require("./linux-onlineschool");
 const laravelFromscratch = require("./laravelFromscratch");
 const cppOopHebrew = require("./cpp-oop-hebrew");
 const basicSqlHebrew = require("./basic-sql-hebrew");
+const beauTeachesJavascript = require("./beau-teaches-javascript");
 
 module.exports = [
   ...solerowebPHP,
@@ -36,4 +37,5 @@ module.exports = [
   ...laravelFromscratch,
   ...cppOopHebrew,
   ...basicSqlHebrew,
+  ...beauTeachesJavascript,
 ];

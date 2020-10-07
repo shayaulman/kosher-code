@@ -2,32 +2,40 @@
   <Layout>
     <section class="p-12 mx-auto">
       <div class="w-16 mx-auto">
-        <app-icon v-if="$context.technology !== 'elementor'" :icon="$context.technology" />
+        <app-icon
+          v-if="$context.technology !== 'elementor'"
+          :icon="$context.technology"
+        />
       </div>
       <div>
         <h1
           :style="`color: ${$context.color}`"
           class="p-2 mb-12 text-lg text-center text-custom-text-primary"
-        >{{ $context.hebrewName }}</h1>
+        >
+          {{ $context.hebrewName }}
+        </h1>
       </div>
       <div class="flex justify-between">
         <h3 class="text-xs text-custom-text-secondary opacity-75">
           נמצאו
           <span class="text-custom-text-primary">
-            {{
-            $context.amountOfVideos
-            }}
+            {{ $context.amountOfVideos }}
           </span>
           סרטונים
         </h3>
         <button
           @click="toggle"
           class="my-1 px-4 py-1 text-white text-xs bg-black rounded-full shadow-outline focus:outline-none"
-        >{{ hebrewOnly ? "הצג את כל הסרטונים" : "הצג רק סרטונים בעברית" }}</button>
+        >
+          {{ hebrewOnly ? "הצג את כל הסרטונים" : "הצג רק סרטונים בעברית" }}
+        </button>
       </div>
     </section>
-    <transition-group name="fade" mode="in-out" style="direction:ltr">
-      <section key="213" class="max-w-6xl mx-auto mb-24 flex flex-wrap justify-center">
+    <transition-group name="fade" mode="in-out" style="direction: ltr">
+      <section
+        key="213"
+        class="max-w-6xl mx-auto mb-24 flex flex-wrap justify-center"
+      >
         <playlist-card
           v-for="playlist in playlists"
           :key="playlist.node.id"
@@ -64,7 +72,7 @@
 
 <page-query>
  query Vid ($technology: String! $page: Int){
- videos: allVideo (sortBy: "index" order:ASC filter: {name: {eq: $technology}} perPage: 20, page: $page)  @paginate {
+ videos: allVideo (sortBy: "index" order:ASC filter: {name: {eq: $technology}} perPage: 30, page: $page)  @paginate {
    pageInfo {
 			totalPages
 			currentPage

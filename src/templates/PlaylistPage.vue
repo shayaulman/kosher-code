@@ -16,31 +16,42 @@
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
+              autoplay="1"
             ></iframe>
           </div>
-          <section style="width:640px" class="my-3">
-            <h1
-              class="my-1 py-2 text-custom-text-primary text-lg"
-            >{{ $page.videos.edges[activeVideo - 1].node.title }}</h1>
-            <p v-html="description" class="text-custom-text-3 text-sm font-thin"></p>
+          <section style="width: 640px" class="my-3">
+            <h1 class="my-1 py-2 text-custom-text-primary text-lg">
+              {{ $page.videos.edges[activeVideo - 1].node.title }}
+            </h1>
+            <p
+              v-html="description"
+              class="text-custom-text-3 text-sm font-thin"
+            ></p>
             <button
               @click="showMore = !showMore"
               class="m-2 p-2 rounded text-custom-text-secondary font-bold outline-none"
             >
               {{
-              isHebrew
-              ? showMore
-              ? "הצג פחות"
-              : "הצג יותר"
-              : showMore
-              ? "Show Less"
-              : "Show More"
+                isHebrew
+                  ? showMore
+                    ? "הצג פחות"
+                    : "הצג יותר"
+                  : showMore
+                  ? "Show Less"
+                  : "Show More"
               }}
             </button>
           </section>
         </div>
-        <section :style="`height: ${videoFrameHeight}px`" class="w-1/3 mx-4 overflow-scroll">
-          <playlist-list @selection="handle" :videos="$page.videos.edges" :active="activeVideo" />
+        <section
+          :style="`height: ${videoFrameHeight}px`"
+          class="w-1/3 mx-4 overflow-scroll"
+        >
+          <playlist-list
+            @selection="handle"
+            :videos="$page.videos.edges"
+            :active="activeVideo"
+          />
         </section>
       </div>
 
