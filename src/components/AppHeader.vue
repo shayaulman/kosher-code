@@ -13,16 +13,6 @@
         :link="item.link"
       />
     </div>
-    <a
-      class="bmc-button bg-custom-bg-card text-custom-text-secondary"
-      target="_blank"
-      href="https://www.buymeacoffee.com/shayaulman"
-      @click="track"
-      ><img
-        src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
-        alt="Buy me a coffee"
-      /><span style="margin-left: 5px">Buy me a coffee</span></a
-    >
     <div>
       <theme-toggle />
     </div>
@@ -51,53 +41,5 @@ export default {
       ],
     };
   },
-  methods: {
-    track() {
-      this.$gtag.pageview("buy-me-a-coffee");
-    },
-  },
 };
 </script>
-
-<style lang="scss" scoped>
-.bmc-button img {
-  width: 27px !important;
-  margin-bottom: 1px !important;
-  box-shadow: none !important;
-  border: none !important;
-  vertical-align: middle !important;
-}
-
-.bmc-button {
-  line-height: 36px !important;
-  text-decoration: none !important;
-  display: inline-flex !important;
-  border-radius: 8px !important;
-  margin: 0 6px;
-  padding: 4px 12px !important;
-  font-size: 20px !important;
-  letter-spacing: 0.6px !important;
-  font-family: "Cookie", cursive !important;
-  -webkit-box-sizing: border-box !important;
-  box-sizing: border-box !important;
-  -o-transition: 0.3s all linear !important;
-  -webkit-transition: 0.3s all linear !important;
-  -moz-transition: 0.3s all linear !important;
-  -ms-transition: 0.3s all linear !important;
-  transition: 0.3s all linear !important;
-
-  img {
-    margin-left: 8px;
-  }
-}
-
-.bmc-button:hover,
-.bmc-button:active,
-.bmc-button:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem #ea3e777c !important;
-  text-decoration: none !important;
-  color: #ea3e78;
-  box-shadow: 0 0 0 0.2rem #ea3e776c !important;
-  opacity: 0.85 !important;
-}
-</style>
