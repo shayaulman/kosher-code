@@ -20,7 +20,7 @@ module.exports = [
   { name: "Chrome", color: "#d54345" },
   { name: "PostgreSQL", color: "#014980" },
   { name: "laravel", color: "#ff2d20" },
-  { name: "web_design", color: "#4b43af"},
+  { name: "web_design", color: "#4b43af" },
   { name: "aws", color: "#146eb4" },
   { name: "Android", color: "#11483c" },
   { name: "cybersecurity", color: "#cc3600" },
@@ -44,4 +44,5 @@ module.exports = [
   { name: "devops", color: "#0079D3" },
   { name: "linuxmint", color: "#94e044" },
   { name: "linuxquestions", color: "#0079d3" },
+  { name: "Ubuntu", color: "#a0363c" },
 ];

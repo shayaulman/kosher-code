@@ -48,6 +48,14 @@ export default {
       const bmcBtn = document.getElementById("bmc-wbtn");
       this.listenerSetup(bmcBtn);
     }, 500);
+
+    const openBmcWidget = !!this.$route.query.bmc;
+    if (openBmcWidget) {
+      setTimeout(() => {
+        const bmcBtn = document.getElementById("bmc-wbtn");
+        bmcBtn.click();
+      }, 500);
+    }
   },
 };
 </script>

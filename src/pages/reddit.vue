@@ -16,7 +16,7 @@
         v-model="searchString"
         type="text"
         placeholder="חיפוש"
-        class="w-84 px-4 py-2 border-0 ext-custom-text-3 bg-custom-bg-3 rounded-md focus:shadow-outline focus:outline-none"
+        class="w-84 px-4 py-2 border-0 text-custom-text-3 bg-custom-bg-primary-2 rounded-md focus:shadow-outline focus:outline-none"
       />
       <p class="p-4 text-sm text-custom-text-secondary opacity-75">
         מציג

@@ -6,6 +6,7 @@ module.exports = {
         custom: {
           brand: "var(--brand)",
           "bg-primary": "var(--bg-primary)",
+          "bg-primary-2": "var(--bg-primary-2)",
           "bg-card": "var(--bg-card)",
           "bg-card-2": "var(--bg-card-2)",
           "bg-3": "var(--bg-3)",
