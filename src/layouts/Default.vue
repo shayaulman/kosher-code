@@ -1,5 +1,5 @@
 <template>
-  <div
+  <main
     :class="theme"
     class="relative min-h-screen bg-custom-bg-primary transition duration-200"
   >
@@ -11,7 +11,7 @@
       <slot />
       <app-footer v-if="!dontShowFooter" />
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
