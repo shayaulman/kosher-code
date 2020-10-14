@@ -4,6 +4,7 @@ const videoTutorials = require("./data/videoTutorials");
 const redditChannels = require("./data/redditChannels");
 const podcasts = require("./data/podcasts");
 const blogs = require("./data/blogs");
+const learningPlatforms = require("./data/learningPlatforms");
 
 let id_list = videoTutorials.map((tech) =>
   tech.videoTutorials.map((video) => video.url)
@@ -78,6 +79,18 @@ module.exports = function(api) {
         color: blog.color,
         isHebrew: blog.hebrew,
         isMedium: isMediumBlog(blog.link),
+      });
+    });
+
+    const LearningPlatforms = actions.addCollection("LearningPlatform");
+    learningPlatforms.forEach((platform) => {
+      LearningPlatforms.addNode({
+        name: platform.name,
+        desc: platform.desc,
+        link: platform.link,
+        tags: platform.tags,
+        isHebrew: platform.isHebrew || false,
+        color: platform.color,
       });
     });
 

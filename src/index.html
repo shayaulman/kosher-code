@@ -10,10 +10,11 @@
     // In case user is going directly to static page
     // Official solution by the framework?
     setTimeout(() => {
-
       const theme = localStorage.getItem('theme') || "theme-dark";
-      console.log(theme);
-      document.querySelector('main').classList.add(theme);
+      const main = document.querySelector('main');
+      if (main) {
+        main.classList.add(theme);
+      }
     }, 1000)
   </script>
   <style>
