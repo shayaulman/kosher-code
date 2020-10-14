@@ -145,4 +145,13 @@ module.exports = [
     link: "https://medium.com/coding-blocks",
     desc: "Code your way to success | codingblocks.com"
   },
+  {
+    name: "הבלוג של חץ ביז",
+    link: "https://linvirtstor.net/",
+    desc: "טיפים ומידע על טכנולוגיות שונות",
+    hebrew: true
+  },
 ];
+
+
+
