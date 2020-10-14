@@ -149,6 +149,7 @@ module.exports = [
     name: "הבלוג של חץ ביז",
     link: "https://linvirtstor.net/",
     desc: "טיפים ומידע על טכנולוגיות שונות",
+    color: "#ecc5ad",
     hebrew: true
   },
 ];
