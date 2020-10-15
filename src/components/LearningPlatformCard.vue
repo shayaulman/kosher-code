@@ -2,7 +2,7 @@
   <g-link
     :to="link"
     :style="`border-top: 3px solid ${color}`"
-    class="m-4 w-84 h-48 flex justify-center bg-custom-bg-card-2 rounded-md transform hover:-translate-y-1 ease-in duration-100"
+    class="m-3 w-72 h-48 flex justify-center bg-custom-bg-card rounded-md transform hover:-translate-y-1 ease-in duration-100"
   >
     <div class="py-2 px-4 w-full flex flex-col justify-between">
       <div class="h-20">
@@ -28,10 +28,13 @@
       <ul class="rtl flex flex-wrap -mx-2 text-xs p-4">
         <li
           v-for="tag in tags"
-          :key="tag"
-          class="m-1 px-3 py-1 text-xxs bg-custom-bg-card-3 rounded-full text-custom-gray-1"
+          @click.prevent="$emit('tag-selected', tag.name)"
+          :key="tag.name"
+          :style="`color: ${tag.color}; background: ${tag.background}`"
+          :class="{ 'shadow-outline': selectedTag === tag.name }"
+          class="m-1 px-3 py-1 text-xxs rounded-full"
         >
-          {{ tag }}
+          {{ tag.name }}
         </li>
       </ul>
     </div>
@@ -49,6 +52,7 @@ export default {
     link: String,
     color: String,
     tags: Array,
+    selectedTag: String,
   },
   computed: {
     direction() {
@@ -59,6 +63,9 @@ export default {
     isHebrew(text) {
       const HEBREW = RegExp("[\u0590-\u05FF]");
       return HEBREW.test(text);
+    },
+    log() {
+      console.log("test");
     },
   },
 };
