@@ -6,15 +6,19 @@
         { 'router-link-active': subIsActive('/video-tutorials') },
         { 'text-custom-text-secondary': item === 'אודות' },
       ]"
-      class="mx-3 text-custom-text-primary font-hairline opacity-75 hover:text-custom-brand transition duration-300"
+      class="relative mx-3 text-custom-text-primary font-hairline opacity-75 hover:text-custom-brand transition duration-300"
       :v-smooth-scroll="link === 'video-tutorials'"
-      >{{ item }}</g-link
+    >
+      <new-badge v-if="item === 'לימודים'" />
+      {{ item }}</g-link
     >
   </section>
 </template>
 
 <script>
+import NewBadge from "~/components/UI/NewBadge";
 export default {
+  components: { NewBadge },
   props: {
     item: String,
     link: String,

@@ -33,6 +33,7 @@ export default {
         { item: "בלוגים", link: "/blogs" },
         { item: "פודקאסטים", link: "/podcasts" },
         { item: "Reddit", link: "/reddit" },
+        { item: "לימודים", link: "/learning-platforms" },
         {
           item: "אודות",
           link:

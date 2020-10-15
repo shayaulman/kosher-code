@@ -1,17 +1,17 @@
 <template>
   <g-link
-    @mouseenter.native="hover=true"
-    @mouseleave.native="hover=false"
+    @mouseenter.native="hover = true"
+    @mouseleave.native="hover = false"
     :to="`video-tutorials/playlists/${name.replace(' ', '-').toLowerCase()}`"
     class="m-3"
   >
     <section
-      :class="{'elevation-high': hover}"
+      :class="{ 'elevation-high': hover }"
       class="bg-custom-bg-card w-64 rounded overflow-hidden"
     >
       <div class="relative">
         <img
-          style="width:320px ;height:150px"
+          style="width: 320px; height: 150px"
           :src="thumbnail"
           height="90"
           class="rounded-t-md bg-black transition duration-300"
@@ -26,22 +26,32 @@
         </div>-->
       </div>
       <div
-        style="height: 150px;"
+        style="height: 150px"
         class="overlay-top relative px-1 py-3 h-16 w-full z-10 pointer-events-none"
       >
-        <div v-if="isHebrew" class="israel-icon w-10 absolute left-0 z-20 rounded">
-          <israel-flag-icon />
+        <div
+          v-if="isHebrew"
+          class="israel-icon w-10 absolute left-0 z-20 rounded"
+        >
+          <israel-flag-icon class="bg-custom-bg-card" />
         </div>
         <h2
           :class="direction"
           class="p-2 px-3 absolute font-light text-sm text-custom-text-primary Z-40"
-        >{{ hebrewName || name }}</h2>
+        >
+          {{ hebrewName || name }}
+        </h2>
         <div
           :class="amountDirection"
           class="videos-anount mt-4 flex justify-center items-center h-full text-white z-0 opacity-50"
         >
-          <h1 class="z-20 text-3xl text-custom-text-secondary">{{ amountOfVideos }}</h1>
-          <svg class="w-16 fill-current text-custom-text-secondary" viewBox="0 0 24 24">
+          <h1 class="z-20 text-3xl text-custom-text-secondary">
+            {{ amountOfVideos }}
+          </h1>
+          <svg
+            class="w-16 fill-current text-custom-text-secondary"
+            viewBox="0 0 24 24"
+          >
             <g>
               <path
                 d="M3.67 8.67h14V11h-14V8.67zm0-4.67h14v2.33h-14V4zm0 9.33H13v2.34H3.67v-2.34zm11.66 0v7l5.84-3.5-5.84-3.5z"

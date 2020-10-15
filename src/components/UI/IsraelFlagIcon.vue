@@ -1,5 +1,5 @@
 <template>
-  <section class="card-background bg-custom-bg-card rounded-md">
+  <section class="card-background rounded-md">
     <svg
       id="Capa_1"
       enable-background="new 0 0 512 512"
@@ -7,7 +7,7 @@
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-      class="fill-stroke border-4 border-red-500"
+        class="fill-stroke border-4 border-red-500"
         d="m466.916 27.204h-421.832c-24.859 0-45.084 20.225-45.084 45.084v65.167l3.858 7.345v217.96l-3.858 10.587v66.365c0 24.859 20.225 45.084 45.084 45.084h421.832c24.859 0 45.084-20.225 45.084-45.084v-66.365l-4.156-7.627v-217.759l4.156-10.506v-65.167c0-24.859-20.225-45.084-45.084-45.084z"
         fill="#406bd4"
       />
