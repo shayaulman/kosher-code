@@ -7,7 +7,7 @@
       <li
         @click="selectedTagString = ''"
         :class="{ 'shadow-outline': !selectedTagString }"
-        class="m-2 px-3 py-1 bg-custom-brand text-gray-200 -xxs rounded-full cursor-pointer"
+        class="m-2 px-3 py-1 bg-custom-brand text-gray-200 -xxs rounded cursor-pointer"
       >
         הכל
       </li>
@@ -17,7 +17,7 @@
         :key="tag.name"
         :style="`color: ${tag.color}; background: ${tag.background}`"
         :class="{ 'shadow-outline': selectedTagString === tag.name }"
-        class="m-2 px-3 py-1 text-xs rounded-full cursor-pointer"
+        class="m-2 px-3 py-1 text-xs rounded cursor-pointer"
       >
         {{ tag.name }}
       </li>
@@ -83,28 +83,35 @@ export default {
     return {
       platforms: [],
       selectedTagString: "",
+      // !TODO: use tech colors when possible
       colors: [
-        { color: "white", background: "#0029d0" },
-        { color: "white", background: "#428bca" },
-        { color: "white", background: "#44ad8e" },
-        { color: "black", background: "#a8d695" },
-        { color: "white", background: "#5cb85c" },
-        { color: "black", background: "#69D100" },
-        { color: "white", background: "#004f00" },
-        { color: "white", background: "#34495e" },
-        { color: "white", background: "#7f8c8d" },
-        { color: "black", background: "#a295d6" },
-        { color: "white", background: "#5843ad" },
-        { color: "white", background: "#8e44ad" },
-        { color: "black", background: "#ffecdb" },
-        { color: "white", background: "#ad4363" },
-        { color: "white", background: "#D10069" },
-        { color: "white", background: "#CC0033" },
-        { color: "white", background: "#FF0000" },
-        { color: "white", background: "#D9534F" },
-        { color: "black", background: "#d1d300" },
-        { color: "black", background: "#f0ad4e" },
-        { color: "white", background: "#ae8e3c" },
+        { color: "#fff", background: "#0029d0" },
+        { color: "#fff", background: "#428bca" },
+        { color: "#fff", background: "#44ad8e" },
+        { color: "#000", background: "#a8d695" },
+        { color: "#fff", background: "#5cb85c" },
+        { color: "#000", background: "#69D100" },
+        { color: "#fff", background: "#004f00" },
+        { color: "#fff", background: "#34495e" },
+        { color: "#fff", background: "#7f8c8d" },
+        { color: "#000", background: "#a295d6" },
+        { color: "#fff", background: "#5843ad" },
+        { color: "#fff", background: "#8e44ad" },
+        { color: "#000", background: "#ffecdb" },
+        { color: "#fff", background: "#ad4363" },
+        { color: "#fff", background: "#D10069" },
+        { color: "#fff", background: "#CC0033" },
+        { color: "#fff", background: "#FF0000" },
+        { color: "#fff", background: "#D9534F" },
+        { color: "#000", background: "#d1d300" },
+        { color: "#000", background: "#f0ad4e" },
+        { color: "#fff", background: "#ae8e3c" },
+        { color: "#000", background: "#ED8936" },
+        { color: "#000", background: "#F56565" },
+        { color: "#fff", background: "#48BB78" },
+        { color: "#fff", background: "#38B2AC" },
+        { color: "#fff", background: "#4299E1" },
+        //!TODO: more colors...
       ],
     };
   },
@@ -139,8 +146,8 @@ export default {
       this.tagList.forEach((tag, i) => {
         tagsWithColors.push({
           name: tag,
-          background: this.colors[i].background,
-          color: this.colors[i].color,
+          background: this.colors[i]?.background || "#CC0033",
+          color: this.colors[i]?.color || "#fff",
         });
       });
 
@@ -152,15 +159,15 @@ export default {
   },
 
   methods: {
-    log() {
-      console.log("tes");
-    },
     selectTags(tagList) {
       const selectedTags = tagList.map((tag) => {
         return this.tagsWithColors.find((t) => t.name === tag);
       });
       return selectedTags;
     },
+  },
+  mounted() {
+    console.log(this.learningPlatforms.length);
   },
 };
 </script>
