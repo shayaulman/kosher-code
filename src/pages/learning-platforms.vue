@@ -22,7 +22,11 @@
         {{ tag.name }}
       </li>
     </ul>
-
+    <h3 class="max-w-5xl mr-24 text-custom-text-primary text-xxs font-hairline">
+      נמצא{{ filteredLearningPlatforms.length > 1 ? "ו" : "ה" }}
+      <span class="font-bold"> {{ filteredLearningPlatforms.length }}</span>
+      פלטפורמ{{ filteredLearningPlatforms.length === 1 ? "ה" : "ות" }}
+    </h3>
     <transition-group
       name="fade"
       class="ltr max-w-5xl mx-auto my-6 flex flex-wrap justify-center items-center"
