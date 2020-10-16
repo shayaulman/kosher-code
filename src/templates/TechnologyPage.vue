@@ -43,7 +43,7 @@
           :hebrew-name="playlist.node.hebrewName"
           :amount-of-videos="playlist.node.amountOfVideos"
           :thumbnail="playlist.node.thumbnail"
-          :is-hebrew="!!playlist.node.hebrewName.length"
+          :is-hebrew="playlist.node.hebrewName !== undefined"
         />
         <video-card
           v-for="course in videos"
@@ -146,7 +146,7 @@ export default {
       );
       return !this.hebrewOnly
         ? playlists
-        : playlists.filter((playlist) => !!playlist.node.hebrewName.length);
+        : playlists.filter((playlist) => playlist.node.hebrewName !== undefined);
     },
 
     direction() {
