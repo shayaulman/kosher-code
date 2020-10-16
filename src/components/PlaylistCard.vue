@@ -92,16 +92,16 @@ export default {
     };
   },
 
-  methods: {
-    doesContainHebrewLetters(textArr) {
-      const HEBREW = RegExp("[\u0590-\u05FF]");
-      return textArr.some((txt) => HEBREW.test(txt));
-    },
-  },
+  // methods: {
+  //   doesContainHebrewLetters(textArr) {
+  //     const HEBREW = RegExp("[\u0590-\u05FF]");
+  //     return textArr.some((txt) => HEBREW.test(txt));
+  //   },
+  // },
 
   computed: {
     direction() {
-      return this.hebrewName.length === 0 ? "left-0" : "right-0";
+      return this.hebrewName.length === 0 ? "left-0 ltr" : "right-0 rtl";
     },
 
     publishTime() {
@@ -109,9 +109,9 @@ export default {
       return format(formattedDate, "MM/dd/yy");
     },
 
-    textDirection() {
-      return this.doesContainHebrewLetters([this.name]) ? "rtl" : "ltr";
-    },
+    // textDirection() {
+    //   return this.doesContainHebrewLetters([this.name]) ? "rtl" : "ltr";
+    // },
 
     amountDirection() {
       return this.hebrewName.length === 0 ? "right-0" : "left-0";
