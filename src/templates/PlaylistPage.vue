@@ -45,7 +45,7 @@
         </div>
         <section
           :style="`height: ${videoFrameHeight}px`"
-          class="w-1/3 mx-4 overflow-scroll"
+          class="w-1/3 mx-4 overflow-auto"
         >
           <playlist-list
             @selection="handle"
