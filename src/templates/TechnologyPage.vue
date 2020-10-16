@@ -134,16 +134,19 @@ export default {
     videos() {
       let videos = !this.hebrewOnly
         ? this.loadedVideos
-        : this.loadedVideos.filter((video, i) =>
+        : this.loadedVideos.filter((video) =>
             this.detectHebrew([video.node.title, video.node.description])
           );
       return videos;
     },
 
     playlists() {
-      return this.loadedPlaylists.filter((playlist) =>
+      const playlists = this.loadedPlaylists.filter((playlist) =>
         playlist.node.tags.includes(this.$context.technology)
       );
+      return !this.hebrewOnly
+        ? playlists
+        : playlists.filter((playlist) => !!playlist.node.hebrewName.length);
     },
 
     direction() {
