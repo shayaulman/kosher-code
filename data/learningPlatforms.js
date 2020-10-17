@@ -303,6 +303,13 @@ module.exports = [
     tags: ["Android דיגיטליים", "קורסים"],
     color: "#24c1e0",
   },
+  {
+    name: "Select Star SQL",
+    desc: "ספר אינטרקטיבי שמנסה להיות המקום הטוב ביותר באינטרנט ללמוד SQL",
+    link: "https://selectstarsql.com/he/",
+    tags: ["SQL", "מדריכים אינטראקטיביים", "עברית", "בחינם"],
+    color: "#0077AA",
+  },
   // {
   //   name: "",
   //   desc: "",
