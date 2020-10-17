@@ -1048,4 +1048,15 @@ module.exports = [
     ],
     color: "#999",
   },
+  
+  {
+    name: "Machine Learning",
+    hebrewName: "משין לרנינג",
+    category: "programming language",
+    officialSite: "",
+    videoTutorials: [
+      { url: "gZmobeGL0Yg" },
+    ],
+    color: "#999",
+  },
 ];
