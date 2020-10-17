@@ -685,6 +685,16 @@ module.exports = [
     ],
     color: "#ef5249",
   },
+  
+  {
+    name: "Machine Learning",
+    hebrewName: "משין לרנינג",
+    category: "special topics",
+    videoTutorials: [
+      { url: "gZmobeGL0Yg" },
+    ],
+    color: "#ef5248",
+  },
 
   {
     name: "Svelte",
