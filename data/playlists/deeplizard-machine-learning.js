@@ -1,7 +1,7 @@
 module.exports = [
   {
     name: "Deeplizard - Machine Learning",
-    hebrewName: "",
+    hebrewName: "למידת מכונה",
     category: "playlist",
     tags: ["machine learning"],
     videoTutorials: [
