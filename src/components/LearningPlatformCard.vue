@@ -17,7 +17,7 @@
           />
           <h1
             :style="`color: ${color}`"
-            class="m-1 text-2xl text-custom-text-primary"
+            class="m-1 text-lg text-custom-text-primary"
           >
             {{ name }}
           </h1>
@@ -63,9 +63,6 @@ export default {
     isHebrew(text) {
       const HEBREW = RegExp("[\u0590-\u05FF]");
       return HEBREW.test(text);
-    },
-    log() {
-      console.log("test");
     },
   },
 };

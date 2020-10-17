@@ -7,7 +7,7 @@
       <li
         @click="selectedTagString = ''"
         :class="{ 'shadow-outline': !selectedTagString }"
-        class="m-2 px-3 py-1 bg-custom-brand text-gray-200 -xxs rounded cursor-pointer"
+        class="m-1 py-1 px-2 bg-custom-brand text-gray-200 text-xxs rounded cursor-pointer"
       >
         הכל
       </li>
@@ -17,7 +17,7 @@
         :key="tag.name"
         :style="`color: ${tag.color}; background: ${tag.background}`"
         :class="{ 'shadow-outline': selectedTagString === tag.name }"
-        class="m-2 px-3 py-1 text-xs rounded cursor-pointer"
+        class="m-1 py-1 px-2 text-xxs rounded cursor-pointer"
       >
         {{ tag.name }}
       </li>
@@ -115,6 +115,14 @@ export default {
         { color: "#fff", background: "#48BB78" },
         { color: "#fff", background: "#38B2AC" },
         { color: "#fff", background: "#4299E1" },
+        { color: "#000", background: "#C6F6D5" },
+        { color: "#fff", background: "#744210" },
+        { color: "#fff", background: "#285E61" },
+        { color: "#000", background: "#B2F5EA" },
+        { color: "#000", background: "#BEE3F8" },
+        { color: "#000", background: "#C3DAFE" },
+        { color: "#000", background: "#97266D" },
+
         //!TODO: more colors...
       ],
     };
