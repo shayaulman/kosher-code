@@ -1,0 +1,37 @@
+module.exports = [
+  {
+    name: "Deeplizard - Machine Learning",
+    hebrewName: "",
+    category: "playlist",
+    tags: ["machine learning"],
+    videoTutorials: [
+      { url: "gZmobeGL0Yg" },
+      { url: "OT1jslLoCyA" },
+      { url: "hfK_dvC-avg" },
+      { url: "FK77zZxaBoI" },
+      { url: "m0pIlLfpXWE" },
+      { url: "sZAlS3_dnk0" },
+      { url: "_N5kpSMDf4o" },
+      { url: "Skc8nqJirJg" },
+      { url: "jWT-AX9677k" },
+      { url: "Zi-0rlM4RDs" },
+      { url: "Z0KVRdE_a7Q" },
+      { url: "DEMmkFC6IGM" },
+      { url: "0h8lAm5Ki5g" },
+      { url: "Quh6x4kG6VY" },
+      { url: "lEfrr0Yr684" },
+      { url: "b-yhKUINb7o" },
+      { url: "rfM4DaLTkMs" },
+      { url: "YRhxdVk_sIs" },
+      { url: "ZjM_XQa5s6s" },
+      { url: "XE3krf3CQls" },
+      { url: "2mSysRx-1c0" },
+      { url: "G5b4jRBKNxw" },
+      { url: "Zr5viAZGndE" },
+      { url: "xClK__CqZnQ" },
+      { url: "iuJgyiS7BKM" },
+      { url: "U4WB9p6ODjM" },
+      { url: "Gbz8RljxIHo" },
+    ]
+  }
+];
