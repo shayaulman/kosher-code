@@ -395,6 +395,13 @@ module.exports = [
     tags: ["ספרים"],
     color: "#001689",
   },
+  {
+    name: "Under Warrior",
+    desc: "מדריכים - תיכנות, בניית אתרים, קידום אתרים ואבטחת מידע",
+    link: "http://www.underwar.co.il/",
+    tags: ["עברית", "מדריכים", "סייבר"],
+    color: "#851614",
+  },
   // {
   //   name: "",
   //   desc: "",
