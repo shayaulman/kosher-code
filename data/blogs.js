@@ -32,14 +32,14 @@ module.exports = [
     desc: "ריאקט ישראל",
     link: "https://www.react-israel.co.il/",
     hebrew: true,
-    color: "#14023d",
+    color: "#5f527e",
   },
   {
     name: "savvy",
     desc: "מדברים וורדפרס",
     link: "https://he.savvy.co.il/blog/",
     hebrew: true,
-    color: "#2d2d2d",
+    color: "#6e6565",
   },
   {
     name: "רשתטק",
@@ -123,36 +123,35 @@ module.exports = [
   {
     name: "Microsoft Design",
     link: "https://medium.com/microsoft-design",
-    desc: "Putting technology on a more human path, one design story at a time"
+    desc: "Putting technology on a more human path, one design story at a time",
   },
   {
     name: "Better Marketing",
     link: "https://medium.com/better-marketing",
-    desc: "Marketing advice & case studies to help you market ethically, authentically, and efficiently."
+    desc:
+      "Marketing advice & case studies to help you market ethically, authentically, and efficiently.",
   },
   {
     name: "Javascript Scene",
     link: "https://medium.com/javascript-scene",
-    desc: "JavaScript, software leadership, software development, and related technologies."
+    desc:
+      "JavaScript, software leadership, software development, and related technologies.",
   },
   {
     name: "Better Programming",
     link: "https://medium.com/better-programming",
-    desc: "Advice for programmers."
+    desc: "Advice for programmers.",
   },
   {
     name: "Coding Blocks",
     link: "https://medium.com/coding-blocks",
-    desc: "Code your way to success | codingblocks.com"
+    desc: "Code your way to success | codingblocks.com",
   },
   {
     name: "הבלוג של חץ ביז",
     link: "https://linvirtstor.net/",
     desc: "טיפים ומידע על טכנולוגיות שונות",
     color: "#ecc5ad",
-    hebrew: true
+    hebrew: true,
   },
 ];
-
-
-

@@ -381,10 +381,25 @@ module.exports = [
     tags: ["עברית", "קורסים"],
     color: "#e72861",
   },
+  {
+    name: "Cybrary",
+    desc: "Free Cybersecurity Training and Career Development",
+    link: "https://www.cybrary.it/",
+    tags: ["קורסים", "סייבר"],
+    color: "#e24897",
+  },
+  {
+    name: "Oreilly",
+    desc: "Free Programming Ebooks",
+    link: "https://www.oreilly.com/programming/free/",
+    tags: ["ספרים"],
+    color: "#001689",
+  },
   // {
   //   name: "",
   //   desc: "",
   //   link: "",
+  //   tags: [],
   //   color: "#",
   // },
   // {

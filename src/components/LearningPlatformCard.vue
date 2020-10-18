@@ -22,7 +22,11 @@
             {{ name }}
           </h1>
         </div>
-        <p class="px-4 text-center text-xs text-custom-gray-1">{{ desc }}</p>
+        <p
+          class="mt-1 px-4 text-center text-xs text-custom-gray-1 font-hairline"
+        >
+          {{ desc }}
+        </p>
       </div>
 
       <ul class="rtl flex flex-wrap -mx-2 text-xs p-4">

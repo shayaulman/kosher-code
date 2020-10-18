@@ -126,12 +126,24 @@ export default {
 
 
 <style lang="scss">
-.fade-enter-active,
-.fade-leave-active {
-  transition: all 0.4s ease-out;
+// https://codepen.io/andymerskin/pen/eRNvLR
+.fade-enter-active {
+  transition: 0.3s ease;
+  c: #282a36;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+  position: absolute;
+}
+
+.fade-enter,
+.fade-leave-to {
   opacity: 0;
-  transform: scale(0.7);
+  transform: translateY(10px);
+}
+
+.fade-move {
+  transition: 0.3s ease;
 }
 </style>

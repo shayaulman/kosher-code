@@ -187,11 +187,11 @@ export default {
 <style lang="scss">
 // https://codepen.io/andymerskin/pen/eRNvLR
 .fade-enter-active {
-  transition: 0.2s ease;
+  transition: 0.3s ease;
 }
 
 .fade-leave-active {
-  transition: opacity 0.2s ease;
+  transition: opacity 3s ease;
   position: absolute;
 }
 
@@ -202,6 +202,6 @@ export default {
 }
 
 .fade-move {
-  transition: 0.2s ease;
+  transition: 3s ease;
 }
 </style>

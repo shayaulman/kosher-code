@@ -1,12 +1,14 @@
 <template>
   <g-link
-    :style="`background:${color}`"
-    :class="{'bg text-custom-text-primary': isMedium}"
-    class="test m-2 py-4 px-6 w-64 h-24 text-center text-white text-lg rounded-md transform hover:scale-105 transition ease-in duration-200"
+    :style="`border-top: 3px ${color} solid`"
+    :class="{ 'bg text-custom-text-primary': isMedium }"
+    class="test m-2 py-4 px-6 w-64 h-24 text-center text-white bg-custom-bg-card text-lg rounded-md transform hover:scale-105 transition ease-in duration-200"
     :to="link"
   >
-    <h1 class="text-lg" dir="auto">{{name}}</h1>
-    <p class="text-xs font-light opacity-75" dir="auto">{{desc}}</p>
+    <h1 :style="`color:${color}`" class="text-lg" dir="auto">{{ name }}</h1>
+    <p class="text-xs text-custom-gray-1 font-hairline opacity-75" dir="auto">
+      {{ desc }}
+    </p>
   </g-link>
 </template>
 
