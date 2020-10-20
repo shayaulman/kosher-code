@@ -148,6 +148,41 @@ module.exports = [
     desc: "Code your way to success | codingblocks.com",
   },
   {
+    name: "Javarevisited",
+    link: "https://medium.com/javarevisited",
+    desc: "Medium’s largest Java publication, followed by 7100+ programmers.",
+  },
+  {
+    name: "JavaScript In Plain English",
+    link: "https://medium.com/javascript-in-plain-english",
+    desc: "New JavaScript + Web Dev articles every day",
+  },
+  {
+    name: "Rinu Gour",
+    link: "https://medium.com/@rinu.gour123",
+    desc: "Data Science Enthusiast | Research writer | Blogger | Entrepreneur",
+  },
+  {
+    name: "Dev Genius",
+    link: "https://medium.com/dev-genius",
+    desc: "Coding, Tutorials, News, UX, UI and much more related to development",
+  },
+  {
+    name: "edureka!",
+    link: "https://medium.com/edureka",
+    desc: "Ridiculously Commited E-Learning Platform",
+  },
+  {
+    name: "randerson112358",
+    link: "https://medium.com/@randerson112358",
+    desc: "A programmer that loves Computer Science",
+  },
+  {
+    name: "Wix Engineering",
+    link: "https://medium.com/wix-engineering",
+    desc: "Architecture, scaling, mobile and web development, management and more, written by our very own Wix engineers. https://www.wix.engineering/",
+  },
+  {
     name: "הבלוג של חץ ביז",
     link: "https://linvirtstor.net/",
     desc: "טיפים ומידע על טכנולוגיות שונות",
