@@ -49,4 +49,5 @@ module.exports = [
   { name: "bashonubuntuonwindows", color: "#545452" },
   { name: "Windows", color: "#0079d3" },
   { name: "Windows10", color: "#0078d7" },
+  { name: "dotnet", color: "#7e53c1" },
 ];
