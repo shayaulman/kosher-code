@@ -45,4 +45,8 @@ module.exports = [
   { name: "linuxmint", color: "#94e044" },
   { name: "linuxquestions", color: "#0079d3" },
   { name: "Ubuntu", color: "#a0363c" },
+  { name: "PowerShell", color: "#0079D3" },
+  { name: "bashonubuntuonwindows", color: "#545452" },
+  { name: "Windows", color: "#0079d3" },
+  { name: "Windows10", color: "#0078d7" },
 ];
