@@ -1,7 +1,7 @@
 module.exports = [
   {
     name: "SoleroWeb html",
-    hebrewName: "",
+    hebrewName: "סולרו ווב - HTML",
     category: "playlist",
     tags: ["html"],
     videoTutorials: [
