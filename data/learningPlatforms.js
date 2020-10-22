@@ -402,6 +402,13 @@ module.exports = [
     tags: ["עברית", "מדריכים", "סייבר"],
     color: "#851614",
   },
+  {
+    name: "CSSBattle",
+    desc: "Use your CSS skills to replicate targets with smallest possible code",
+    link: "https://cssbattle.dev/",
+    tags: ["תחרוית", "חינמי", "CSS"],
+    color: "#cbd1e1",
+  },
   // {
   //   name: "",
   //   desc: "",
