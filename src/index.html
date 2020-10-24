@@ -4,18 +4,13 @@
 <head>
   <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="shayaulman"
     data-description="Support me on Buy me a coffee!"
-    data-message="Thank you for visiting. You can now buy me a coffee!" data-color="#ea3e78b3" data-position=""
+    data-message="Thank you for visiting. You can now buy me a coffee!" data-color="#ea3e777e" data-position=""
     data-x_margin="18" data-y_margin="18"></script>
   <script>
     // In case user is going directly to static page
     // Official solution by the framework?
-    setTimeout(() => {
-      const theme = localStorage.getItem('theme') || "theme-dark";
-      const main = document.querySelector('main');
-      if (main) {
-        main.classList.add(theme);
-      }
-    }, 1000)
+    const theme = localStorage.getItem('theme') || "theme-dark";
+    document.querySelector('body').classList.add(theme);
   </script>
   <style>
     iframe[src*="buymeacoffee"] {
@@ -23,8 +18,8 @@
     }
 
     #bmc-wbtn {
-      width: 44px !important;
-      height: 44px !important;
+      width: 38px !important;
+      height: 38px !important;
     }
 
     /* override onmouseover */
@@ -33,8 +28,8 @@
     }
 
     #bmc-wbtn img {
-      height: 25px !important;
-      width: 25px !important;
+      height: 22px !important;
+      width: 22px !important;
     }
   </style>
   <meta property="og:title" content="KosherCode" />

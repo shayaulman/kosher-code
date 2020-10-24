@@ -2,7 +2,7 @@
   <Layout>
     <div class="my-8 flex justify-center"><student-icon /></div>
     <ul
-      class="rtl max-w-4xl mb-8 mx-auto p-4 flex justify-center flex-wrap text-xs"
+      class="rtl max-w-5xl mb-8 mx-auto p-4 flex justify-center flex-wrap text-xs"
     >
       <li
         @click="selectedTagString = ''"
@@ -48,6 +48,11 @@
       <h1 class="mt-8 p-4 text-custom-text-primary">
         ידוע לכם על פלטפורמת לימודים (באנגלית או עברית) שפתוח בנטפרי ואינו מופיע
         במאגר?
+        <a
+          href="https://github.com/shayaulman/kosher-code/blob/master/data/learningPlatforms.js"
+          class="underline"
+          >ערוך ישירות את המקור</a
+        >, או
       </h1>
       <g-link to="/contact">
         <button
@@ -80,6 +85,7 @@
 <script>
 import LearningPlatformCard from "~/components/LearningPlatformCard";
 import StudentIcon from "~/components/UI/StudentIcon";
+import colors from "~/assets/colors";
 
 export default {
   components: { LearningPlatformCard, StudentIcon },
@@ -87,50 +93,18 @@ export default {
     return {
       platforms: [],
       selectedTagString: "",
-      // !TODO: use tech colors when possible
-      colors: [
-        { color: "#fff", background: "#0029d0" },
-        { color: "#fff", background: "#428bca" },
-        { color: "#fff", background: "#44ad8e" },
-        { color: "#000", background: "#a8d695" },
-        { color: "#fff", background: "#5cb85c" },
-        { color: "#000", background: "#69D100" },
-        { color: "#fff", background: "#004f00" },
-        { color: "#fff", background: "#34495e" },
-        { color: "#fff", background: "#7f8c8d" },
-        { color: "#000", background: "#a295d6" },
-        { color: "#fff", background: "#5843ad" },
-        { color: "#fff", background: "#8e44ad" },
-        { color: "#000", background: "#ffecdb" },
-        { color: "#fff", background: "#ad4363" },
-        { color: "#fff", background: "#D10069" },
-        { color: "#fff", background: "#CC0033" },
-        { color: "#fff", background: "#FF0000" },
-        { color: "#fff", background: "#D9534F" },
-        { color: "#000", background: "#d1d300" },
-        { color: "#000", background: "#f0ad4e" },
-        { color: "#fff", background: "#ae8e3c" },
-        { color: "#000", background: "#ED8936" },
-        { color: "#000", background: "#F56565" },
-        { color: "#fff", background: "#48BB78" },
-        { color: "#fff", background: "#38B2AC" },
-        { color: "#fff", background: "#4299E1" },
-        { color: "#000", background: "#C6F6D5" },
-        { color: "#fff", background: "#744210" },
-        { color: "#fff", background: "#285E61" },
-        { color: "#000", background: "#B2F5EA" },
-        { color: "#000", background: "#BEE3F8" },
-        { color: "#000", background: "#C3DAFE" },
-        { color: "#000", background: "#97266D" },
-
-        //!TODO: more colors...
-      ],
+      colors: colors,
+      // !TODO: maybe use tech colors
     };
   },
 
   computed: {
     learningPlatforms() {
-      return this.$page.learningPlatform.edges;
+      return this.$page.learningPlatform.edges.sort((a, b) => {
+        return a.node.name
+          .toLowerCase()
+          .localeCompare(b.node.name.toLowerCase());
+      });
     },
     filteredLearningPlatforms() {
       if (!this.selectedTagString) {
@@ -163,10 +137,16 @@ export default {
         });
       });
 
-      const sorted = tagsWithColors.sort((a, b) => {
-        return a.name.toLowerCase().localeCompare(b.name.toLowerCase());
-      });
-      return sorted;
+      const englishTagsSorted = tagsWithColors
+        .sort((a, b) => {
+          return a.name.toLowerCase().localeCompare(b.name.toLowerCase());
+        })
+        .filter((tag) => !this.isHebrew(tag.name));
+
+      const hebrewTags = tagsWithColors
+        .filter((tag) => this.isHebrew(tag.name))
+        .sort((a, b) => (a.name !== "עברית") - (b.name !== "עברית"));
+      return [...hebrewTags, ...englishTagsSorted];
     },
   },
 
@@ -177,9 +157,10 @@ export default {
       });
       return selectedTags;
     },
-  },
-  mounted() {
-    console.log(this.learningPlatforms.length);
+    isHebrew(text) {
+      const HEBREW = RegExp("[\u0590-\u05FF]");
+      return HEBREW.test(text);
+    },
   },
 };
 </script>
@@ -191,7 +172,7 @@ export default {
 }
 
 .fade-leave-active {
-  transition: opacity 3s ease;
+  transition: opacity 0.3s ease;
   position: absolute;
 }
 
@@ -202,6 +183,6 @@ export default {
 }
 
 .fade-move {
-  transition: 3s ease;
+  transition: 0.3s ease;
 }
 </style>
