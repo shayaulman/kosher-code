@@ -131,7 +131,7 @@ module.exports = [
     name: "Leet Code",
     desc: "The World's Leading Online Programming Learning Platform",
     link: "https://leetcode.com/",
-    tags: ["הכנה לראיונות", "תחרוית"],
+    tags: ["הכנה לראיונות", "תרוית"],
     color: "#fab31e",
   },
   {
@@ -413,14 +413,14 @@ module.exports = [
     name: "Flexbox Froggy",
     desc: "A game for learning CSS flexbox",
     link: "https://flexboxfroggy.com/",
-    tags: ["CSS", "תירגול"],
+    tags: ["CSS", "תרגול"],
     color: "#77fa78",
   },
   {
     name: "CSS Grid Garden",
     desc: "A game for learning CSS grid layout",
     link: "https://cssgridgarden.com/",
-    tags: ["CSS", "תירגול"],
+    tags: ["CSS", "תרגול"],
     color: "#c1831d",
   },
   {
@@ -443,6 +443,13 @@ module.exports = [
     link: "https://www.leveluptutorials.com/",
     tags: ["קורסים", "פיתוח-ווב"],
     color: "#504660",
+  },
+  {
+    name: "Interview Bit",
+    desc: "Coding practice",
+    link: "https://www.interviewbit.com/practice/",
+    tags: ["הכנה לראיונות", "תרגול"],
+    color: "#",
   },
   // {
   //   name: "",

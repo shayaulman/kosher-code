@@ -9,8 +9,10 @@
   <script>
     // In case user is going directly to static page
     // Official solution by the framework?
-    const theme = localStorage.getItem('theme') || "theme-dark";
-    document.querySelector('body').classList.add(theme);
+    setTimeout(() => {
+      const theme = localStorage.getItem('theme') || "theme-dark";
+      document.querySelector('main').classList.add(theme);
+    }, 500);
   </script>
   <style>
     iframe[src*="buymeacoffee"] {

@@ -165,7 +165,8 @@ module.exports = [
   {
     name: "Dev Genius",
     link: "https://medium.com/dev-genius",
-    desc: "Coding, Tutorials, News, UX, UI and much more related to development",
+    desc:
+      "Coding, Tutorials, News, UX, UI and much more related to development",
   },
   {
     name: "edureka!",
@@ -180,7 +181,8 @@ module.exports = [
   {
     name: "Wix Engineering",
     link: "https://medium.com/wix-engineering",
-    desc: "Architecture, scaling, mobile and web development, management and more, written by our very own Wix engineers. https://www.wix.engineering/",
+    desc:
+      "Architecture, scaling, mobile and web development, management and more, written by our very own Wix engineers. https://www.wix.engineering/",
   },
   {
     name: "הבלוג של חץ ביז",
@@ -188,5 +190,10 @@ module.exports = [
     desc: "טיפים ומידע על טכנולוגיות שונות",
     color: "#ecc5ad",
     hebrew: true,
+  },
+  {
+    name: "Weekly Web Tips",
+    link: "https://medium.com/weekly-webtips",
+    desc: "Weekly Web Tips",
   },
 ];
