@@ -185,6 +185,11 @@ module.exports = [
       "Architecture, scaling, mobile and web development, management and more, written by our very own Wix engineers. https://www.wix.engineering/",
   },
   {
+    name: "Ido Kanner",
+    link: "https://medium.com/@idokan",
+    desc: "Ido Kanner",
+  },
+  {
     name: "הבלוג של חץ ביז",
     link: "https://linvirtstor.net/",
     desc: "טיפים ומידע על טכנולוגיות שונות",
@@ -195,5 +200,12 @@ module.exports = [
     name: "Weekly Web Tips",
     link: "https://medium.com/weekly-webtips",
     desc: "Weekly Web Tips",
+  },
+  {
+    name: "לראות שונה",
+    link: "https://idkn.wordpress.com/",
+    desc: "מבט שונה בעיקר על (פיתוח) תוכנה, עסקים והקוד הפתוח",
+    color: "#444",
+    hebrew: true,
   },
 ];

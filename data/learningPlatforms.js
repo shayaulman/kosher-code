@@ -449,7 +449,21 @@ module.exports = [
     desc: "Coding practice",
     link: "https://www.interviewbit.com/practice/",
     tags: ["הכנה לראיונות", "תרגול"],
-    color: "#",
+    color: "#63B1C6",
+  },
+  {
+    name: "Calhoun.io",
+    desc: "Go for Everyone",
+    link: "https://www.calhoun.io/",
+    tags: ["Go"],
+    color: "#851614",
+  },
+  {
+    name: "gorails",
+    desc: "Learn Ruby on Rails",
+    link: "https://gorails.com/",
+    tags: ["Ruby"],
+    color: "#2db44a",
   },
   // {
   //   name: "",
