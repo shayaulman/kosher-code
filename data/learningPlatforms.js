@@ -448,7 +448,7 @@ module.exports = [
     name: "Calhoun.io",
     desc: "Go for Everyone",
     link: "https://www.calhoun.io/",
-    tags: ["go"],
+    tags: ["Go"],
     color: "#851614",
   },
   // {
