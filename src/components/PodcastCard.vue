@@ -9,14 +9,14 @@
       class="h-full bg-custom-bg-card"
     >
       <div class="w-12 h-12 m-4">
-        <g-image v-if="image.length > 0" :src="handleImage" />
+        <g-image v-if="image.length > 0" :src="image" />
         <podcast-icon v-else small class="" />
       </div>
     </div>
 
     <div class="p-6">
       <g-link :to="`${link}`" target="_blank" class="px-8">
-        <h1 :style="`color: ${color}`" class="text-xl text-custom-text-primary">
+        <h1 :style="`color: ${color}`" class="text-lg text-custom-text-primary">
           {{ name }}
         </h1>
         <p class="text-xs text-custom-text-3">{{ description }}</p>
@@ -34,20 +34,15 @@ export default {
     link: String,
     image: String,
     color: String,
-    hebrew: Boolean
+    hebrew: Boolean,
   },
 
   components: { PodcastIcon },
 
   computed: {
-    handleImage() {
-      const splitedPath = this.image.split(".");
-      const isPng = splitedPath[splitedPath.length - 1] === "png";
-      return isPng ? require("~/assets/icons/syntaxfm.png") : this.image;
-    },
     direction() {
       return this.hebrew ? "rtl" : "ltr";
-    }
-  }
+    },
+  },
 };
 </script>

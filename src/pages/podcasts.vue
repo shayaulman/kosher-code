@@ -38,7 +38,7 @@
         description
         link
         color
-        image 
+        image
       }
     }
   }
@@ -55,7 +55,7 @@ export default {
     isHebrew(text) {
       const HEBREW = RegExp("[\u0590-\u05FF]");
       return HEBREW.test(text);
-    }
-  }
+    },
+  },
 };
 </script>

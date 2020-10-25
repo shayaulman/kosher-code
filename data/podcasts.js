@@ -23,7 +23,7 @@ module.exports = [
     name: "Syntax",
     description: "A Tasty Treats Podcast for Web Developers.",
     link: "https://syntax.fm",
-    image: "syntaxfm.png",
+    image: "https://syntax.fm/static/logo.png",
     color: "#d0a650",
   },
   {
@@ -35,10 +35,9 @@ module.exports = [
       "https://www1.assets.heroku.com/assets/podcast/codeish/codeish-logo-square-purple-16a8ad4d7ee52d1e31726be3527a299057df336503828eadb48d595a5c8ad5e8.svg",
     color: "#79589F",
   },
-   {
-    name: "programmingthrowdown",
-    description:
-      "Programming Throwdown with Patrick Wheeler and Jason Gauci",
+  {
+    name: "Programming Throwdown",
+    description: "Programming Throwdown with Patrick Wheeler and Jason Gauci",
     link: "https://www.programmingthrowdown.com/",
     image:
       "https://3.bp.blogspot.com/-rM9WWDxF9Oo/V2Aq6xitPNI/AAAAAAAAOgM/DJ32nsyJxrQqjFARXKs3LR0Q09hCCbiQACK4B/s758/PTLogoWithTitleAndBorder256.png",
