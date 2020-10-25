@@ -36,7 +36,7 @@ module.exports = [
     color: "#79589F",
   },
    {
-    name: "programmingthrowdown",
+    name: "Programming Throwdown",
     description:
       "Programming Throwdown with Patrick Wheeler and Jason Gauci",
     link: "https://www.programmingthrowdown.com/",
