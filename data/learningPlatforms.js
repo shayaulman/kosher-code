@@ -444,6 +444,13 @@ module.exports = [
     tags: ["קורסים", "פיתוח-ווב"],
     color: "#504660",
   },
+  {
+    name: "Calhoun.io",
+    desc: "Go for Everyone",
+    link: "https://www.calhoun.io/",
+    tags: ["go"],
+    color: "#851614",
+  },
   // {
   //   name: "",
   //   desc: "",
