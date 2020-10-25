@@ -451,6 +451,13 @@ module.exports = [
     tags: ["Go"],
     color: "#851614",
   },
+   {
+    name: "gorails",
+    desc: "Learn Ruby on Rails",
+    link: "https://gorails.com/",
+    tags: ["Ruby"],
+    color: "#2db44a",
+  },
   // {
   //   name: "",
   //   desc: "",
