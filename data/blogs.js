@@ -202,6 +202,11 @@ module.exports = [
     desc: "Weekly Web Tips",
   },
   {
+    name: "Pete Houston",
+    link: "https://medium.com/@petehouston",
+    desc: "Code / Design / Love",
+  },
+  {
     name: "לראות שונה",
     link: "https://idkn.wordpress.com/",
     desc: "מבט שונה בעיקר על (פיתוח) תוכנה, עסקים והקוד הפתוח",
