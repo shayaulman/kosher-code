@@ -77,6 +77,13 @@ module.exports = [
     color: "#50bbb7",
   },
   {
+    name: "WebDevIsrael",
+    link: "https://webdevisrael.io/",
+    desc: "בלוג על פיתוח ווב וכל מה שמסביב",
+    hebrew: true,
+    color: "#0278ae"
+  },
+  {
     name: "פינת הקפה",
     link: "https://pinatkafe.com/",
     desc: "חוויות של מנהל קטן בחברת הייטק גדולה",
