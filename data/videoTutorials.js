@@ -542,6 +542,8 @@ module.exports = [
     category: "programming language",
     officialSite: "https://nodejs.org/en/",
     videoTutorials: [
+      { url: "P5ilS8KsU7s" },
+      { url: "UQbQqzcwt_U" },
       { url: "AA2G9ZFIN8o" },
       { url: "KujWrArivjo" },
       { url: "sqf_2EIRdpk" },
