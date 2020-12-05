@@ -43,4 +43,10 @@ module.exports = [
       "https://3.bp.blogspot.com/-rM9WWDxF9Oo/V2Aq6xitPNI/AAAAAAAAOgM/DJ32nsyJxrQqjFARXKs3LR0Q09hCCbiQACK4B/s758/PTLogoWithTitleAndBorder256.png",
     color: "#ff2600",
   },
+  {
+    name: "Real Python",
+    description: "Python Tips, Interviews, and More",
+    link: "https://realpython.com/podcasts/rpp/",
+    color: "#18354c",
+  },
 ];
