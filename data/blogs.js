@@ -220,4 +220,9 @@ module.exports = [
     color: "#444",
     hebrew: true,
   },
+  {
+    name: "Dan Abramov",
+    link: "https://medium.com/@dan_abramov",
+    desc: "Working on @reactjs. Co-author of Redux and Create React App. Building tools for humans",
+  },
 ];
