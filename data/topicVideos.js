@@ -115,5 +115,16 @@ module.exports = [
       { url: "HL_uUjVWV4w" },
       { url: "IiGvUtCKyMw" }
     ]
+  },
+
+  {
+    name: "serverless",
+    hebrewName: "סרבר-לס",
+    category: "special topics",
+    color: "#de873c",
+    videoTutorials: [
+      { url: "ZhvlO5UJnoI" },
+
+    ]
   }
 ];
