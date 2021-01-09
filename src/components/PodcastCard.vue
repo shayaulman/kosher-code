@@ -1,8 +1,8 @@
 <template>
   <section
     :class="direction"
-    :style="`border-top: 3px solid ${color}`"
-    class="m-2 h-24 w-96 flex items-center bg-custom-bg-card-2 rounded-md transform hover:-translate-x-1 ease-in duration-100"
+    :style="`border-top: 3px solid ${podcastColor}`"
+    class="my-2 mx-4 h-24 w-96 flex items-center bg-custom-bg-card-2 rounded-md transform hover:-translate-x-1 ease-in duration-100"
   >
     <div
       :class="[hebrew ? 'rounded-r-md' : 'rounded-l-md']"
@@ -16,7 +16,10 @@
 
     <div class="p-6">
       <g-link :to="`${link}`" target="_blank" class="px-8">
-        <h1 :style="`color: ${color}`" class="text-lg text-custom-text-primary">
+        <h1
+          :style="`color: ${podcastColor}`"
+          class="text-lg text-custom-text-primary"
+        >
           {{ name }}
         </h1>
         <p class="text-xs text-custom-text-3">{{ description }}</p>
@@ -42,6 +45,14 @@ export default {
   computed: {
     direction() {
       return this.hebrew ? "rtl" : "ltr";
+    },
+    podcastColor() {
+      const defaultColor = "#8c5ba5";
+      if (!this.image.length) {
+        return defaultColor;
+      }
+
+      return this.color || defaultColor;
     },
   },
 };

@@ -121,10 +121,9 @@ module.exports = [
     name: "serverless",
     hebrewName: "סרבר-לס",
     category: "special topics",
-    color: "#de873c",
+    color: "#4CAF50",
     videoTutorials: [
       { url: "ZhvlO5UJnoI" },
-
     ]
   }
 ];

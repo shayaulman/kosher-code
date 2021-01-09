@@ -7,7 +7,7 @@ module.exports = [
     name: "React",
     hebrewName: "ריאקט",
     category: "framework",
-    officialSite: "he.reactjs.org",
+    officialSite: "https://he.reactjs.org",
     videoTutorials: [
       { url: "UtIOMUQ7nWM" },
       { url: "sBws8MSXN7A" },
@@ -60,7 +60,7 @@ module.exports = [
     name: "Vue",
     hebrewName: "ויו",
     category: "framework",
-    officialSite: "vuejs.org",
+    officialSite: "https://vuejs.org",
     videoTutorials: [
       { url: "zyWNA2SdZU4", pl: "gocode" },
       { url: "h7hR2_LGlGs", pl: "gocode" },
@@ -113,7 +113,7 @@ module.exports = [
     name: "Angular",
     hebrewName: "אנגולר",
     category: "framework",
-    officialSite: "angular.io",
+    officialSite: "https://angular.io",
     videoTutorials: [
       { url: "GWws2gi9JEM" },
       { url: "9P5DTlg9oLc" },
@@ -184,7 +184,7 @@ module.exports = [
     name: "AngularJS",
     hebrewName: "אנגולר JS",
     category: "framework",
-    officialSite: "angularjs.org",
+    officialSite: "https://angularjs.org",
     videoTutorials: [
       { url: "OPxeCiy0RdY" },
       { url: "KyWkKvpr_Sk" },
@@ -215,7 +215,7 @@ module.exports = [
     name: "Python",
     hebrewName: "פייתון",
     category: "programming language",
-    officialSite: "python.org",
+    officialSite: "https://python.org",
     videoTutorials: [
       { url: "hNuJ7Doc7Sg" },
       { url: "eWlzclQFG8Y" },
