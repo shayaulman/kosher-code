@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="my-8 flex justify-center"><podcast-icon /></div>
-    <section class="mx-auto my-16 flex flex-col items-center">
+    <section class="mx-auto max-w-4xl flex-wrap my-16 flex items-center">
       <podcast-card
         v-for="(podcast, i) in $page.podcast.edges"
         :key="i"

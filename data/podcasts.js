@@ -41,12 +41,33 @@ module.exports = [
     link: "https://www.programmingthrowdown.com/",
     image:
       "https://3.bp.blogspot.com/-rM9WWDxF9Oo/V2Aq6xitPNI/AAAAAAAAOgM/DJ32nsyJxrQqjFARXKs3LR0Q09hCCbiQACK4B/s758/PTLogoWithTitleAndBorder256.png",
-    color: "#ff2600",
+    color: "#068808",
   },
   {
-    name: "Real Python",
-    description: "Python Tips, Interviews, and More",
-    link: "https://realpython.com/podcasts/rpp/",
-    color: "#18354c",
+    name: "הייטק בפקקים",
+    description: "האנשים שעושים את ההייטק הישראלי",
+    link: "https://www.startupstadium.com/hitech-bapkakim/",
+    image: "https://www.startupstadium.com/wp-content/uploads/Logo-300-300.jpg",
+    color: "#2f7155",
   },
+  {
+    name: "Devchat",
+    description: "Podcasts on various topics & technologies",
+    link: "https://devchat.tv/",
+    image: "https://devchat.tv/wp-content/uploads/2020/06/Logo-web.png",
+    color: "#2acaea",
+  },
+  {
+    name: "Style Guide",
+    description: "A small batch series of interviews on Style Guides",
+    link: "http://styleguides.io/podcast/",
+    color: "#6cbcca",
+  },
+  {
+    name: "InfoQ",
+    description: "Intended for architects and senior developers.",
+    link: "https://www.infoq.com/podcasts/",
+    image: "https://www.infoq.com/styles/static/images/podcast/podcast-infoq.png",
+    color: "#1d8d44",
+  }
 ];
