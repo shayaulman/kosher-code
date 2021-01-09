@@ -25,7 +25,7 @@
     </div>
     <div class="px-4 pb-2 flex justify-between items-center">
       <g-link
-        :to="`https://${link}`"
+        :to="link"
         target="_blank"
         :style="hoverColor"
         class="link text-gray-600 transition ease-in duration-200"
@@ -63,26 +63,26 @@ export default {
     icon: String,
     amountOfVideos: Number,
     color: String,
-    link: String
+    link: String,
   },
   data() {
     return {
       icons: require("~/assets/icons/SvgIcons"),
-      playlists: []
+      playlists: [],
     };
   },
   components: {
     AppIcon,
     ExternalIcon,
-    YoutubeIcon
+    YoutubeIcon,
   },
   computed: {
     hoverColor() {
       return {
-        "--color-hover": this.color
+        "--color-hover": this.color,
       };
-    }
-  }
+    },
+  },
 };
 </script>
 
