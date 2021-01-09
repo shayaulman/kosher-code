@@ -73,10 +73,9 @@ export default {
 
   computed: {
     filteredCategories() {
-      return [];
-      // this.categories.filter(
-      //   (cat) => cat.node.category === this.category
-      // );
+      return this.categories.filter(
+        (cat) => cat.node.category === this.category
+      );
     },
     theme() {
       return this.$store.state.theme;
