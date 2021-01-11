@@ -542,6 +542,20 @@ module.exports = [
     tags: ["Javascript", "ספרים"],
     color: "#f8d411",
   },
+  {
+    name: "self.py",
+    desc: "הדרך שלך ללמוד פייתון",
+    link: "https://stage.campus.gov.il/course/course-v1-cs-gov_cs_selfpy101/",
+    tags: ["Python", "קורסים (חינמי)"],
+    color: "#f8d411",
+  },
+  {
+    name: "next.py",
+    desc: "הצעד הבא שלך בפייתון",
+    link: "https://campus.gov.il/course/course-v1-cs-gov-cs-nextpy102/",
+    tags: ["Python", "קורסים (חינמי)"],
+    color: "#f8d411",
+  },
   // {
   //   name: "",
   //   desc: "",
