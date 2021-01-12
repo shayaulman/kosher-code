@@ -51,6 +51,12 @@ module.exports = [
     color: "#2f7155",
   },
   {
+    name: "Real Python",
+    description: "Python Tips, Interviews, and More",
+    link: "https://realpython.com/podcasts/rpp/",
+    color: "#18354c",
+  },
+  {
     name: "Devchat",
     description: "Podcasts on various topics & technologies",
     link: "https://devchat.tv/",
