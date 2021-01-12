@@ -1,9 +1,11 @@
 <template>
   <Layout>
     <div class="my-8 flex justify-center"><podcast-icon /></div>
-    <section class="mx-auto max-w-4xl flex-wrap my-16 flex items-center">
+    <section
+      class="mx-auto max-w-4xl flex-wrap my-16 flex items-center justify-center"
+    >
       <podcast-card
-        v-for="(podcast, i) in $page.podcast.edges"
+        v-for="(podcast, i) in podcastsSorted"
         :key="i"
         :name="podcast.node.name"
         :description="podcast.node.description"
@@ -51,6 +53,15 @@ import PodcastIcon from "~/components/UI/PodcastIcon";
 export default {
   components: { PodcastIcon, PodcastCard },
 
+  computed: {
+    podcastsSorted() {
+      return this.$page.podcast.edges.sort((a, b) => {
+        if (this.isHebrew(a.node.name)) return -1;
+
+        return a.node.name.localeCompare(b.node.name);
+      });
+    },
+  },
   methods: {
     isHebrew(text) {
       const HEBREW = RegExp("[\u0590-\u05FF]");
