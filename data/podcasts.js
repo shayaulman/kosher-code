@@ -75,5 +75,19 @@ module.exports = [
     link: "https://www.infoq.com/podcasts/",
     image: "https://www.infoq.com/styles/static/images/podcast/podcast-infoq.png",
     color: "#1d8d44",
-  }
+  },
+  {
+    name: "GRC",
+    description: "Security now!",
+    link: "https://www.grc.com/securitynow.htm",
+    image: "https://www.grc.com/mh-logo.gif",
+    color: "#d25253",
+  },
+  {
+    name: "Full",
+    description: "A podcast for developers interested in building great software products",
+    link: "https://fullstackradio.com/",
+    image: "https://fullstackradio.com/podcast-cover.jpg",
+    color: "#74b5b5",
+  },
 ];
