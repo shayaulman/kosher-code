@@ -406,7 +406,7 @@ module.exports = [
     desc:
       "Use your CSS skills to replicate targets with smallest possible code",
     link: "https://cssbattle.dev/",
-    tags: ["תחרוית", "חינמי", "CSS"],
+    tags: ["תחרוית", "CSS"],
     color: "#db4f4c",
   },
   {
@@ -555,6 +555,13 @@ module.exports = [
     link: "https://campus.gov.il/course/course-v1-cs-gov-cs-nextpy102/",
     tags: ["Python", "קורסים (חינמי)"],
     color: "#f8d411",
+  },
+  {
+    name: "Developer Roadmaps",
+    desc: "Step by step guides and paths to learn different tools or technologies",
+    link: "https://roadmap.sh/",
+    tags: ["מיוחד למתחילים", "מפת דרכים לימודי"],
+    color: "#7da4e0",
   },
   // {
   //   name: "",

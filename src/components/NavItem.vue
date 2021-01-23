@@ -9,7 +9,6 @@
       class="relative mx-3 text-custom-text-primary font-hairline opacity-75 hover:text-custom-brand transition duration-300"
       :v-smooth-scroll="link === 'video-tutorials'"
     >
-      <new-badge v-if="item === 'לימודים'" />
       {{ item }}</g-link
     >
   </section>
