@@ -851,6 +851,20 @@ module.exports = [
   },
 
   {
+    name: "Nest.js",
+    hebrewName: "Nest.js",
+    category: "framework",
+    officialSite: "https://nestjs.com",
+    videoTutorials: [
+      { url: "F_oOtaxb0L8" },
+      { url: "p29wLfPlxqo" },
+      { url: "C65Ipd52cTo" },
+      { url: "EHlhvy-fh90" },
+    ],
+    color: "#ea2845",
+  },
+
+  {
     name: "Linux",
     hebrewName: "לינוקס",
     category: "special topics",
