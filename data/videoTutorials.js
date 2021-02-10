@@ -856,6 +856,7 @@ module.exports = [
     category: "framework",
     officialSite: "https://nestjs.com",
     videoTutorials: [
+      { url: "wqhNoDE6pb4" },
       { url: "F_oOtaxb0L8" },
       { url: "p29wLfPlxqo" },
       { url: "C65Ipd52cTo" },
