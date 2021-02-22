@@ -24,6 +24,7 @@
               name="name"
               v-model="formData.name"
               placeholder="שם"
+              required
             />
           </div>
           <div>
@@ -33,6 +34,7 @@
               name="email"
               v-model="formData.email"
               placeholder="אי-מייל"
+              required
             />
           </div>
         </div>
@@ -43,12 +45,13 @@
             name="message"
             v-model="formData.message"
             placeholder="הודעה"
+            required
           ></textarea>
           <button
             type="submit"
             class="bg-custom-brand hover:opacity-75 transition duration-300"
           >
-            <span class="mdc-button__label ">שלח!</span>
+            <span class="mdc-button__label">שלח!</span>
           </button>
         </div>
       </form>
@@ -59,19 +62,19 @@
 <script>
 export default {
   metaInfo: {
-    title: "Contact"
+    title: "Contact",
   },
   components: {},
   data() {
     return {
-      formData: {}
+      formData: {},
     };
   },
   methods: {
     encode(data) {
       return Object.keys(data)
         .map(
-          key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+          (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
         )
         .join("&");
     },
@@ -81,13 +84,13 @@ export default {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: this.encode({
           "form-name": e.target.getAttribute("name"),
-          ...this.formData
-        })
+          ...this.formData,
+        }),
       })
         .then(() => this.$router.push("/success/"))
-        .catch(error => alert(error));
-    }
-  }
+        .catch((error) => alert(error));
+    },
+  },
 };
 </script>
 
