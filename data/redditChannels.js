@@ -51,4 +51,5 @@ module.exports = [
   { name: "Windows10", color: "#0078d7" },
   { name: "dotnet", color: "#7e53c1" },
   { name: "PHP", color: "#8893bd" },
+  { name: "FirefoxCSS", color: "#F7C500" },
 ];
