@@ -562,7 +562,14 @@ module.exports = [
     link: "https://roadmap.sh/",
     tags: ["מיוחד למתחילים", "מפת דרכים לימודי"],
     color: "#7da4e0",
-  },
+  },{
+    name: "javascript.info",
+    desc: "The Modern JavaScript Tutorial",
+    link: "https://javascript.info/",
+    tags: ["Javascript"],
+    color: "#eec56d",
+  }
+  
   // {
   //   name: "",
   //   desc: "",
