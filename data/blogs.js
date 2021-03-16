@@ -84,6 +84,13 @@ module.exports = [
     color: "#0278ae"
   },
   {
+    name: "TechSense",
+    link: "https://blog.arps.co.il/",
+    desc: "בלוג טכנולוגי מאת אביב רונן – Hands-On CTO and Developer",
+    hebrew: true,
+    color: "#c80000",
+  },
+  {
     name: "פינת הקפה",
     link: "https://pinatkafe.com/",
     desc: "חוויות של מנהל קטן בחברת הייטק גדולה",
