@@ -28,6 +28,13 @@ module.exports = [
     color: "#2db08e",
   },
   {
+    name: "Tutlane",
+    desc: "Free programming courses and tutorials with examples",
+    link: "https://www.tutlane.com/",
+    tags: ["C#", "Python", "Swift", "SQLite", "Courses", "Learn"],
+    color: "#2196F3",
+  },  
+  {
     name: "To Code",
     desc: "קורסים מקצועיים למפתחים אונליין ובעברית",
     link: "https://www.tocode.co.il/",
