@@ -6,7 +6,7 @@
         class="font-thin hover:text-custom-brand transform transition duration-300"
         >Shaya Ulman</a
       >
-      &copy; 2020
+      &copy; {{ year }}
     </p>
     <a
       href="https://github.com/shayaulman/kosher-code"
@@ -25,5 +25,10 @@
 import AppIcon from "~/components/UI/AppIcon";
 export default {
   components: { AppIcon },
+  computed: {
+    year() {
+      return new Date().getFullYear();
+    },
+  },
 };
 </script>
