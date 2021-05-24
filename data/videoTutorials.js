@@ -880,6 +880,32 @@ module.exports = [
   },
 
   {
+    name: "Strapi",
+    hebrewName: "Strapi",
+    category: "framework",
+    officialSite: "https://strapi.io/",
+    videoTutorials: [
+      { url: "e3qapZznJ7o" },
+      { url: "nux0djdHmY8" },
+      { url: "6FnwAbd2SDY" },
+      { url: "zd0_S_FPzKg" },
+      { url: "aQhDFN64YrQ" },
+      { url: "kIZHzbmnhnU" },
+      { url: "hisau__LM-o" },
+      { url: "EjBpJuqqi3U" },
+      { url: "pR9kXTyNS1U" },
+      { url: "gtvXiRqn0ZI" },
+      { url: "EqZB2brjCL8" },
+      { url: "AsEGCzFiWTM" },
+      { url: "cvL204xus1w" },
+      { url: "DzUsg1lT8yg" },
+      { url: "TIK9CYDgs5k" },
+      { url: "WrmndNpWSJw" },
+    ],
+    color: "#1e1d80",
+  },
+
+  {
     name: "Linux",
     hebrewName: "לינוקס",
     category: "special topics",
