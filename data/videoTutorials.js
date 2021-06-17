@@ -1053,6 +1053,7 @@ module.exports = [
     category: "programming language",
     officialSite: "https://docs.microsoft.com/en-us/cpp/",
     videoTutorials: [
+      { url: "mF3Md4FSUUo" },
       { url: "Rub-JsjMhWY" },
       { url: "-rRiknAjWlw" },
       { url: "u_qedHigB-A" },
