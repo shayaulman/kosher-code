@@ -98,6 +98,13 @@ module.exports = [
     color: "#6d4738",
   },
   {
+    name: "dev-blog",
+    link: "https://dev-blog.co.il/,
+    desc: "מדריכים בתכנות - מתכנתים חרדיים",
+    hebrew: true,
+    color: "#dce4ea",
+  },
+  {
     name: "Aayush Wadhwa",
     desc: "Passionately Curious",
     link: "https://medium.com/@aayushwadhwa31",
