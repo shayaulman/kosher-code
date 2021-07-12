@@ -99,7 +99,7 @@ module.exports = [
   },
   {
     name: "dev-blog",
-    link: "https://dev-blog.co.il/,
+    link: "https://dev-blog.co.il/",
     desc: "מדריכים בתכנות - מתכנתים חרדיים",
     hebrew: true,
     color: "#dce4ea",
