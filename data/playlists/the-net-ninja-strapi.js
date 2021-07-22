@@ -11,6 +11,8 @@ module.exports = [
       { url: "N4JpylgjRK0" },
       { url: "8IVQahYX-mc" },
       { url: "cOE_hF2xjpM" },
+      { url: "9OwZHtH6Ppo" },
+      { url: "3x-DeIbuNLc" },
     ],
   },
 ];
