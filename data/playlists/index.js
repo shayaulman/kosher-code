@@ -18,6 +18,7 @@ const cppOopHebrew = require("./cpp-oop-hebrew");
 const basicSqlHebrew = require("./basic-sql-hebrew");
 const beauTeachesJavascript = require("./beau-teaches-javascript");
 const deeplizardMachineLearning = require("./deeplizard-machine-learning");
+const theNetNinjaStrapi = require("./the-net-ninja-strapi");
 
 module.exports = [
   ...solerowebPHP,
@@ -40,4 +41,5 @@ module.exports = [
   ...basicSqlHebrew,
   ...beauTeachesJavascript,
   ...deeplizardMachineLearning,
+  ...theNetNinjaStrapi,
 ];
