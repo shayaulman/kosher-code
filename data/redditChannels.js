@@ -52,4 +52,5 @@ module.exports = [
   { name: "dotnet", color: "#7e53c1" },
   { name: "PHP", color: "#8893bd" },
   { name: "FirefoxCSS", color: "#F7C500" },
+  { name: "EtherMining", color: "#794C65" },
 ];

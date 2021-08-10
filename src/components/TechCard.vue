@@ -1,12 +1,12 @@
 <template>
   <section
-    class="m-2 w-34 bg-custom-bg-card rounded-md transform hover:scale-105 transition ease-in duration-200"
+    class="m-2 w-34 flex flex-col bg-custom-bg-card rounded-md transform hover:scale-105 transition ease-in duration-200"
   >
-    <div class="pt-2 px-5">
+    <div class="pt-2 px-5 flex-grow">
       <g-link
         :to="`/video-tutorials/${name.toLowerCase()}`"
         :style="`color: ${color}`"
-        class="text-center"
+        class="text-center flex flex-col justify-between h-full"
       >
         <app-icon
           v-if="name !== 'Elementor'"

@@ -878,7 +878,7 @@ module.exports = [
       { url: "hNWDLifTh3s" },
       { url: "jVJUD6Kl8CM" },
     ],
-    color: "#2f406a",
+    color: "#4c6298",
   },
 
   {
@@ -924,7 +924,7 @@ module.exports = [
       { url: "PxD3MGjpKd8" },
       { url: "cI5Ko36KvWI" },
     ],
-    color: "#1e1d80",
+    color: " #826BF9",
   },
 
   {
@@ -1182,4 +1182,25 @@ module.exports = [
     ],
     color: "#999",
   },
+  {
+    name: 'Docker',
+    hebrewName: 'דוקר',
+    category: 'framework',
+    officialSite: 'https://docs.docker.com/',
+    videoTutorials: [
+      { url: 'd-PPOS-VsC8' },
+      { url: '_dfLOzuIg2o' },
+      { url: '2U8hLQQn3oA' },
+      { url: 'ANQRoSIAamE' },
+      { url: '19XcNWIXxS4' },
+      { url: 'fqMOX6JJhGo' },
+      { url: 'rOTqprHv1YE' },
+      { url: '3c-iBn73dDE' },
+      { url: 'zJ6WbK9zFpI' },
+      { url: 'IbUXb4pQbPY' },
+      { url: 'Kyx2PsuwomE' },
+      { url: 'pGYAg7TMmp0' }
+    ],
+    color: '#4b94e6'
+  }
 ];

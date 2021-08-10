@@ -129,7 +129,7 @@ export default {
 // https://codepen.io/andymerskin/pen/eRNvLR
 .fade-enter-active {
   transition: 0.3s ease;
-  c: #282a36;
+  // c: #282a36;
 }
 
 .fade-leave-active {
