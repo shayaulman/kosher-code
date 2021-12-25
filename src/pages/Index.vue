@@ -1,6 +1,8 @@
 <template>
   <Layout>
     <section class="mt-24">
+      <ais-instant-search :search-client="searchClient" index-name="kosher_code"></ais-instant-search>
+
       <div class="heading">
         <div class="mb-16 flex flex-col items-center">
           <h1 class="text-xl text-custom-text-primary">מאגר ענק של מקורות למידה למתכנתים</h1>
@@ -44,12 +46,22 @@
 </static-query>
 
 <script>
+import algoliasearch from "algoliasearch/lite";
+
 import TechList from "@/components/TechList";
 import CategoriesSlide from "@/components/CategoriesSlide";
 export default {
   components: {
     TechList,
     CategoriesSlide,
+  },
+  data() {
+    return {
+      searchClient: algoliasearch(
+        "62E0YWSSPA",
+        "c7c20ffbf45590c4c543aac36bb75f3e"
+      ),
+    };
   },
 
   computed: {

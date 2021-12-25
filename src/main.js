@@ -8,6 +8,8 @@ import "~/assets/tailwind.css";
 import "~/assets/global.scss";
 import vueSmoothScroll from "vue-smooth-scroll";
 import InfiniteLoading from "vue-infinite-loading";
+import InstantSearch from "vue-instantsearch";
+
 
 export default function(Vue, { router, head, isClient, appOptions }) {
   // Set default layout as a global component
@@ -16,6 +18,8 @@ export default function(Vue, { router, head, isClient, appOptions }) {
   Vue.use(Vuex);
   Vue.use(vueSmoothScroll);
   Vue.use(InfiniteLoading);
+  Vue.use(InstantSearch);
+
 
   Vue.filter("number", (value) =>
     isNaN(value) ? "" : Number(value).toLocaleString("en")
