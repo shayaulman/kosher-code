@@ -19,6 +19,7 @@ const basicSqlHebrew = require("./basic-sql-hebrew");
 const beauTeachesJavascript = require("./beau-teaches-javascript");
 const deeplizardMachineLearning = require("./deeplizard-machine-learning");
 const theNetNinjaStrapi = require("./the-net-ninja-strapi");
+const theNetNinjaHtmlCss = require("./the-net-ninja-html-css.js");
 
 module.exports = [
   ...solerowebPHP,
@@ -42,4 +43,5 @@ module.exports = [
   ...beauTeachesJavascript,
   ...deeplizardMachineLearning,
   ...theNetNinjaStrapi,
+  ...theNetNinjaHtmlCss
 ];
