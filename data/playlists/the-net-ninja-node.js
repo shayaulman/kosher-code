@@ -3,7 +3,7 @@ module.exports = [
     name: "The Net Ninja - Node.js Crash Course",
     hebrewName: "",
     category: "playlist",
-    tags: ["NodeJS"],
+    tags: ["nodejs"],
     videoTutorials: [
       { url: "zb3Qk8SG5Ms" },
       { url: "OIBIXYLJjsI" },

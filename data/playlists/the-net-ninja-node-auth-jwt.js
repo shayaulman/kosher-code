@@ -3,7 +3,7 @@ module.exports = [
     name: "The Net Ninja - Node Auth with JWY",
     hebrewName: "",
     category: "playlist",
-    tags: ["node.js"],
+    tags: ["nodejs"],
     videoTutorials: [
       { url: "SnoAwLP1a-0" },
       { url: "muhJTRQ7WMk" },
