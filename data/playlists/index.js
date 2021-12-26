@@ -1,27 +1,27 @@
-const solerowebPHP = require('./soleroweb-php');
-const solerowebHTML = require('./soleroweb-html');
-const solerowebJS = require('./soleroweb-js');
-const whatspython = require('./whatspython');
-const htmlCssBeginners = require('./htmlcssbeginners');
-const hightechReact = require('./hightech-react');
-const learncodeacadamyReact = require('./learncodeacadamy-react');
-const tocodeReact = require('./tocode-react');
-const automationcourseJava = require('./automationcourse-java');
-const es6InHebrew = require('./es6inhebrew');
-const reshetechCss = require('./reshetech-css');
-const onlineschoolAspnet = require('./onlineschool-aspnet');
-const angular4Hebrew = require('./angular4-hebrew');
-const jsvideotutorial = require('./js-videotutorial');
-const linuxOnlineschool = require('./linux-onlineschool');
-const laravelFromscratch = require('./laravelFromscratch');
-const cppOopHebrew = require('./cpp-oop-hebrew');
-const basicSqlHebrew = require('./basic-sql-hebrew');
-const beauTeachesJavascript = require('./beau-teaches-javascript');
-const deeplizardMachineLearning = require('./deeplizard-machine-learning');
-const theNetNinjaStrapi = require('./the-net-ninja-strapi');
-const theNetNinjaHtmlCss = require('./the-net-ninja-html-css.js');
-const theNetNinjaNode = require('./the-net-ninja-node');
-const theNetNinjaNodeAuthJwt = require('./the-net-ninja-node-auth-jwt');
+const solerowebPHP = require("./soleroweb-php");
+const solerowebHTML = require("./soleroweb-html");
+const solerowebJS = require("./soleroweb-js");
+const whatspython = require("./whatspython");
+const htmlCssBeginners = require("./htmlcssbeginners");
+const hightechReact = require("./hightech-react");
+const learncodeacadamyReact = require("./learncodeacadamy-react");
+const tocodeReact = require("./tocode-react");
+const automationcourseJava = require("./automationcourse-java");
+const es6InHebrew = require("./es6inhebrew");
+const reshetechCss = require("./reshetech-css");
+const onlineschoolAspnet = require("./onlineschool-aspnet");
+const angular4Hebrew = require("./angular4-hebrew");
+const jsvideotutorial = require("./js-videotutorial");
+const linuxOnlineschool = require("./linux-onlineschool");
+const laravelFromscratch = require("./laravelFromscratch");
+const cppOopHebrew = require("./cpp-oop-hebrew");
+const basicSqlHebrew = require("./basic-sql-hebrew");
+const beauTeachesJavascript = require("./beau-teaches-javascript");
+const deeplizardMachineLearning = require("./deeplizard-machine-learning");
+const theNetNinjaStrapi = require("./the-net-ninja-strapi");
+const theNetNinjaHtmlCss = require("./the-net-ninja-html-css.js");
+const theNetNinjaNode = require("./the-net-ninja-node");
+const theNetNinjaNodeAuthJwt = require("./the-net-ninja-node-auth-jwt");
 
 module.exports = [
   ...solerowebPHP,
@@ -47,5 +47,5 @@ module.exports = [
   ...theNetNinjaStrapi,
   ...theNetNinjaHtmlCss,
   ...theNetNinjaNode,
-  ...theNetNinjaNodeAuthJwt
+  ...theNetNinjaNodeAuthJwt,
 ];
