@@ -55,7 +55,7 @@ module.exports = [
       { url: "93p3LxR9xfM" },
       { url: "w7ejDZ8SWv8" },
     ],
-    color: "#5adafd"
+    color: "#5adafd",
   },
   {
     name: "Vue",
@@ -117,7 +117,7 @@ module.exports = [
       { url: "Padx6mTe4sQ" },
       { url: "BEOfyUpIHU8" },
     ],
-    color: "#41b883"
+    color: "#41b883",
   },
   {
     name: "Angular",
@@ -188,7 +188,7 @@ module.exports = [
       { url: "FXzOPErFivY" },
       { url: "xx8HLEfdB_0" },
     ],
-    color: "#c5002a"
+    color: "#c5002a",
   },
   {
     name: "AngularJS",
@@ -219,7 +219,7 @@ module.exports = [
       { url: "blXtHRbQm_s" },
       { url: "OQltyPp2BYk" },
     ],
-    color: "#c5002a"
+    color: "#c5002a",
   },
   {
     name: "Python",
@@ -249,7 +249,7 @@ module.exports = [
       { url: "rfscVS0vtbw" },
       { url: "lrUPmBpVQRw" },
     ],
-    color: "#ffd530"
+    color: "#ffd530",
   },
   {
     name: "GO",
@@ -265,7 +265,7 @@ module.exports = [
       { url: "8T3VxGrrJwc" },
       { url: "_pww3NJuWnk" },
     ],
-    color: "#00acd7"
+    color: "#00acd7",
   },
   {
     name: "HTML",
@@ -291,7 +291,7 @@ module.exports = [
       { url: "3GLyOS-nB4Q" },
       { url: "KnJAFa-YVd0" },
     ],
-    color: "#e65c18"
+    color: "#e65c18",
   },
   {
     name: "CSS",
@@ -319,7 +319,7 @@ module.exports = [
       { url: "ngHFf2ZSHtI" },
       { url: "zHUpx90NerM" },
     ],
-    color: "#1673b6"
+    color: "#1673b6",
   },
   {
     name: "JavaScript",
@@ -416,7 +416,7 @@ module.exports = [
       { url: "_gXg518vNNs" },
       { url: "PkZNo7MFNFg" },
     ],
-    color: "#c2b134"
+    color: "#c2b134",
   },
   {
     name: "Git",
@@ -463,7 +463,7 @@ module.exports = [
       { url: "lSIec1U0uRQ" },
       { url: "B8uvje6X7lo" },
     ],
-    color: "#f44f29"
+    color: "#f44f29",
   },
   {
     name: "WordPress",
@@ -539,7 +539,7 @@ module.exports = [
       { url: "q_MWcY5Nu8k" },
       { url: "xQ6ecbNI6NM" },
     ],
-    color: "#8d2d6b"
+    color: "#8d2d6b",
   },
 
   {
@@ -561,7 +561,7 @@ module.exports = [
       { url: "TMkC2zE0teA" },
       { url: "Wkh47XLVWbQ" },
     ],
-    color: "#6181B6"
+    color: "#6181B6",
   },
 
   {
@@ -629,7 +629,7 @@ module.exports = [
       { url: "L72fhGm1tfE" },
 
     ],
-    color: "#83CD29"
+    color: "#83CD29",
   },
 
   {
@@ -671,7 +671,7 @@ module.exports = [
       { url: "js84deD7pzk" },
       { url: "Dd2ej-QKrWY" },
     ],
-    color: "#306693"
+    color: "#306693",
   },
 
   {
@@ -731,7 +731,7 @@ module.exports = [
       { url: "UbMDK4UNtPA" },
       { url: "E8n_k6HNAgs" },
     ],
-    color: "#ff7000"
+    color: "#ff7000",
   },
 
   {
@@ -755,7 +755,7 @@ module.exports = [
       { url: "-sWvsUsrqjI" },
       { url: "wY8sryzMJvY" },
     ],
-    color: "#ef5249"
+    color: "#ef5249",
   },
 
   {
@@ -775,7 +775,7 @@ module.exports = [
       { url: "uK2RnIzrQ0M" },
       { url: "3TVy6GdtNuQ" },
     ],
-    color: "#ff3c00"
+    color: "#ff3c00",
   },
 
   {
@@ -813,7 +813,7 @@ module.exports = [
       { url: "bE309sLiHUw" },
       { url: "hYBxbPqvRZk" },
     ],
-    color: "#3c79e6"
+    color: "#3c79e6",
   },
 
   {
@@ -844,7 +844,7 @@ module.exports = [
       { url: "IkWnZFdbMwc" },
       { url: "6rl7-tVzHc0" },
     ],
-    color: "#a96af6"
+    color: "#a96af6",
   },
 
   {
@@ -859,7 +859,7 @@ module.exports = [
       { url: "TvD_ia7vkkA" },
       { url: "qWSPog9Fz-o" },
     ],
-    color: "#007acc"
+    color: "#007acc",
   },
 
   {
@@ -875,7 +875,7 @@ module.exports = [
       { url: "hNWDLifTh3s" },
       { url: "jVJUD6Kl8CM" },
     ],
-    color: "#4c6298"
+    color: "#4c6298",
   },
 
   {
@@ -891,7 +891,7 @@ module.exports = [
       { url: "EHlhvy-fh90" },
       { url: "4RkMAt8-u8g" },
     ],
-    color: "#ea2845"
+    color: "#ea2845",
   },
 
   {
@@ -921,7 +921,7 @@ module.exports = [
       { url: "PxD3MGjpKd8" },
       { url: "cI5Ko36KvWI" },
     ],
-    color: " #826BF9"
+    color: " #826BF9",
   },
 
   {
@@ -968,7 +968,7 @@ module.exports = [
       { url: "z_6piM7kOz8" },
       { url: "4XtDKOg3e1M" },
     ],
-    color: "#f5be06"
+    color: "#f5be06",
   },
 
   {
@@ -988,7 +988,7 @@ module.exports = [
       { url: "OFT9bSv3aYA" },
       { url: "eMjju1nQ1F8" },
     ],
-    color: "#E535AB"
+    color: "#E535AB",
   },
 
   {
@@ -1006,7 +1006,7 @@ module.exports = [
       { url: "F0G9lZ7gecE" },
       { url: "948by_y1VKI" },
     ],
-    color: "#818385"
+    color: "#818385",
   },
 
   {
@@ -1038,7 +1038,7 @@ module.exports = [
       { url: "j70xZ0nS1Pg" },
       { url: "1exF0kNKCvQ" },
     ],
-    color: "#FD4F31"
+    color: "#FD4F31",
   },
 
   {
@@ -1059,7 +1059,7 @@ module.exports = [
       { url: "GD3jbAPe_XY" },
       { url: "PLHln7wHgPE" },
     ],
-    color: "#45d1fd"
+    color: "#45d1fd",
   },
 
   {
@@ -1108,7 +1108,7 @@ module.exports = [
       { url: "EP4MWr9NfjQ" },
       { url: "vLnPwxZdW4Y" },
     ],
-    color: "#00579e"
+    color: "#00579e",
   },
 
   {
@@ -1163,7 +1163,7 @@ module.exports = [
       { url: "f5nUR8_qGGc" },
       { url: "HXV3zeQKqGY" },
     ],
-    color: "#8690fa"
+    color: "#8690fa",
   },
 
   {
@@ -1177,7 +1177,7 @@ module.exports = [
       { url: "Y6SSTRr2mFU" },
       { url: "_agDeiWek8w" },
     ],
-    color: "#999"
+    color: "#999",
   },
   {
     name: "Docker",
@@ -1198,6 +1198,6 @@ module.exports = [
       { url: "Kyx2PsuwomE" },
       { url: "pGYAg7TMmp0" },
     ],
-    color: "#4b94e6"
+    color: "#4b94e6",
   },
 ];
