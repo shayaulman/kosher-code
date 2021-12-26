@@ -323,7 +323,7 @@ module.exports = [
   },
   {
     name: "JavaScript",
-    hebrewName: "ג"אווהסקריפט",
+    hebrewName: "ג'אווהסקריפט",
     category: "programming language",
     officialSite: "https://www.w3.org/javascript/",
     videoTutorials: [
@@ -505,7 +505,7 @@ module.exports = [
       { url: "_UEGeMFUW1w" },
       { url: "sggjmDtwEi4" },
       { url: "AcnJ-gVIWx4" },
-    ]
+    ],
   },
   {
     name: "Elementor",
@@ -655,7 +655,7 @@ module.exports = [
       { url: "w1rTxE-fOy8" },
       { url: "BHBLjRuzb7s" },
       { url: "Rv_RX3SxdHM" },
-    ]
+    ],
   },
 
   {
@@ -718,7 +718,7 @@ module.exports = [
       { url: "RrOPUegE8MI" },
       { url: "7jiICxVggL8" },
       { url: "XGNHOMq2Q6o" },
-    ]
+    ],
   },
 
   {
