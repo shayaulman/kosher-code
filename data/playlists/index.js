@@ -22,6 +22,7 @@ const theNetNinjaStrapi = require("./the-net-ninja-strapi");
 const theNetNinjaHtmlCss = require("./the-net-ninja-html-css.js");
 const theNetNinjaNode = require("./the-net-ninja-node");
 const theNetNinjaNodeAuthJwt = require("./the-net-ninja-node-auth-jwt");
+const theNetNinjaVue = require("./the-net-ninja-vue");
 
 module.exports = [
   ...solerowebPHP,
@@ -48,4 +49,5 @@ module.exports = [
   ...theNetNinjaHtmlCss,
   ...theNetNinjaNode,
   ...theNetNinjaNodeAuthJwt,
+  ...theNetNinjaVue
 ];
