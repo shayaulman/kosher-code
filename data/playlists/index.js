@@ -23,6 +23,8 @@ const theNetNinjaHtmlCss = require("./the-net-ninja-html-css.js");
 const theNetNinjaNode = require("./the-net-ninja-node");
 const theNetNinjaNodeAuthJwt = require("./the-net-ninja-node-auth-jwt");
 const theNetNinjaVue = require("./the-net-ninja-vue");
+const theNetNinjaJsAsync = require("./the-net-ninja-j.s-async")
+const theNetNinjaOOJS = require("./the-net-ninja-object-oriented-j.s")
 
 module.exports = [
   ...solerowebPHP,
@@ -49,5 +51,7 @@ module.exports = [
   ...theNetNinjaHtmlCss,
   ...theNetNinjaNode,
   ...theNetNinjaNodeAuthJwt,
-  ...theNetNinjaVue
+  ...theNetNinjaVue,
+  ...theNetNinjaJsAsync,
+  ...theNetNinjaOOJS
 ];
