@@ -12,6 +12,13 @@ module.exports = [
     color: "#ff2600",
   },
   {
+    name: "DDOS Developers",
+    description: "הייטק | קהילת מפתחים חרדים",
+    link: "https://www.ddosdevs.co.il/podcast",
+    color: "#7680c1",
+    image: "https://static.wixstatic.com/media/0914b5_0a64c8ec3f134495965c1398e17537cc~mv2.png/v1/fill/w_128,h_114,al_c,q_85,usm_0.66_1.00_0.01/LogoMakr_1Ly6VT.webp"
+  },
+  {
     name: "Changelog",
     description: "News and podcasts for developers",
     link: "https://changelog.com",
