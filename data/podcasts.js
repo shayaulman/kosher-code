@@ -51,13 +51,6 @@ module.exports = [
     color: "#068808",
   },
   {
-    name: "הייטק בפקקים",
-    description: "האנשים שעושים את ההייטק הישראלי",
-    link: "https://www.startupstadium.com/hitech-bapkakim/",
-    image: "https://www.startupstadium.com/wp-content/uploads/Logo-300-300.jpg",
-    color: "#2f7155",
-  },
-  {
     name: "Real Python",
     description: "Python Tips, Interviews, and More",
     link: "https://realpython.com/podcasts/rpp/",
@@ -91,7 +84,7 @@ module.exports = [
     color: "#d25253",
   },
   {
-    name: "Full",
+    name: "Full Stack Radio",
     description: "A podcast for developers interested in building great software products",
     link: "https://fullstackradio.com/",
     image: "https://fullstackradio.com/podcast-cover.jpg",
