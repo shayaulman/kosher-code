@@ -908,7 +908,23 @@ module.exports = [
       { url: "PxD3MGjpKd8" },
       { url: "cI5Ko36KvWI" },
     ],
-    color: " #826BF9",
+    color: "#826BF9",
+  },
+
+  {
+    name: "Fastify",
+    hebrewName: "Fastify",
+    category: "framework",
+    officialSite: "https://www.fastify.io/",
+    videoTutorials: [
+      { url: "Lk-uVEVGxOA" },
+      { url: "pGhWPDlF2sM" },
+      { url: "YxiWBFQUwCQ" },
+      { url: "a9uEhq1uwNk" },
+      { url: "O0r-jf9Wez4" },
+      { url: "XbG1B5vjo7M" },
+    ],
+    color: "#000000",
   },
 
   {
