@@ -871,6 +871,12 @@ module.exports = [
       { url: "C65Ipd52cTo" },
       { url: "EHlhvy-fh90" },
       { url: "4RkMAt8-u8g" },
+      { url: "k6ya4ZVlMAg" },
+      { url: "0M8AYU_hPas" },
+      { url: "xs_MFwPtwbI" },
+      { url: "5rlsUfQTRzs" },
+      { url: "e5qk1Xruwso" },
+      { url: "_L225zpUK0M" },
     ],
     color: "#ea2845",
   },
@@ -902,7 +908,23 @@ module.exports = [
       { url: "PxD3MGjpKd8" },
       { url: "cI5Ko36KvWI" },
     ],
-    color: " #826BF9",
+    color: "#826BF9",
+  },
+
+  {
+    name: "Fastify",
+    hebrewName: "Fastify",
+    category: "framework",
+    officialSite: "https://www.fastify.io/",
+    videoTutorials: [
+      { url: "Lk-uVEVGxOA" },
+      { url: "pGhWPDlF2sM" },
+      { url: "YxiWBFQUwCQ" },
+      { url: "a9uEhq1uwNk" },
+      { url: "O0r-jf9Wez4" },
+      { url: "XbG1B5vjo7M" },
+    ],
+    color: "#000000",
   },
 
   {
