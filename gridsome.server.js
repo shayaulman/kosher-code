@@ -1,6 +1,7 @@
 const axios = require("axios");
 
 const videoTutorials = require("./data/videoTutorials");
+const youtubeChannels = require("./data/youtubeChannels");
 const redditChannels = require("./data/redditChannels");
 const podcasts = require("./data/podcasts");
 const blogs = require("./data/blogs");
@@ -50,6 +51,24 @@ module.exports = function(api) {
         });
       }
     }
+
+    const CHANNELS_BASE_URL = `https://www.googleapis.com/youtube/v3/channels?part=snippet&key=${process.env.GRIDSOME_API_KEY}`;
+    // TODO: Optimize to use only 1 query for 50 entires like we do with videos
+    const channelsData = await axios
+      .all(youtubeChannels.map((channel) => axios.get(`${CHANNELS_BASE_URL}&id=${channel.id}`)))
+      .then((res) => res.map((r) => r.data));
+
+    const YoutubeChannel = actions.addCollection("YoutubeChannel");
+    channelsData.forEach(({ items }) => {
+      const data = items[0].snippet;
+      YoutubeChannel.addNode({
+        id: data.id,
+        title: data.title,
+        customUrl: data.customUrl,
+        description: data.description,
+        thumbnails: data.thumbnails
+      });
+    });
 
     const RedditChannels = actions.addCollection("Reddit");
     redditChannels.forEach((channel) => {
