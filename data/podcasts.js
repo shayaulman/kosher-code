@@ -90,4 +90,11 @@ module.exports = [
     image: "https://fullstackradio.com/podcast-cover.jpg",
     color: "#74b5b5",
   },
+  {
+    name: "Egghead podcast",
+    description: "Concise Full Stack Courses for Busy Web Developers",
+    link: "https://egghead.io/podcasts/",
+    image: "https://egghead.io/_next/static/media/eggo.a29f6f2d.svg",
+    color: "#ffffff",
+  },
 ];
