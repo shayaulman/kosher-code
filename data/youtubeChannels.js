@@ -5,6 +5,8 @@ module.exports = [
   { id: 'channel/UCIld0affiSkmp-KkEit3S_w' },
   { id: 'channel/UC29ju8bIPH5as8OGnQzwJyA' },
   { id: 'channel/UCW5YeuERMmlnqo4oq8vwUpg' },
+  { id: 'channel/UCSJbGtTlrDami-tDGPUV9-w' },
   { id: 'c/programmingwithmosh' },
-  { id: 'c/Freecodecamp' }
+  { id: 'c/Freecodecamp' },
+  { id: 'c/CodinginPublic' }
 ];
