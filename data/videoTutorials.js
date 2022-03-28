@@ -877,6 +877,8 @@ module.exports = [
       { url: "5rlsUfQTRzs" },
       { url: "e5qk1Xruwso" },
       { url: "_L225zpUK0M" },
+      { url: "GHTA143_b-s" },
+      { url: "oU5Di3be-Sk" },
     ],
     color: "#ea2845",
   },
