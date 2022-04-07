@@ -19,6 +19,13 @@ module.exports = [
     image: "https://static.wixstatic.com/media/0914b5_0a64c8ec3f134495965c1398e17537cc~mv2.png/v1/fill/w_128,h_114,al_c,q_85,usm_0.66_1.00_0.01/LogoMakr_1Ly6VT.webp"
   },
   {
+    name: "CYBERCYBER",
+    description: "סיפורים על האקרים, קאקרים, פירצות אבטחה, בורקס ופחמימות באופן כללי",
+    link: "https://cybercyber.co.il/?cat=2",
+    image: "https://cybercyber.co.il/wp-content/uploads/2018/12/cropped-2018-12-20_tagmp3_wsrp6cgsr4vo-150x150.jpg",
+    color: "#fefc61",
+  },
+  {
     name: "Changelog",
     description: "News and podcasts for developers",
     link: "https://changelog.com",

@@ -55,6 +55,7 @@ export default {
 
   computed: {
     podcastsSorted() {
+      // For some reason does not on initial render
       return this.$page.podcast.edges.sort((a, b) => {
         if (this.isHebrew(a.node.name)) return -1;
 
