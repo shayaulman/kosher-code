@@ -7,7 +7,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "date-fns": "^2.10.0",
     "fuse.js": "^6.4.1",
     "gridsome": "latest",
