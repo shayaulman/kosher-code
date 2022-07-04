@@ -70,6 +70,13 @@ module.exports = [
     color: "#214a81",
   },
   {
+    name: "Design for Living",
+    link: "https://ernan-maisels.net/",
+    desc: "C# and Design Paterns",
+    hebrew: true,
+    color: "#50bbb7",
+  },
+   {
     name: "codebrain",
     link: "https://www.codebrain.co.il/",
     desc: "web פיתוח",
