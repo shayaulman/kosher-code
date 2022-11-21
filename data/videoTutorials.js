@@ -1068,6 +1068,17 @@ module.exports = [
   },
 
   {
+    name: "C",
+    hebrewName: "סי",
+    category: "programming language",
+    officialSite: "", // Not sure what to put here...
+    videoTutorials: [
+      { url: "KJgsSFOSQv0" },
+    ],
+    color: "#0c5c98",
+  },
+
+  {
     name: "C++",
     hebrewName: "סי פלוס פלוס",
     category: "programming language",
