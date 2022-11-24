@@ -1084,6 +1084,9 @@ module.exports = [
     officialSite: "", // Not sure what to put here...
     videoTutorials: [
       { url: "KJgsSFOSQv0" },
+      { url: "guRzAgMGM9o" },
+      { url: "naFdOXmBUsg" },
+      { url: "owqotYeZn_k" },
     ],
     color: "#0c5c98",
   },
