@@ -2,7 +2,7 @@ module.exports = [
   {
     name: "Udemy",
     desc: "Online Courses - Learn Anything, On Your Schedule",
-    link: "https://www.udemy.com/",
+    link: "http://click.linksynergy.com/fs-bin/click?id=M3G3NGQG3aU&offerid=1060092&type=3&subid=0",
     tags: ["קורסים"],
     color: "#e95252",
   },
@@ -16,7 +16,7 @@ module.exports = [
   {
     name: "Codecademy",
     desc: "Learn to code - for Free",
-    link: "https://www.codecademy.com/",
+    link: "https://www.pntra.com/t/2-438167-281661-213588",
     tags: ["קורסים (חלק חינמי)", "מדריכים אינטראקטיביים"],
     color: "#6101e4",
   },
@@ -51,7 +51,7 @@ module.exports = [
   {
     name: "Udacity",
     desc: "Learn the Latest Tech Skills; Advance Your Career",
-    link: "https://www.udacity.com/",
+    link: "https://imp.i115008.net/c/3571670/786224/11298",
     tags: ["קורסים"],
     color: "#01b3e4",
   },
@@ -151,7 +151,7 @@ module.exports = [
   {
     name: "Edabit",
     desc: "Learn to Code with 10,000+ Interactive Challenges",
-    link: "https://edabit.com/",
+    link: "https://edabit.com/?ref=koshercode",
     tags: ["מדריכים אינטראקטיביים"],
     color: "#2db04b",
   },
