@@ -12,7 +12,7 @@
     "fuse.js": "^6.4.1",
     "gridsome": "latest",
     "gridsome-plugin-tailwindcss": "latest",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "sass-loader": "^8.0.2",
     "tailwindcss": "^1.2.0",
     "vue-content-loader": "^0.2.3",
