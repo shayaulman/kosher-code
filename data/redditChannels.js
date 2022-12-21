@@ -54,5 +54,6 @@ module.exports = [
   { name: "FirefoxCSS", color: "#F7C500" },
   { name: "EtherMining", color: "#794C65" },
   { name: "Haskell", color: "#5e5086" },
-  { name: "Elementor", color: "#ff38d7" }
+  { name: "elementor", color: "#ff38d7" },
+  { name: "nginx", color: "#0079d3" }
 ];
