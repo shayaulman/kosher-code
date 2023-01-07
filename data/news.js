@@ -1,0 +1,72 @@
+module.exports = [
+  {
+    name: "Changelog Nightly",
+    desc: "Every night @ 10pm US Central we ship this email that unearths the top new and top starred projects on GitHub before they blow up. No fluff, just repos.",
+    link: "https://changelog.com/nightly",
+    tags: ["מייל"],
+    color: "#e95252",
+  },
+  {
+    name: "Changelog Weekly",
+    desc: "Every weekend we ship our editorialized take on this week in open source and software development",
+    link: "https://changelog.com/weekly",
+    tags: ["מייל"],
+    color: "#4689c6",
+  },
+  {
+    name: "Golang Weekly",
+    desc: "A weekly newsletter about the Go programming language",
+    link: "https://golangweekly.com",
+    tags: ["מייל","cooperpress","go"],
+    color: "#4689c6",
+  },
+  {
+    name: "JavaScript Weekly",
+    desc: "A newsletter of JavaScript articles, news and cool projects",
+    link: "https://javascriptweekly.com",
+    tags: ["מייל","cooperpress","js"],
+    color: "#4689c6",
+  },
+  {
+    name: "Frontend Focus",
+    desc: "A once–weekly roundup of the best front-end news, articles and tutorials. HTML, CSS, WebGL, Canvas, browser tech, and more",
+    link: "https://frontendfoc.us",
+    tags: ["מייל","cooperpress","front-end"],
+    color: "#4689c6",
+  },
+  {
+    name: "Node Weekly",
+    desc: "A free, once–weekly e-mail round-up of Node.js news and articles",
+    link: "https://nodeweekly.com",
+    tags: ["מייל","cooperpress","node"],
+    color: "#4689c6",
+  },
+  {
+    name: "React Status",
+    desc: "A weekly roundup of the latest React and React Native links and tutorials",
+    link: "https://react.statuscode.com",
+    tags: ["מייל","cooperpress","react"],
+    color: "#4689c6",
+  },
+  {
+    name: "Serverless Status",
+    desc: "A weekly newsletter on serverless and function-as-a-service (FaaS) architectures and platforms including AWS Lambda and Azure Functions",
+    link: "https://serverless.email",
+    tags: ["מייל","cooperpress","serverless"],
+    color: "#4689c6",
+  },
+  {
+    name: "Postgres Weekly",
+    desc: "A weekly email roundup of Postgres news and articles",
+    link: "https://postgresweekly.com",
+    tags: ["מייל","cooperpress","postgres"],
+    color: "#4689c6",
+  }
+  // {
+  //   name: "",
+  //   desc: "",
+  //   link: "",
+  //   tags: [],
+  //   color: "#",
+  // },
+];
