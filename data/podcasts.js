@@ -26,12 +26,12 @@ module.exports = [
     color: "#fefc61",
   },
   {
-    name: "Changelog",
-    description: "News and podcasts for developers",
+    name: "The Changelog",
+    description: "The software world's best weekly news brief, deep technical interviews, and talk show",
     link: "https://changelog.com",
     image:
-      "https://cdn.changelog.com/images/brand/changelog-logomark-97913322799ebebe4ec08d1ee2492899.svg?vsn=d",
-    color: "#3d765f",
+      "https://cdn.changelog.com/static/images/podcasts/podcast-original-f16d0363067166f241d080ee2e2d4a28.png",
+    color: "#59B287",
   },
   {
     name: "Syntax",
