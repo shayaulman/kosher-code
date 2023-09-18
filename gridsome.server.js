@@ -62,7 +62,7 @@ module.exports = function(api) {
       const bannerElm = $(`.${BANNER_CLASS}`)
       assert(bannerElm, `Could not find banner element for Class ${BANNER_CLASS}`)
 
-      const backgroundStyle = bannerElm.css('style')
+      const backgroundStyle = $(bannerElm).css('background')
       const [bgColor] = backgroundStyle.match(/rgb\((\d{1,3}), (\d{1,3}), (\d{1,3})\)/)
 
       RedditChannels.addNode({
