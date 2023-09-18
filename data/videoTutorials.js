@@ -66,7 +66,7 @@ module.exports = [
     officialSite: "https://vuejs.org",
     videoTutorials: [
       { url: "C1BXOKNcBKg" },
-      { url: "FdC4Mjljd3k" }
+      { url: "FdC4Mjljd3k" },
       { url: "YSEY9CbWpHU" },
       { url: "1OIvvxIBk64" },
       { url: "-gnDnjv6PEU" },
