@@ -1,4 +1,6 @@
 const axios = require("axios");
+const cheerio = require("cheerio");
+const assert = require("assert");
 
 const videoTutorials = require("./data/videoTutorials");
 const redditChannels = require("./data/redditChannels");
@@ -52,12 +54,22 @@ module.exports = function(api) {
     }
 
     const RedditChannels = actions.addCollection("Reddit");
-    redditChannels.forEach((channel) => {
+    const BANNER_CLASS = "_2L5G9B5yaoqW3IegiYN-FL"
+    for (const channelName of redditChannels) {
+      const { data } = await axios.get(`https://www.reddit.com/r/${channelName}`);
+      const $ = cheerio.load(data);
+      
+      const bannerElm = $(`.${BANNER_CLASS}`)
+      assert(bannerElm, `Could not find banner element for Class ${BANNER_CLASS}`)
+
+      const backgroundStyle = bannerElm.css('style')
+      const [bgColor] = backgroundStyle.match(/rgb\((\d{1,3}), (\d{1,3}), (\d{1,3})\)/)
+
       RedditChannels.addNode({
-        name: channel.name,
-        color: channel.color,
+        name: channelName,
+        color: bgColor,
       });
-    });
+    }
 
     const PodcastsCollection = actions.addCollection("Podcast");
     podcasts.forEach((podcast) => {
