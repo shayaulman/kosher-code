@@ -55,5 +55,9 @@ module.exports = [
   { name: "EtherMining", color: "#794C65" },
   { name: "Haskell", color: "#5e5086" },
   { name: "elementor", color: "#ff38d7" },
-  { name: "nginx", color: "#0079d3" }
+  { name: "nginx", color: "#0079d3" },
+  { name: "sveltejs", color: "#e55f2d" },
+  { name: "bunjs", color: "#2d97e5" },
+  { name: "webdev", color: "#c15151" },
+  { name: "GoogleAppsScript", color: "#3fbc56" },
 ];
