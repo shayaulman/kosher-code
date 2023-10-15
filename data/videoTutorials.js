@@ -66,7 +66,7 @@ module.exports = [
     officialSite: "https://vuejs.org",
     videoTutorials: [
       { url: "C1BXOKNcBKg" },
-      { url: "FdC4Mjljd3k" }
+      { url: "FdC4Mjljd3k" },
       { url: "YSEY9CbWpHU" },
       { url: "1OIvvxIBk64" },
       { url: "-gnDnjv6PEU" },
@@ -77,8 +77,6 @@ module.exports = [
       { url: "9RtNC_7TBTg" },
       { url: "33NTCaUU8DI" },
       { url: "8fLykma4Cv4" },
-    
-      
       { url: "zyWNA2SdZU4", pl: "gocode" },
       { url: "h7hR2_LGlGs", pl: "gocode" },
       { url: "togm3q-uvH4", pl: "gocode" },
@@ -264,7 +262,6 @@ module.exports = [
       { url: "rfscVS0vtbw" },
       { url: "lrUPmBpVQRw" },
       { url: "eWRfhZUzrAc" },
-
     ],
     color: "#ffd530",
   },
@@ -339,7 +336,6 @@ module.exports = [
       { url: "mU6anWqZJcc" },
       { url: "-8LTPIJBGwQ" },
       { url: "p0bGHP-PXD4" },
-
     ],
     color: "#1673b6",
   },
@@ -637,7 +633,6 @@ module.exports = [
       { url: "gG3pytAY2MY" },
       { url: "G8uL0lFFoN0" },
       { url: "L72fhGm1tfE" },
-
     ],
     color: "#83CD29",
   },
