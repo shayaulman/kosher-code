@@ -42,6 +42,13 @@ module.exports = [
     color: "#6e6565",
   },
   {
+    name: "ChaniK",
+    desc: "פוסטים על CSS, jQuery, וורדפרס ואלמנטור",
+    link: "https://chani-k.co.il/",
+    hebrew: true,
+    color: "#06B0EF",
+  },
+  {
     name: "רשתטק",
     desc: "מדריכים לתכנות ופיתוח אתרי אינטרנט",
     link: "https://reshetech.co.il/",
