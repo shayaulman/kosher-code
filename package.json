@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.12",
     "date-fns": "^2.10.0",
     "fuse.js": "^6.4.1",
     "gridsome": "latest",
