@@ -12,7 +12,7 @@
     "fuse.js": "^6.4.1",
     "gridsome": "latest",
     "gridsome-plugin-tailwindcss": "latest",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
     "tailwindcss": "^1.2.0",
     "vue-content-loader": "^0.2.3",
@@ -22,6 +22,9 @@
     "vue2-smooth-scroll": "^1.2.0",
     "vuejs-paginate": "^2.1.0",
     "vuex": "^3.1.2"
+  },
+  "resolutions": {
+    "sharp": "^0.29.0"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.0.6"
