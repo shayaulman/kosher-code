@@ -1,35 +1,5 @@
 module.exports = [
   {
-    name: "Cyber Security",
-    hebrewName: "אבטחת מידע",
-    category: "special topics",
-    color: "#73ce54",
-    videoTutorials: [
-      { url: "pw27CdvR78U" },
-      { url: "XfbyWPrYcRM" },
-      { url: "8BuwL1icB9M" },
-      { url: "vW3swJTS51w" },
-      { url: "Uikcu4uHR_c" },
-      { url: "hPymqBifh6o" },
-      { url: "wZVKceJ13a8" },
-      { url: "ipA6ie7803c" },
-      { url: "A95rAJk2T6k" },
-      { url: "ipzCvQBJ5SE" },
-      { url: "izcXaFZ4eL4" },
-      { url: "8_3xqM-C63k" },
-      { url: "SlEKZY-gyDM" },
-      { url: "TfLPv7sthA4" },
-      { url: "3kh9sfL6bFw" },
-      { url: "fzaB4TsDewY" },
-      { url: "G0ZiYws5-Ms" },
-      { url: "5pOimn-TSvc" },
-      { url: "58wAVaWKwNM" },
-      { url: "THVjV0XW_z4" },
-      { url: "SBnFiuH6nZc" },
-      { url: "bAXxP0XmWhk" }
-    ]
-  },
-  {
     name: "Artificial Intelligence",
     hebrewName: "בינה מלאכותית",
     category: "special topics",
@@ -38,8 +8,8 @@ module.exports = [
       { url: "GQsngU3zZUI" },
       { url: "EV-ULNzLztg" },
       { url: "jroQQT8_wRI" },
-      { url: "QM1NphlHWCo" }
-    ]
+      { url: "QM1NphlHWCo" },
+    ],
   },
   {
     name: "Machine Learning",
@@ -49,8 +19,8 @@ module.exports = [
     videoTutorials: [
       { url: "u2BmFI4qwmw" },
       { url: "PPLop4L2eGk" },
-      { url: "UzxYlbK2c7E" }
-    ]
+      { url: "UzxYlbK2c7E" },
+    ],
   },
   {
     name: "Arduino",
@@ -89,8 +59,8 @@ module.exports = [
       { url: "uDV3AVcE4f4" },
       { url: "iXmlRtAk290" },
       { url: "3NU-_WV4YbI" },
-      { url: "ipsMstssE1E" }
-    ]
+      { url: "ipsMstssE1E" },
+    ],
   },
 
   {
@@ -127,17 +97,44 @@ module.exports = [
       { url: "nw9GyUpkaS4" },
       { url: "F1KXuKybt44" },
       { url: "HL_uUjVWV4w" },
-      { url: "IiGvUtCKyMw" }
-    ]
+      { url: "IiGvUtCKyMw" },
+    ],
   },
-
+  {
+    name: "Cyber Security",
+    hebrewName: "אבטחת מידע",
+    category: "special topics",
+    color: "#73ce54",
+    videoTutorials: [
+      { url: "pw27CdvR78U" },
+      { url: "XfbyWPrYcRM" },
+      { url: "8BuwL1icB9M" },
+      { url: "vW3swJTS51w" },
+      { url: "Uikcu4uHR_c" },
+      { url: "hPymqBifh6o" },
+      { url: "wZVKceJ13a8" },
+      { url: "ipA6ie7803c" },
+      { url: "A95rAJk2T6k" },
+      { url: "ipzCvQBJ5SE" },
+      { url: "izcXaFZ4eL4" },
+      { url: "8_3xqM-C63k" },
+      { url: "SlEKZY-gyDM" },
+      { url: "TfLPv7sthA4" },
+      { url: "3kh9sfL6bFw" },
+      { url: "fzaB4TsDewY" },
+      { url: "G0ZiYws5-Ms" },
+      { url: "5pOimn-TSvc" },
+      { url: "58wAVaWKwNM" },
+      { url: "THVjV0XW_z4" },
+      { url: "SBnFiuH6nZc" },
+      { url: "bAXxP0XmWhk" },
+    ],
+  },
   {
     name: "serverless",
     hebrewName: "סרבר-לס",
     category: "special topics",
     color: "#4CAF50",
-    videoTutorials: [
-      { url: "ZhvlO5UJnoI" },
-    ]
-  }
+    videoTutorials: [{ url: "ZhvlO5UJnoI" }],
+  },
 ];
