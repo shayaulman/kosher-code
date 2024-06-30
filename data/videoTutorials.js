@@ -501,6 +501,7 @@ module.exports = [
     color: "#d4d3d3",
     videoTutorials: [
       { url: "0zwDo5hH2LQ" },
+      { url: "uRbqzETsCqU" },
       { url: "NmBADqf1UY0" },
       { url: "AYua5KpkBCg" },
       { url: "4teO1oHuQbA" },
