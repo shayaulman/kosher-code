@@ -228,7 +228,7 @@ module.exports = [
   {
     name: "Learn HTML",
     desc: "Learn HTML - Free Interactive HTML Tutorial",
-    link: "https://www.learnhtml.org/",
+    link: "https://www.learn-html.org/",
     tags: ["מדריכים אינטראקטיביים", "סדרת -Learn", "HTML"],
     color: "#ba4d32",
   },
