@@ -1,6 +1,9 @@
 {
   "name": "gridsome",
   "private": true,
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "scripts": {
     "build": "gridsome build",
     "start": "gridsome develop",
@@ -12,8 +15,8 @@
     "fuse.js": "^6.4.1",
     "gridsome": "latest",
     "gridsome-plugin-tailwindcss": "latest",
-    "node-sass": "^4.14.1",
-    "sass-loader": "^8.0.2",
+    "sass": "^1.69.5",
+    "sass-loader": "^10.4.1",
     "tailwindcss": "^1.2.0",
     "vue-content-loader": "^0.2.3",
     "vue-gtag": "^1.9.1",
@@ -24,7 +27,10 @@
     "vuex": "^3.1.2"
   },
   "resolutions": {
-    "sharp": "^0.29.0"
+    "sharp": "^0.31.3"
+  },
+  "overrides": {
+    "sharp": "^0.31.3"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.0.6"
